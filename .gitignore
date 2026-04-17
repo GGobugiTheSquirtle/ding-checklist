@@ -1,0 +1,19 @@
+# Playwright output
+.playwright-mcp/
+*.png
+!icon.png
+
+# Legacy files (구버전 참고용, repo에 포함하지 않음)
+_legacy/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.swp
+*~
