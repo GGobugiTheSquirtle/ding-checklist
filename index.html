@@ -324,7 +324,14 @@ input:focus, select:focus, textarea:focus {
 .toolbar-row.justify-end { justify-content: flex-end; }
 .filter-group { display: flex; align-items: center; gap: var(--sp-2); flex: 1; min-width: 160px; }
 .filter-group label { font-size: var(--text-xs); color: var(--text-dim); letter-spacing: 1px; white-space: nowrap; }
-.filter-group select { flex: 1; }
+.filter-group select, .filter-group input[type="search"] { flex: 1; }
+.search-group { min-width: 240px; flex: 2; }
+.search-group input[type="search"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 34px;
+}
 
 .btn {
   display: inline-flex; align-items: center; gap: var(--sp-2);
@@ -753,18 +760,20 @@ input:focus, select:focus, textarea:focus {
   .toolbar-row { gap: var(--sp-2); flex-wrap: wrap; }
   .btn { padding: 7px 12px; font-size: var(--text-xs); }
 
-  /* 모바일에서 엑셀/동기화/뷰 버튼은 아이콘만 남기고 레이블 숨김
+  /* 모바일에서 엑셀/동기화/공유/뷰 버튼은 아이콘만 남기고 레이블 숨김
      (뷰 버튼은 레이블 유지 — "상세 목록 보기"는 이해에 필요)  */
   #btn-sync .btn-label,
   #btn-export .btn-label,
-  #btn-import .btn-label { display: none; }
-  #btn-sync, #btn-export, #btn-import {
+  #btn-import .btn-label,
+  #btn-share .btn-label { display: none; }
+  #btn-sync, #btn-export, #btn-import, #btn-share {
     padding: 7px; width: 38px; height: 38px;
     justify-content: center;
   }
-  #btn-sync .icon, #btn-export .icon, #btn-import .icon {
+  #btn-sync .icon, #btn-export .icon, #btn-import .icon, #btn-share .icon {
     width: 18px; height: 18px;
   }
+  .search-group { min-width: 140px; flex: 1; }
   /* 뷰 버튼은 텍스트 유지하되 패딩 축소 */
   #btn-view { padding: 7px 10px; font-size: var(--text-xs); }
   /* 플로팅 버튼이 하단 필터/버튼과 안 겹치게 살짝 띄움 */
@@ -891,6 +900,20 @@ input:focus, select:focus, textarea:focus {
     <!-- TOOLBAR -->
     <div class="toolbar" role="toolbar" aria-label="필터 및 도구">
       <div class="toolbar-row">
+        <div class="filter-group search-group">
+          <label for="f-search">검색</label>
+          <input type="search" id="f-search" placeholder="항목 검색… (Ctrl+K)" autocomplete="off">
+        </div>
+        <div class="filter-group">
+          <label for="f-status">상태</label>
+          <select id="f-status">
+            <option value="">전체</option>
+            <option value="todo">미완료</option>
+            <option value="done">완료</option>
+          </select>
+        </div>
+      </div>
+      <div class="toolbar-row">
         <div class="filter-group">
           <label for="f-category">카테고리</label>
           <select id="f-category"><option value="">— 전체 —</option></select>
@@ -919,6 +942,10 @@ input:focus, select:focus, textarea:focus {
         <button class="btn" id="btn-import" title="엑셀 가져오기" aria-label="엑셀 가져오기">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V9m0 0l-4 4m4-4l4 4"/><path d="M5 3h14"/></svg>
           <span class="btn-label">엑셀 가져오기</span>
+        </button>
+        <button class="btn" id="btn-share" title="진행도 URL로 공유" aria-label="진행도 공유">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg>
+          <span class="btn-label">공유</span>
         </button>
         <input type="file" id="file-import"
                accept=".xlsx,.xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
@@ -966,6 +993,6 @@ input:focus, select:focus, textarea:focus {
   </div>
 </div>
 
-<script src="app.js?v=7"></script>
+<script src="app.js?v=8"></script>
 </body>
 </html>

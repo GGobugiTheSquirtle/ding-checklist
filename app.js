@@ -34,7 +34,7 @@ const state = {
   progress: {},
   openChapters: new Set(),
   view: "dashboard",
-  filter: { categoryId: "", sectionId: "" },
+  filter: { categoryId: "", sectionId: "", query: "", status: "" },
 };
 
 let ALL_IDS = new Set();
@@ -385,6 +385,9 @@ function renderAll() {
   renderSidebar();
   renderCategoryFilter();
   renderSectionFilter();
+  // 검색/상태 input 복원
+  const s = $("#f-search"); if (s && s.value !== state.filter.query) s.value = state.filter.query || "";
+  const st = $("#f-status"); if (st && st.value !== state.filter.status) st.value = state.filter.status || "";
   // 뷰 전환 버튼 레이블을 현재 상태와 항상 동기화 (.btn-label 유지)
   const btnViewLabel = $("#btn-view .btn-label");
   if (btnViewLabel) btnViewLabel.textContent = state.view === "dashboard" ? "상세 목록 보기" : "대시보드 보기";
@@ -533,6 +536,17 @@ function renderDashboard() {
   }
 }
 
+function matchItem(it) {
+  // 검색 쿼리 매칭 (대소문자 무시)
+  const q = (state.filter.query || "").trim().toLowerCase();
+  if (q && !it.text.toLowerCase().includes(q)) return false;
+  // 완료 상태 필터
+  const status = state.filter.status;
+  if (status === "done" && !state.progress[it.id]) return false;
+  if (status === "todo" && state.progress[it.id]) return false;
+  return true;
+}
+
 function renderChecklist() {
   const host = $("#checklist");
   host.textContent = "";
@@ -544,6 +558,7 @@ function renderChecklist() {
     return;
   }
 
+  let anyVisible = false;
   for (const cat of cats) {
     const st = chapterStats(cat);
     const pct = percent(st.done, st.total);
@@ -574,28 +589,39 @@ function renderChecklist() {
 
     const body = el("div", { class: "chapter-body" });
 
-    // 카테고리 직속 아이템 (섹션 필터 없을 때만)
-    if (cat.items && cat.items.length && !sectionId) {
-      body.appendChild(renderItems(cat.items));
+    // 검색·상태 필터 적용 후 남은 아이템만 렌더
+    const filteredDirect = (!sectionId && cat.items) ? cat.items.filter(matchItem) : [];
+    const filteredSections = (cat.sections || [])
+      .filter((sec) => !sectionId || sec.sectionId === sectionId)
+      .map((sec) => ({ sec, items: sec.items.filter(matchItem) }))
+      .filter((x) => x.items.length > 0);
+
+    // 카테고리 내 결과 0개면 이 챕터 스킵
+    if (filteredDirect.length === 0 && filteredSections.length === 0) continue;
+    anyVisible = true;
+
+    if (filteredDirect.length) {
+      body.appendChild(renderItems(filteredDirect));
     }
-    // 섹션
-    if (cat.sections) {
-      for (const sec of cat.sections) {
-        if (sectionId && sec.sectionId !== sectionId) continue;
-        const secDone = sec.items.filter((it) => state.progress[it.id]).length;
-        const block = el("div", { class: "section-block" },
-          el("div", { class: "section-title" },
-            el("span", {}, sec.sectionName),
-            el("span", { class: "count" }, `${secDone}/${sec.items.length}`)
-          ),
-          renderItems(sec.items)
-        );
-        body.appendChild(block);
-      }
+    for (const { sec, items } of filteredSections) {
+      const totalInSec = sec.items.length;
+      const secDone = sec.items.filter((it) => state.progress[it.id]).length;
+      const block = el("div", { class: "section-block" },
+        el("div", { class: "section-title" },
+          el("span", {}, sec.sectionName),
+          el("span", { class: "count" },
+            items.length === totalInSec ? `${secDone}/${totalInSec}` : `${items.length} / ${totalInSec}`)
+        ),
+        renderItems(items)
+      );
+      body.appendChild(block);
     }
 
+    // 검색 활성화 시 자동으로 펼쳐서 결과 노출
+    const forceOpen = (state.filter.query || state.filter.status) ? true : isOpen;
     const chapter = el("section", { class: "chapter", id: "ch-" + cat.categoryId }, header, body);
-    chapter.dataset.open = isOpen ? "true" : "false";
+    chapter.dataset.open = forceOpen ? "true" : "false";
+    header.setAttribute("aria-expanded", String(forceOpen));
     chapter.style.setProperty("--progress-color", color);
 
     header.addEventListener("click", () => {
@@ -608,6 +634,14 @@ function renderChecklist() {
     });
 
     host.appendChild(chapter);
+  }
+
+  // 필터 결과가 전부 비었을 때 안내
+  if (!anyVisible) {
+    host.appendChild(el("div", { class: "empty" },
+      (state.filter.query || state.filter.status)
+        ? "검색·필터 조건에 맞는 항목이 없습니다."
+        : "표시할 항목이 없습니다."));
   }
 }
 
@@ -1015,6 +1049,174 @@ function sanitizeSheetName(name) {
   return (name || "sheet").replace(/[\\\/\?\*\[\]:]/g, "").slice(0, 31);
 }
 
+// ==========================================================================
+// 공유 (URL 인코딩) — 진행도를 마스터 순서 기반 비트맵으로 직렬화
+// 662개 아이템 → 83바이트 → base64url 111자.
+// 마스터 지문(fp) 6자를 붙여 마스터 버전 검증.
+// ==========================================================================
+
+/** 마스터 순서대로 id 배열 반환 (공유 인코딩의 기준 순서) */
+function masterIdOrder() {
+  const ids = [];
+  for (const cat of state.master) {
+    (cat.items || []).forEach((it) => ids.push(it.id));
+    (cat.sections || []).forEach((sec) => sec.items.forEach((it) => ids.push(it.id)));
+  }
+  return ids;
+}
+
+/** FNV-1a 32비트 해시 (base36 6자로 압축) — 마스터 지문 */
+function masterFingerprint() {
+  let h = 0x811c9dc5;
+  const ids = masterIdOrder();
+  // 길이도 지문에 포함 — 아이템 추가/삭제 감지
+  const seed = `${ids.length}:` + ids.join("|");
+  for (let i = 0; i < seed.length; i++) {
+    h ^= seed.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h.toString(36).padStart(6, "0").slice(0, 6);
+}
+
+/** base64 → base64url (URL 안전) */
+function b64urlEncode(b64) {
+  return b64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+function b64urlDecode(s) {
+  s = s.replace(/-/g, "+").replace(/_/g, "/");
+  while (s.length % 4) s += "=";
+  return s;
+}
+
+/** progress 객체 → base64url 문자열 */
+function encodeProgress(progress = state.progress, ids = masterIdOrder()) {
+  const bytes = new Uint8Array(Math.ceil(ids.length / 8));
+  ids.forEach((id, i) => {
+    if (progress[id]) bytes[i >> 3] |= 1 << (i & 7);
+  });
+  let bin = "";
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return b64urlEncode(btoa(bin));
+}
+
+/** base64url 문자열 → progress 객체 */
+function decodeProgress(str, ids = masterIdOrder()) {
+  const bin = atob(b64urlDecode(str));
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  const result = {};
+  ids.forEach((id, i) => {
+    if (bytes[i >> 3] & (1 << (i & 7))) result[id] = true;
+  });
+  return result;
+}
+
+/** 현재 진행도로 공유 URL 생성 */
+function buildShareUrl() {
+  const p = encodeProgress();
+  const v = masterFingerprint();
+  const base = location.origin + location.pathname.replace(/\?.*$/, "");
+  return `${base}?v=${v}&p=${p}`;
+}
+
+/** URL 쿼리에 ?p=가 있으면 미리보기 다이얼로그 → 덮어쓰기 확인 → 적용 */
+async function handleSharedUrl() {
+  const params = new URLSearchParams(location.search);
+  const p = params.get("p");
+  if (!p) return;
+  const v = params.get("v") || "";
+  const currentFp = masterFingerprint();
+
+  let imported;
+  try {
+    imported = decodeProgress(p);
+  } catch (e) {
+    toast("공유 URL 디코드 실패 — 링크가 손상된 것 같습니다", "error", 4000);
+    history.replaceState({}, "", location.pathname);
+    return;
+  }
+
+  const doneCount = Object.keys(imported).length;
+  const versionWarn = v && v !== currentFp
+    ? `\n\n⚠ 마스터 버전 다름 (${v} → ${currentFp}): 일부 항목이 어긋날 수 있습니다.`
+    : "";
+  const ok = await confirmDialog(
+    "공유된 진행도 가져오기",
+    `받은 URL에 담긴 완료 항목: ${doneCount}개\n현재 진행도를 이 값으로 덮어씁니다.${versionWarn}`,
+    "덮어쓰기", "취소"
+  );
+  if (ok) {
+    state.progress = imported;
+    saveLS(LS.progress, state.progress);
+    renderAll();
+    toast("공유된 진행도를 적용했습니다", "success");
+  }
+  // URL에서 쿼리 제거 (새로고침해도 재적용 안 되도록)
+  history.replaceState({}, "", location.pathname);
+}
+
+/** 공유 다이얼로그 — URL 표시 + 복사 + (가능 시) navigator.share */
+async function openShareDialog() {
+  const url = buildShareUrl();
+  const dialog = $("#dialog");
+  $("#dialog-title").textContent = "진행도 URL 공유";
+  const msgEl = $("#dialog-msg");
+  msgEl.textContent = "";
+  msgEl.appendChild(el("div", { style: { marginBottom: "12px", fontSize: "0.88rem" } },
+    `현재 진행도 ${Object.keys(state.progress).length}개 항목을 URL에 담았습니다.`));
+  const urlBox = el("input", {
+    type: "text", readonly: true, value: url,
+    style: {
+      width: "100%", padding: "8px 10px", fontSize: "0.78rem",
+      fontFamily: "monospace", wordBreak: "break-all",
+    },
+    onClick: (e) => e.target.select(),
+  });
+  msgEl.appendChild(urlBox);
+  msgEl.appendChild(el("div", { style: { fontSize: "0.74rem", color: "var(--text-dim)", marginTop: "8px" } },
+    `길이: ${url.length}자`));
+
+  const actions = $("#dialog-actions");
+  actions.textContent = "";
+
+  const close = () => { dialog.dataset.open = "false"; document.removeEventListener("keydown", onKey, true); };
+  const onKey = (e) => { if (e.key === "Escape") { e.preventDefault(); close(); } };
+
+  const copyBtn = el("button", { class: "btn btn-primary" }, "복사하기");
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      toast("URL을 클립보드에 복사했습니다", "success");
+      close();
+    } catch (e) {
+      urlBox.select();
+      document.execCommand && document.execCommand("copy");
+      toast("URL 선택됨 — Ctrl+C 로 복사", "success", 3000);
+    }
+  });
+
+  actions.append(el("button", { class: "btn", onClick: close }, "닫기"));
+
+  // navigator.share가 있으면 "공유…" 버튼 추가 (주로 모바일)
+  if (navigator.share) {
+    const shareBtn = el("button", { class: "btn" }, "공유…");
+    shareBtn.addEventListener("click", async () => {
+      try {
+        await navigator.share({ title: "Another Eden 올클리어 체크리스트", url });
+        close();
+      } catch (_) { /* 사용자 취소 */ }
+    });
+    actions.appendChild(shareBtn);
+  }
+
+  actions.appendChild(copyBtn);
+
+  dialog.dataset.open = "true";
+  document.addEventListener("keydown", onKey, true);
+  urlBox.focus();
+  urlBox.select();
+}
+
 async function importXlsx(file) {
   if (!window.XLSX) { toast("XLSX 라이브러리를 로드하지 못했습니다", "error"); return; }
   const ok = await confirmDialog(
@@ -1145,8 +1347,27 @@ function bindEvents() {
     state.filter.sectionId = e.target.value;
     persistUi(); renderAll();
   });
+
+  // 검색 — debounce로 과도한 재렌더 방지
+  let searchTimer = null;
+  $("#f-search").addEventListener("input", (e) => {
+    const v = e.target.value;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.filter.query = v;
+      if (v && state.view === "dashboard") state.view = "detail";
+      persistUi(); renderAll();
+    }, 180);
+  });
+  $("#f-status").addEventListener("change", (e) => {
+    state.filter.status = e.target.value;
+    if (state.filter.status && state.view === "dashboard") state.view = "detail";
+    persistUi(); renderAll();
+  });
   $("#btn-reset-filter").addEventListener("click", () => {
-    state.filter = { categoryId: "", sectionId: "" };
+    state.filter = { categoryId: "", sectionId: "", query: "", status: "" };
+    $("#f-search").value = "";
+    $("#f-status").value = "";
     persistUi(); renderAll();
   });
 
@@ -1166,6 +1387,7 @@ function bindEvents() {
 
   $("#btn-export").addEventListener("click", exportXlsx);
   $("#btn-import").addEventListener("click", () => $("#file-import").click());
+  $("#btn-share").addEventListener("click", openShareDialog);
   $("#file-import").addEventListener("change", (e) => {
     const f = e.target.files && e.target.files[0];
     if (f) importXlsx(f);
@@ -1200,16 +1422,31 @@ function bindEvents() {
   });
 
   document.addEventListener("keydown", (e) => {
+    // Ctrl/Cmd + K = 검색 포커스 (모든 포커스 상태에서 먼저 처리)
+    if ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K")) {
+      e.preventDefault();
+      const s = $("#f-search"); if (s) s.focus();
+      return;
+    }
     // 다이얼로그 열려있으면 단축키 무시 (ESC는 confirmDialog 자체에서 처리)
     if (isDialogOpen()) return;
-    // 입력 요소 포커스 중엔 단축키 무시
-    if (e.target.matches("input, textarea, select, [contenteditable]")) return;
-    // 모바일 드로어 열려있으면 ESC로 닫기 우선
+    // 모바일 드로어 ESC
     if (e.key === "Escape" && $("#sidebar").dataset.open === "true") {
       e.preventDefault();
       closeMobileSidebar();
       return;
     }
+    // 검색 input에 포커스 중이면 ESC로 비우기
+    if (e.target.id === "f-search") {
+      if (e.key === "Escape") {
+        e.target.value = "";
+        state.filter.query = "";
+        persistUi(); renderAll();
+      }
+      return;
+    }
+    // 그 외 입력 요소 포커스 중엔 단축키 무시
+    if (e.target.matches("input, textarea, select, [contenteditable]")) return;
     if (e.key === "t" || e.key === "T") toggleTheme();
     if (e.key === "d" || e.key === "D") { state.view = "dashboard"; persistUi(); renderAll(); }
     if (e.key === "l" || e.key === "L") { state.view = "detail"; persistUi(); renderAll(); }
@@ -1231,6 +1468,9 @@ async function boot() {
 
   bindEvents();
   renderAll();
+
+  // 공유 URL 파라미터 처리 (?p=... 있으면 미리보기 다이얼로그)
+  handleSharedUrl();
 }
 
 boot();
