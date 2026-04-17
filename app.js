@@ -123,11 +123,27 @@ function saveLS(key, value) {
 // ==========================================================================
 // Toast & Dialog
 // ==========================================================================
+/** 같은 메시지가 짧은 시간 내 연속 호출되는 걸 dedupe */
+let _lastToastKey = "";
+let _lastToastTs = 0;
 function toast(msg, kind = "success", ms = 2600) {
+  const key = `${kind}::${msg}`;
+  const now = Date.now();
+  if (key === _lastToastKey && now - _lastToastTs < 1500) return; // 1.5초 내 동일 토스트 무시
+  _lastToastKey = key; _lastToastTs = now;
+
   const host = $("#toast-host");
-  const t = el("div", { class: `toast ${kind}` }, String(msg));
+  const t = el("div", {
+    class: `toast ${kind}`,
+    role: kind === "error" ? "alert" : "status",
+  }, String(msg));
   host.appendChild(t);
-  setTimeout(() => { t.style.opacity = "0"; t.style.transition = "opacity .3s"; }, ms - 300);
+
+  // reduced-motion 사용자는 페이드 생략 — 바로 제거
+  const reduced = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduced) {
+    setTimeout(() => { t.style.opacity = "0"; t.style.transition = "opacity .3s"; }, ms - 300);
+  }
   setTimeout(() => t.remove(), ms);
 }
 
@@ -191,16 +207,22 @@ async function loadMaster() {
   if (sheetCsvUrl && sheetCsvUrl.trim()) {
     try {
       const res = await fetch(sheetCsvUrl, { cache: "no-store" });
-      if (!res.ok) throw new Error("sheet HTTP " + res.status);
+      if (!res.ok) { const err = new Error("sheet HTTP " + res.status); err.kind = "net"; throw err; }
       const text = await res.text();
-      // 원격 CSV 크기 상한 — 악의적/손상된 시트에 의한 OOM 방지
-      if (text.length > 5 * 1024 * 1024) throw new Error("CSV too large (>5MB)");
+      if (text.length > 5 * 1024 * 1024) { const err = new Error("CSV too large (>5MB)"); err.kind = "size"; throw err; }
       const rows = parseCsv(text);
-      if (rows.length > 20000) throw new Error("CSV too many rows (>20k)");
-      return csvRowsToMaster(rows);
+      if (rows.length > 20000) { const err = new Error("CSV too many rows (>20k)"); err.kind = "size"; throw err; }
+      try {
+        return csvRowsToMaster(rows);
+      } catch (parseErr) {
+        parseErr.kind = "format"; throw parseErr;
+      }
     } catch (e) {
       console.warn("Google Sheet fetch failed, fallback:", e);
-      toast("구글시트 로드 실패 — 번들본으로 진행합니다", "error");
+      const msg = e.kind === "format" ? "구글시트 헤더 형식 오류 — 번들본 사용"
+              : e.kind === "size"    ? "구글시트가 너무 큼 — 번들본 사용"
+              :                        "구글시트 네트워크 실패 — 번들본 사용";
+      toast(msg, "error", 3200);
     }
   }
 
@@ -363,9 +385,9 @@ function renderAll() {
   renderSidebar();
   renderCategoryFilter();
   renderSectionFilter();
-  // 뷰 전환 버튼 텍스트를 현재 상태와 항상 동기화
-  const btnView = $("#btn-view");
-  if (btnView) btnView.textContent = state.view === "dashboard" ? "상세 목록 보기" : "대시보드 보기";
+  // 뷰 전환 버튼 레이블을 현재 상태와 항상 동기화 (.btn-label 유지)
+  const btnViewLabel = $("#btn-view .btn-label");
+  if (btnViewLabel) btnViewLabel.textContent = state.view === "dashboard" ? "상세 목록 보기" : "대시보드 보기";
   if (state.view === "dashboard") {
     $("#view-dashboard").classList.remove("hidden");
     $("#view-detail").classList.add("hidden");
@@ -624,10 +646,16 @@ function onItemToggle(e) {
       const st = chapterStats(cat);
       const pct = percent(st.done, st.total);
       chapter.style.setProperty("--progress-color", progressHsl(pct));
-      chapter.querySelector(".chapter-meta .num").textContent = pct + "%";
-      chapter.querySelector(".chapter-meta .mini-bar .fill").style.width = pct + "%";
-      const totalSpan = chapter.querySelector(".chapter-meta .progress-total");
-      if (totalSpan) totalSpan.textContent = `${st.done}/${st.total}`;
+      // meta 노드 한 번만 찾아 하위 요소 참조 범위 축소
+      const meta = chapter.querySelector(".chapter-meta");
+      if (meta) {
+        const numEl = meta.querySelector(".num");
+        const fillEl = meta.querySelector(".mini-bar .fill");
+        const totEl = meta.querySelector(".progress-total");
+        if (numEl) numEl.textContent = pct + "%";
+        if (fillEl) fillEl.style.width = pct + "%";
+        if (totEl) totEl.textContent = `${st.done}/${st.total}`;
+      }
     }
   }
   const sectionBlock = cb.closest(".section-block");
@@ -1124,7 +1152,6 @@ function bindEvents() {
 
   $("#btn-view").addEventListener("click", () => {
     state.view = state.view === "dashboard" ? "detail" : "dashboard";
-    $("#btn-view").textContent = state.view === "dashboard" ? "상세 목록 보기" : "대시보드 보기";
     persistUi(); renderAll();
   });
 
@@ -1201,8 +1228,6 @@ async function boot() {
   state.master = await loadMaster();
   rebuildIdIndex();
   $("#loader").classList.add("hidden");
-
-  $("#btn-view").textContent = state.view === "dashboard" ? "상세 목록 보기" : "대시보드 보기";
 
   bindEvents();
   renderAll();
