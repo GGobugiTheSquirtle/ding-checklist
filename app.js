@@ -720,7 +720,7 @@ async function exportXlsx() {
     ws.getRow(1).height = 28;
 
     ws.mergeCells("A2:D2");
-    ws.getCell("A2").value = `진행: ${catStats.done} / ${catStats.total}  (${catPct}%)  ·  완료하려면 C열에 아무 글자나 입력 (v, x, ✓ 등) · 지우려면 Delete`;
+    ws.getCell("A2").value = `진행: ${catStats.done} / ${catStats.total}  (${catPct}%)  ·  완료: C열 드롭다운 선택 또는 직접 입력(v, ✓ 등)  ·  해제: Delete`;
     ws.getCell("A2").font = XL.subFont;
     ws.getCell("A2").alignment = { vertical: "middle", horizontal: "left", indent: 1 };
     ws.getRow(2).height = 20;
@@ -757,6 +757,14 @@ async function exportXlsx() {
         // alternating row color — 조건부 서식이 완료 행을 덮어씀
         if (idx % 2 === 1) c.fill = XL.rowAlt;
       });
+      // 완료 셀 드롭다운 — 선택지에서 고르거나 직접 입력 둘 다 허용
+      // showErrorMessage: false 로 리스트 외 값(직접 입력)도 경고 없이 수용됨
+      row.getCell(3).dataValidation = {
+        type: "list",
+        allowBlank: true,
+        formulae: ['"✓,v,O"'],
+        showErrorMessage: false,
+      };
       row.height = 22;
     };
 
