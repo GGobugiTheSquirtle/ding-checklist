@@ -50,18 +50,24 @@ const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
  * - 문자열 자식은 textContent로 안전 주입
  * - 객체 자식은 appendChild
  * - style/dataset은 객체로 지정 가능
+ * - CSS 커스텀 속성(--*)은 style 객체 내에서도 올바르게 setProperty로 주입
+ * - html 옵션 없음 (XSS sink 차단; 정적 SVG는 svgEl 헬퍼 사용)
  */
 function el(tag, props = {}, ...children) {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(props || {})) {
     if (v == null) continue;
     if (k === "class") node.className = v;
-    else if (k === "style" && typeof v === "object") Object.assign(node.style, v);
+    else if (k === "style" && typeof v === "object") {
+      for (const [sk, sv] of Object.entries(v)) {
+        if (sk.startsWith("--")) node.style.setProperty(sk, String(sv));
+        else node.style[sk] = sv;
+      }
+    }
     else if (k === "dataset" && typeof v === "object") Object.assign(node.dataset, v);
     else if (k.startsWith("on") && typeof v === "function") {
       node.addEventListener(k.slice(2).toLowerCase(), v);
     }
-    else if (k === "html") node.innerHTML = v; // 신뢰된 정적 SVG 등 한정 사용
     else if (k in node && typeof node[k] !== "object") node[k] = v;
     else node.setAttribute(k, v);
   }
@@ -76,10 +82,29 @@ function el(tag, props = {}, ...children) {
   return node;
 }
 
-/** 내부 정의된 SVG 마크업만 사용 (사용자 입력 미포함 → 안전) */
-const SVG = {
-  chev: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg>`,
-};
+/** null 안전 이벤트 바인딩 헬퍼 */
+function $on(sel, ev, fn, root = document) {
+  const n = root.querySelector(sel);
+  if (n) n.addEventListener(ev, fn);
+  return n;
+}
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+/** 정적 SVG 노드를 안전하게 생성 (innerHTML 미사용) */
+function makeChevron() {
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("class", "chev");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2");
+  svg.setAttribute("stroke-linecap", "round");
+  const poly = document.createElementNS(SVG_NS, "polyline");
+  poly.setAttribute("points", "9 6 15 12 9 18");
+  svg.appendChild(poly);
+  return svg;
+}
 
 // ==========================================================================
 // localStorage
@@ -108,6 +133,7 @@ function toast(msg, kind = "success", ms = 2600) {
 
 function confirmDialog(title, msg, okLabel = "확인", cancelLabel = "취소") {
   return new Promise((resolve) => {
+    const dialog = $("#dialog");
     $("#dialog-title").textContent = title;
     $("#dialog-msg").textContent = msg;
     const actions = $("#dialog-actions");
@@ -115,12 +141,45 @@ function confirmDialog(title, msg, okLabel = "확인", cancelLabel = "취소") {
     const cancel = el("button", { class: "btn" }, cancelLabel);
     const ok = el("button", { class: "btn btn-primary" }, okLabel);
     actions.append(cancel, ok);
-    const close = (v) => { $("#dialog").dataset.open = "false"; resolve(v); };
+
+    const previouslyFocused = document.activeElement;
+    const focusables = [cancel, ok];
+
+    const onKey = (e) => {
+      if (e.key === "Escape") { e.preventDefault(); close(false); }
+      else if (e.key === "Tab") {
+        // 포커스 트랩 — dialog 내부만 순환
+        const active = document.activeElement;
+        const idx = focusables.indexOf(active);
+        if (e.shiftKey) {
+          if (idx <= 0) { e.preventDefault(); focusables[focusables.length - 1].focus(); }
+        } else {
+          if (idx === focusables.length - 1) { e.preventDefault(); focusables[0].focus(); }
+        }
+      }
+    };
+    const onBackdrop = (e) => { if (e.target === dialog) close(false); };
+    const close = (v) => {
+      dialog.dataset.open = "false";
+      document.removeEventListener("keydown", onKey, true);
+      dialog.removeEventListener("click", onBackdrop);
+      // 이전 포커스 복원
+      try { previouslyFocused && previouslyFocused.focus && previouslyFocused.focus(); } catch (_) {}
+      resolve(v);
+    };
     cancel.addEventListener("click", () => close(false));
     ok.addEventListener("click", () => close(true));
-    $("#dialog").dataset.open = "true";
+    document.addEventListener("keydown", onKey, true);
+    dialog.addEventListener("click", onBackdrop);
+
+    dialog.dataset.open = "true";
     ok.focus();
   });
+}
+
+function isDialogOpen() {
+  const d = document.getElementById("dialog");
+  return d && d.dataset.open === "true";
 }
 
 // ==========================================================================
@@ -134,7 +193,10 @@ async function loadMaster() {
       const res = await fetch(sheetCsvUrl, { cache: "no-store" });
       if (!res.ok) throw new Error("sheet HTTP " + res.status);
       const text = await res.text();
+      // 원격 CSV 크기 상한 — 악의적/손상된 시트에 의한 OOM 방지
+      if (text.length > 5 * 1024 * 1024) throw new Error("CSV too large (>5MB)");
       const rows = parseCsv(text);
+      if (rows.length > 20000) throw new Error("CSV too many rows (>20k)");
       return csvRowsToMaster(rows);
     } catch (e) {
       console.warn("Google Sheet fetch failed, fallback:", e);
@@ -242,6 +304,12 @@ function rebuildIdIndex() {
     (cat.items || []).forEach((it) => ALL_IDS.add(it.id));
     (cat.sections || []).forEach((sec) => sec.items.forEach((it) => ALL_IDS.add(it.id)));
   }
+  // 마스터에서 사라진 orphan 진행도 정리 — localStorage 용량 낭비 방지
+  let changed = false;
+  for (const id of Object.keys(state.progress)) {
+    if (!ALL_IDS.has(id)) { delete state.progress[id]; changed = true; }
+  }
+  if (changed) saveLS(LS.progress, state.progress);
 }
 
 // ==========================================================================
@@ -277,8 +345,12 @@ function percent(done, total) {
 
 function progressHsl(pct) {
   if (!pct) return "var(--text-dim)";
-  const hue = 20 + pct * 1.0;
-  return `hsl(${hue}, 55%, 52%)`;
+  if (pct >= 100) return "var(--success)";
+  // 20°(앰버) → 105°(라임) 그라디언트 · 채도·명도는 색약 구분 위해 pct에 따라 증가
+  const hue = 20 + (pct / 100) * 85;
+  const sat = 55 + Math.round(pct / 5);
+  const light = 50;
+  return `hsl(${hue}, ${sat}%, ${light}%)`;
 }
 
 function findCategory(cid) { return state.master.find((c) => c.categoryId === cid); }
@@ -324,13 +396,15 @@ function renderSidebar() {
 
   const all = el("button",
     { class: state.filter.categoryId === "" ? "active" : "",
+      dataset: { cid: "__all__" },
       onClick: () => {
         state.filter = { categoryId: "", sectionId: "" };
         persistUi(); renderAll(); closeMobileSidebar();
       } },
     el("span", {}, "전체"),
-    el("span", { class: "count" }, String(s.total))
+    el("span", { class: "count" }, `${s.done}/${s.total}`)
   );
+  if (state.filter.categoryId === "") all.setAttribute("aria-current", "page");
   nav.appendChild(all);
 
   for (const cat of state.master) {
@@ -338,6 +412,7 @@ function renderSidebar() {
     const isActive = state.filter.categoryId === cat.categoryId;
     const btn = el("button",
       { class: isActive ? "active" : "",
+        dataset: { cid: cat.categoryId },
         onClick: () => {
           state.filter = { categoryId: cat.categoryId, sectionId: "" };
           state.view = "detail";
@@ -352,8 +427,23 @@ function renderSidebar() {
       el("span", {}, cat.categoryName),
       el("span", { class: "count" }, `${cs.done}/${cs.total}`)
     );
+    if (isActive) btn.setAttribute("aria-current", "page");
     nav.appendChild(btn);
   }
+}
+
+/** 사이드바 전체 재렌더 없이 카운트 span만 갱신 — 체크박스 토글 hot path용 */
+function updateSidebarCount(cid) {
+  const nav = $("#sidebar-nav");
+  if (!nav) return;
+  const s = stats();
+  const cs = s.byCat.get(cid);
+  if (cs) {
+    const btn = nav.querySelector(`button[data-cid="${CSS.escape(cid)}"] .count`);
+    if (btn) btn.textContent = `${cs.done}/${cs.total}`;
+  }
+  const all = nav.querySelector('button[data-cid="__all__"] .count');
+  if (all) all.textContent = `${s.done}/${s.total}`;
 }
 
 function renderCategoryFilter() {
@@ -396,7 +486,9 @@ function renderDashboard() {
       el("div", { class: "fill", style: { width: pct + "%" } }));
 
     const card = el("button",
-      { class: "card", style: { "--progress-color": color },
+      { class: "card",
+        dataset: { cid: cat.categoryId },
+        style: { "--progress-color": color },
         onClick: () => {
           state.filter = { categoryId: cat.categoryId, sectionId: "" };
           state.view = "detail";
@@ -415,8 +507,6 @@ function renderDashboard() {
       ),
       bar
     );
-    // set CSS custom prop via style attribute workaround
-    card.style.setProperty("--progress-color", color);
     host.appendChild(card);
   }
 }
@@ -438,8 +528,7 @@ function renderChecklist() {
     const color = progressHsl(pct);
     const isOpen = state.openChapters.has(cat.categoryId);
 
-    const chev = el("svg", { class: "chev", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round" });
-    chev.innerHTML = `<polyline points="9 6 15 12 9 18"/>`; // 정적 SVG — 안전
+    const chev = makeChevron();
 
     const miniFill = el("span", { class: "fill", style: { width: pct + "%" } });
     const miniBar = el("span", { class: "mini-bar" }, miniFill);
@@ -448,11 +537,18 @@ function renderChecklist() {
       style: { color: "var(--text-dim)", fontSize: "var(--text-xs)", fontVariantNumeric: "tabular-nums" }
     }, `${st.done}/${st.total}`);
 
-    const header = el("header", { class: "chapter-header", role: "button" },
+    const header = el("header", { class: "chapter-header", role: "button", tabindex: "0" },
       el("div", { class: "chapter-title" }, chev, cat.categoryName),
       el("div", { class: "chapter-meta" }, miniBar, numSpan, totalSpan)
     );
     header.setAttribute("aria-expanded", String(isOpen));
+    // 키보드 접근성 — Enter/Space 로도 토글
+    header.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        header.click();
+      }
+    });
 
     const body = el("div", { class: "chapter-body" });
 
@@ -544,7 +640,35 @@ function onItemToggle(e) {
       title.textContent = `${doneN}/${totalN}`;
     }
   }
-  renderSidebar();
+  // 사이드바는 전체 재렌더하지 않고 해당 카테고리 카운트만 패치
+  if (chapter) {
+    const cid = chapter.id.replace("ch-", "");
+    updateSidebarCount(cid);
+  }
+  // 대시보드 뷰가 있다면 해당 카드 % 도 부분 업데이트 (현재는 상세뷰에서만 토글됨 — 방어적)
+  if (state.view === "dashboard") {
+    const cid = (chapter && chapter.id.replace("ch-", "")) || null;
+    updateDashboardCard(cid);
+  }
+}
+
+/** 대시보드 카드의 진행률 텍스트/바를 해당 카테고리만 갱신 */
+function updateDashboardCard(cid) {
+  if (!cid) return;
+  const card = document.querySelector(`.card[data-cid="${CSS.escape(cid)}"]`);
+  if (!card) return;
+  const cat = findCategory(cid);
+  if (!cat) return;
+  const st = chapterStats(cat);
+  const pct = percent(st.done, st.total);
+  const color = progressHsl(pct);
+  card.style.setProperty("--progress-color", color);
+  const num = card.querySelector(".progress-num");
+  const tot = card.querySelector(".progress-total");
+  const fill = card.querySelector(".progress-bar .fill");
+  if (num) { num.textContent = pct + "%"; num.style.color = color; }
+  if (tot) tot.textContent = `${st.done} / ${st.total}`;
+  if (fill) fill.style.width = pct + "%";
 }
 
 // ==========================================================================
@@ -552,6 +676,7 @@ function onItemToggle(e) {
 // ==========================================================================
 async function loadExcelJS() {
   if (window.ExcelJS) return window.ExcelJS;
+  const SRI = "sha384-Pqp51FUN2/qzfxZxBCtF0stpc9ONI6MYZpVqmo8m20SoaQCzf+arZvACkLkirlPz";
   const urls = [
     "https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js",
     "https://unpkg.com/exceljs@4.4.0/dist/exceljs.min.js",
@@ -561,9 +686,15 @@ async function loadExcelJS() {
       await new Promise((resolve, reject) => {
         const s = document.createElement("script");
         s.src = url;
-        s.onload = resolve;
-        s.onerror = () => reject(new Error("네트워크"));
-        setTimeout(() => reject(new Error("타임아웃")), 12000);
+        s.integrity = SRI;
+        s.crossOrigin = "anonymous";
+        let done = false;
+        const timer = setTimeout(() => {
+          if (done) return;
+          done = true; s.remove(); reject(new Error("타임아웃"));
+        }, 12000);
+        s.onload = () => { if (done) return; done = true; clearTimeout(timer); resolve(); };
+        s.onerror = () => { if (done) return; done = true; clearTimeout(timer); s.remove(); reject(new Error("네트워크")); };
         document.head.appendChild(s);
       });
       if (window.ExcelJS) return window.ExcelJS;
@@ -950,15 +1081,26 @@ function restoreUi() {
 // ==========================================================================
 // 모바일 사이드바
 // ==========================================================================
+let _sidebarOpenerFocus = null;
 function openMobileSidebar() {
-  $("#sidebar").dataset.open = "true";
+  const sidebar = $("#sidebar");
+  sidebar.dataset.open = "true";
   $("#mobile-scrim").dataset.open = "true";
   document.body.style.overflow = "hidden";
+  _sidebarOpenerFocus = document.activeElement;
+  // 첫 카테고리 버튼으로 포커스 이동 (접근성)
+  setTimeout(() => {
+    const first = sidebar.querySelector("button");
+    if (first) first.focus();
+  }, 50);
 }
 function closeMobileSidebar() {
   $("#sidebar").dataset.open = "false";
   $("#mobile-scrim").dataset.open = "false";
   document.body.style.overflow = "";
+  // 메뉴를 열었던 요소로 포커스 복귀
+  try { _sidebarOpenerFocus && _sidebarOpenerFocus.focus && _sidebarOpenerFocus.focus(); } catch (_) {}
+  _sidebarOpenerFocus = null;
 }
 
 // ==========================================================================
@@ -1031,7 +1173,16 @@ function bindEvents() {
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.target.matches("input, textarea, select")) return;
+    // 다이얼로그 열려있으면 단축키 무시 (ESC는 confirmDialog 자체에서 처리)
+    if (isDialogOpen()) return;
+    // 입력 요소 포커스 중엔 단축키 무시
+    if (e.target.matches("input, textarea, select, [contenteditable]")) return;
+    // 모바일 드로어 열려있으면 ESC로 닫기 우선
+    if (e.key === "Escape" && $("#sidebar").dataset.open === "true") {
+      e.preventDefault();
+      closeMobileSidebar();
+      return;
+    }
     if (e.key === "t" || e.key === "T") toggleTheme();
     if (e.key === "d" || e.key === "D") { state.view = "dashboard"; persistUi(); renderAll(); }
     if (e.key === "l" || e.key === "L") { state.view = "detail"; persistUi(); renderAll(); }
