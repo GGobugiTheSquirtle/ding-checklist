@@ -17,6 +17,7 @@ Output:
 import json
 import re
 import csv
+import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,6 +43,22 @@ def slugify(s: str) -> str:
     return s[:40]
 
 
+def text_hash(s: str, n: int = 8) -> str:
+    """텍스트 안정 해시 — 위치 무관 ID 생성용 (마스터 재정렬/삽입 시 진행도 보존)"""
+    return hashlib.sha1(s.encode("utf-8")).hexdigest()[:n]
+
+
+def uniq_id(base: str, used: set) -> str:
+    """parent 내 중복(같은 텍스트/슬러그) 충돌 시 -2, -3 ... 결정적 부여"""
+    cand = base
+    k = 2
+    while cand in used:
+        cand = f"{base}-{k}"
+        k += 1
+    used.add(cand)
+    return cand
+
+
 def parse():
     lines = MD_PATH.read_text(encoding="utf-8").splitlines()
 
@@ -50,7 +67,9 @@ def parse():
     current_section = None    # dict or None
     cat_idx = -1
     sec_idx = -1
-    item_counters = {}        # (cat_id, sec_id) → int
+    item_counters = {}        # legacy parent_id → int  (legacyId 계산용)
+    sec_slugs = {}            # cat_id → set(used section id)   (안정 sectionId 충돌 방지)
+    item_ids = {}             # parent stable id → set(used item id)  (안정 itemId 충돌 방지)
 
     for raw in lines:
         line = raw.rstrip()
@@ -79,9 +98,13 @@ def parse():
         # 2) 섹션 헤더인가?
         if not ITEM_PREFIX.match(stripped) and SECTION_HEADER.match(stripped):
             sec_idx += 1
+            cat_id = current_cat["categoryId"]
+            slug = slugify(stripped) or f"s{sec_idx}"
+            stable_sec_id = uniq_id(f"{cat_id}-{slug}", sec_slugs.setdefault(cat_id, set()))
             current_section = {
                 "sectionName": stripped,
-                "sectionId": f"{current_cat['categoryId']}-s{sec_idx}",
+                "sectionId": stable_sec_id,               # 안정 (위치 무관)
+                "_legacyId": f"{cat_id}-s{sec_idx}",       # 기존 positional (마이그레이션용, 출력 전 제거)
                 "items": [],
             }
             current_cat["sections"].append(current_section)
@@ -92,13 +115,20 @@ def parse():
         if m:
             text = stripped[m.end():].strip()
             parent = current_section if current_section else current_cat
-            parent_id = (current_section["sectionId"]
-                         if current_section else current_cat["categoryId"])
-            counter_key = parent_id
-            i = item_counters.get(counter_key, 0)
-            item_counters[counter_key] = i + 1
+            # legacyId: 기존 positional 체계 그대로 재현 (localStorage v5 마이그레이션용)
+            legacy_parent = (current_section["_legacyId"]
+                             if current_section else current_cat["categoryId"])
+            i = item_counters.get(legacy_parent, 0)
+            item_counters[legacy_parent] = i + 1
+            legacy_id = f"{legacy_parent}-i{i}"
+            # 안정 id: parent 안정 id + 텍스트 해시 (항목 삽입/재정렬돼도 동일 → 진행도 보존)
+            stable_parent = (current_section["sectionId"]
+                             if current_section else current_cat["categoryId"])
+            stable_id = uniq_id(f"{stable_parent}-{text_hash(text)}",
+                                item_ids.setdefault(stable_parent, set()))
             item = {
-                "id": f"{parent_id}-i{i}",
+                "id": stable_id,
+                "legacyId": legacy_id,
                 "text": text,
                 "completed": False,
             }
@@ -110,6 +140,8 @@ def parse():
 
     # 정리: 빈 sections/items 키는 그대로 두되 일관성 유지
     for cat in categories:
+        for sec in cat.get("sections", []):
+            sec.pop("_legacyId", None)   # 마이그레이션 내부 필드 — JSON 출력 제외
         if not cat["sections"]:
             # 섹션이 없는 카테고리(공통)는 items만
             cat.pop("sections", None)

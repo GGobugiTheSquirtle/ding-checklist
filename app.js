@@ -23,9 +23,10 @@ window.__CONFIG__ = Object.assign({
 
 // ---------- localStorage 키 ----------
 const LS = {
-  progress: "ae-checklist.progress.v5",
-  theme:    "ae-checklist.theme",
-  ui:       "ae-checklist.ui.v5",
+  progress:   "ae-checklist.progress.v6",   // v6: 위치무관 안정 id (v5 positional → 1회 마이그레이션)
+  progressV5: "ae-checklist.progress.v5",    // 레거시 — 마이그레이션 소스 (안전상 보존)
+  theme:      "ae-checklist.theme",
+  ui:         "ae-checklist.ui.v5",
 };
 
 // ---------- 상태 ----------
@@ -318,6 +319,30 @@ function csvRowsToMaster(rows) {
     return c;
   });
   return out;
+}
+
+// v5(위치기반 id) → v6(안정 id) 1회 마이그레이션.
+// 파서가 각 item에 legacyId(기존 positional)와 id(안정 해시)를 함께 출력하므로
+// legacyId→id 직접 매핑으로 진행도 무손실 이전. 반드시 loadMaster 후 / rebuildIdIndex(orphan 정리) 전 호출.
+function migrateProgressV5toV6() {
+  if (localStorage.getItem(LS.progress) !== null) return;  // 이미 v6 존재 → 완료
+  const v5 = loadLS(LS.progressV5, null);
+  if (!v5 || typeof v5 !== "object" || !Object.keys(v5).length) return;
+  const map = {};
+  const collect = (it) => { if (it.legacyId) map[it.legacyId] = it.id; };
+  for (const cat of state.master) {
+    (cat.items || []).forEach(collect);
+    (cat.sections || []).forEach((sec) => sec.items.forEach(collect));
+  }
+  const migrated = {};
+  let n = 0;
+  for (const [legacyId, val] of Object.entries(v5)) {
+    const newId = map[legacyId];
+    if (newId) { migrated[newId] = val; n++; }
+  }
+  state.progress = migrated;
+  saveLS(LS.progress, migrated);   // v6 저장 → 다음 로드부터 건너뜀
+  if (n) console.log(`progress 마이그레이션 v5→v6: ${n}/${Object.keys(v5).length}개 이전`);
 }
 
 function rebuildIdIndex() {
@@ -1463,6 +1488,7 @@ async function boot() {
 
   $("#loader").classList.remove("hidden");
   state.master = await loadMaster();
+  migrateProgressV5toV6();   // v5 positional → v6 안정 id (loadMaster 후, orphan 정리 전)
   rebuildIdIndex();
   $("#loader").classList.add("hidden");
 

@@ -4,52 +4,62 @@
     "categoryId": "c0",
     "items": [
       {
-        "id": "c0-i0",
+        "id": "c0-beb0e2c4",
+        "legacyId": "c0-i0",
         "text": "무기, 방어구, 재료 도감 완성",
         "completed": false
       },
       {
-        "id": "c0-i1",
+        "id": "c0-20a7ccd3",
+        "legacyId": "c0-i1",
         "text": "서브 퀘스트 모두 완료",
         "completed": false
       },
       {
-        "id": "c0-i2",
+        "id": "c0-3008b1e2",
+        "legacyId": "c0-i2",
         "text": "숨겨진 길, 장소, 상자",
         "completed": false
       },
       {
-        "id": "c0-i3",
+        "id": "c0-b800f2c6",
+        "legacyId": "c0-i3",
         "text": "어나더 포스 1회로 대미지 1억 달성",
         "completed": false
       },
       {
-        "id": "c0-i4",
+        "id": "c0-cc341ff9",
+        "legacyId": "c0-i4",
         "text": "모든 FEAR 토벌 (금훈장 및 놓치기 쉬운 FEAR 제외)",
         "completed": false
       },
       {
-        "id": "c0-i5",
+        "id": "c0-e75fb5eb",
+        "legacyId": "c0-i5",
         "text": "모든 몬스터를 100회씩 토벌 (던전 제외)",
         "completed": false
       },
       {
-        "id": "c0-i6",
+        "id": "c0-1b710c91",
+        "legacyId": "c0-i6",
         "text": "배틀에서 100만번 승리",
         "completed": false
       },
       {
-        "id": "c0-i7",
+        "id": "c0-95ab3abb",
+        "legacyId": "c0-i7",
         "text": "필드를 1000만 보 걷기",
         "completed": false
       },
       {
-        "id": "c0-i8",
+        "id": "c0-0865b1e5",
+        "legacyId": "c0-i8",
         "text": "모든 던전 클리어",
         "completed": false
       },
       {
-        "id": "c0-i9",
+        "id": "c0-83abb319",
+        "legacyId": "c0-i9",
         "text": "지온 가문의 남자의 지원을 모두 받기",
         "completed": false
       }
@@ -61,80 +71,95 @@
     "sections": [
       {
         "sectionName": "제1부 <Another Eden — 시공을 넘는 고양이>",
-        "sectionId": "c1-s0",
+        "sectionId": "c1-제1부AnotherEden시공을넘는고양이",
         "items": [
           {
-            "id": "c1-s0-i0",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-9da84a1e",
+            "legacyId": "c1-s0-i0",
             "text": "메인 퀘스트 제1~26장",
             "completed": false
           },
           {
-            "id": "c1-s0-i1",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-91705921",
+            "legacyId": "c1-s0-i1",
             "text": "히든 퀘스트: 숨바꼭질 왕",
             "completed": false
           },
           {
-            "id": "c1-s0-i2",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-fd28d1b2",
+            "legacyId": "c1-s0-i2",
             "text": "키 아이템: 은으로 쓴 메모, 꽃의 소녀 제4권, 꽃의 소녀 제13권, 꽃의 소녀 제19권, 광휘의 백성의 경전 제4편, 광휘의 백성의 경전 제13편, 알트리지의 모험, 그림자 나라 기담 전편, 그림자 나라 기담 후편",
             "completed": false
           },
           {
-            "id": "c1-s0-i3",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-dd8d3673",
+            "legacyId": "c1-s0-i3",
             "text": "첫 번째 아다마스 무기 획득",
             "completed": false
           },
           {
-            "id": "c1-s0-i4",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-ae8b43ca",
+            "legacyId": "c1-s0-i4",
             "text": "FEAR <고블린 킹> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s0-i5",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-97c33288",
+            "legacyId": "c1-s0-i5",
             "text": "FEAR <붉은 여명> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s0-i6",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-9c309075",
+            "legacyId": "c1-s0-i6",
             "text": "FEAR <Imbrium Basin> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s0-i7",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-7aacc0f0",
+            "legacyId": "c1-s0-i7",
             "text": "진짜 그림자를 격파",
             "completed": false
           },
           {
-            "id": "c1-s0-i8",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-9beca320",
+            "legacyId": "c1-s0-i8",
             "text": "이름 없는 소녀의 진실",
             "completed": false
           },
           {
-            "id": "c1-s0-i9",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-c230b9ee",
+            "legacyId": "c1-s0-i9",
             "text": "촌장의 진정한 힘에 승리",
             "completed": false
           },
           {
-            "id": "c1-s0-i10",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-af446285",
+            "legacyId": "c1-s0-i10",
             "text": "시간의 요람지에서 2만 년 후에 도달",
             "completed": false
           },
           {
-            "id": "c1-s0-i11",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-5c150da2",
+            "legacyId": "c1-s0-i11",
             "text": "시간의 요람지에서 나무 물방울의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c1-s0-i12",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-c28df366",
+            "legacyId": "c1-s0-i12",
             "text": "고양이 일기에서 고양이를 50회 발견",
             "completed": false
           },
           {
-            "id": "c1-s0-i13",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-949422f2",
+            "legacyId": "c1-s0-i13",
             "text": "여왕 고양이의 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c1-s0-i14",
+            "id": "c1-제1부AnotherEden시공을넘는고양이-1d1bf37c",
+            "legacyId": "c1-s0-i14",
             "text": "여왕 고양이의 방어구 3종 강화",
             "completed": false
           }
@@ -142,30 +167,35 @@
       },
       {
         "sectionName": "제1.5부 전편 <오우거 전쟁편 — 수호성의 왕과 성검의 만가>",
-        "sectionId": "c1-s1",
+        "sectionId": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가",
         "items": [
           {
-            "id": "c1-s1-i0",
+            "id": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가-6cecc182",
+            "legacyId": "c1-s1-i0",
             "text": "메인 퀘스트 제27~32장",
             "completed": false
           },
           {
-            "id": "c1-s1-i1",
+            "id": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가-011b51fe",
+            "legacyId": "c1-s1-i1",
             "text": "히든 퀘스트: 셔플 게임 <회오리바람> 난이도 클리어",
             "completed": false
           },
           {
-            "id": "c1-s1-i2",
+            "id": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가-ab7d9a4f",
+            "legacyId": "c1-s1-i2",
             "text": "히든 퀘스트: 술래잡기",
             "completed": false
           },
           {
-            "id": "c1-s1-i3",
+            "id": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가-5dff7ba3",
+            "legacyId": "c1-s1-i3",
             "text": "항마 무기 8종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s1-i4",
+            "id": "c1-제15부전편오우거전쟁편수호성의왕과성검의만가-722b97ae",
+            "legacyId": "c1-s1-i4",
             "text": "알도 5★ Class Change",
             "completed": false
           }
@@ -173,55 +203,65 @@
       },
       {
         "sectionName": "제1.5부 후편 <오우거 전쟁편 — 수호성의 왕과 성검의 만가>",
-        "sectionId": "c1-s2",
+        "sectionId": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가",
         "items": [
           {
-            "id": "c1-s2-i0",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-3dc6a41a",
+            "legacyId": "c1-s2-i0",
             "text": "메인 퀘스트 제33~44장",
             "completed": false
           },
           {
-            "id": "c1-s2-i1",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-04edafea",
+            "legacyId": "c1-s2-i1",
             "text": "히든 퀘스트: (라틀) 줄넘기를 300번 성공",
             "completed": false
           },
           {
-            "id": "c1-s2-i2",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-8b2f4023",
+            "legacyId": "c1-s2-i2",
             "text": "히든 퀘스트: (바르오키) 8자 줄넘기를 1000번 성공",
             "completed": false
           },
           {
-            "id": "c1-s2-i3",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-7b818d2d",
+            "legacyId": "c1-s2-i3",
             "text": "토토 무기 8종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s2-i4",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-47880c56",
+            "legacyId": "c1-s2-i4",
             "text": "정령 무기 4종 강화",
             "completed": false
           },
           {
-            "id": "c1-s2-i5",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-ae649645",
+            "legacyId": "c1-s2-i5",
             "text": "FEAR <Insula Ventorum> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s2-i6",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-232a405a",
+            "legacyId": "c1-s2-i6",
             "text": "FEAR <미미> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s2-i7",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-fffb9079",
+            "legacyId": "c1-s2-i7",
             "text": "FEAR <메르빌 레이브> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s2-i8",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-c082242a",
+            "legacyId": "c1-s2-i8",
             "text": "오우거 제논의 그림자를 격파",
             "completed": false
           },
           {
-            "id": "c1-s2-i9",
+            "id": "c1-제15부후편오우거전쟁편수호성의왕과성검의만가-aea1960a",
+            "legacyId": "c1-s2-i9",
             "text": "에이미 5★ Class Change",
             "completed": false
           }
@@ -229,60 +269,71 @@
       },
       {
         "sectionName": "제2부 전편 <동방 기담 편 — 시간의 여신의 귀환>",
-        "sectionId": "c1-s3",
+        "sectionId": "c1-제2부전편동방기담편시간의여신의귀환",
         "items": [
           {
-            "id": "c1-s3-i0",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-281a85ab",
+            "legacyId": "c1-s3-i0",
             "text": "메인 퀘스트 제45~55장",
             "completed": false
           },
           {
-            "id": "c1-s3-i1",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-809f54b8",
+            "legacyId": "c1-s3-i1",
             "text": "히든 퀘스트: 가를레아 대륙의 여덟 요괴 불가사의를 모두 해결",
             "completed": false
           },
           {
-            "id": "c1-s3-i2",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-7c56917a",
+            "legacyId": "c1-s3-i2",
             "text": "히든 퀘스트: 맥미널에게 동방 대륙의 기념품을 모두 전달",
             "completed": false
           },
           {
-            "id": "c1-s3-i3",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-8e211207",
+            "legacyId": "c1-s3-i3",
             "text": "키 아이템: 신부 수업의 주의 사항, 낡은 온천 안내서, 달의 청년 초고, 달의 청년 비와 바다, 달의 청년 눈의 대륙",
             "completed": false
           },
           {
-            "id": "c1-s3-i4",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-5a8a7624",
+            "legacyId": "c1-s3-i4",
             "text": "가넬리 탄생제 종목별 클리어",
             "completed": false
           },
           {
-            "id": "c1-s3-i5",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-47f15cae",
+            "legacyId": "c1-s3-i5",
             "text": "10권의 겐신 어록을 책꽃이에 꽂기",
             "completed": false
           },
           {
-            "id": "c1-s3-i6",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-b4c66216",
+            "legacyId": "c1-s3-i6",
             "text": "황금 무기 8종 획득",
             "completed": false
           },
           {
-            "id": "c1-s3-i7",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-9b73a69f",
+            "legacyId": "c1-s3-i7",
             "text": "현대 동방 무기 8종, 방어구 6종 강화",
             "completed": false
           },
           {
-            "id": "c1-s3-i8",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-6875a9f4",
+            "legacyId": "c1-s3-i8",
             "text": "현대 가를레아 대륙 <Hard>: 방어구 3종 획득",
             "completed": false
           },
           {
-            "id": "c1-s3-i9",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-ed48f40c",
+            "legacyId": "c1-s3-i9",
             "text": "현대 가를레아 대륙 <Hard> 이자나: 아저씨, 여자아이, 할아버지와의 고양이 에마 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s3-i10",
+            "id": "c1-제2부전편동방기담편시간의여신의귀환-e9f73611",
+            "legacyId": "c1-s3-i10",
             "text": "현대 가를레아 대륙 <Hard> 나그샴: 발명 마니아 청년과의 잡동사니 교환을 완료",
             "completed": false
           }
@@ -290,100 +341,119 @@
       },
       {
         "sectionName": "제2부 중편 <동방 기담 편 — 시간의 여신의 귀환>",
-        "sectionId": "c1-s4",
+        "sectionId": "c1-제2부중편동방기담편시간의여신의귀환",
         "items": [
           {
-            "id": "c1-s4-i0",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-c4d9d77a",
+            "legacyId": "c1-s4-i0",
             "text": "메인 퀘스트 제56~66장",
             "completed": false
           },
           {
-            "id": "c1-s4-i1",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-76c8972d",
+            "legacyId": "c1-s4-i1",
             "text": "히든 퀘스트: 망루의 남편 부르기",
             "completed": false
           },
           {
-            "id": "c1-s4-i2",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-4b714f9c",
+            "legacyId": "c1-s4-i2",
             "text": "히든 퀘스트: 길 잃은 자의 부처님",
             "completed": false
           },
           {
-            "id": "c1-s4-i3",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-98a78fd5",
+            "legacyId": "c1-s4-i3",
             "text": "히든 서브 퀘스트: 모스코스페이스회",
             "completed": false
           },
           {
-            "id": "c1-s4-i4",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-98bcf977",
+            "legacyId": "c1-s4-i4",
             "text": "히든 퀘스트: 뱃묘지의 금고 열기",
             "completed": false
           },
           {
-            "id": "c1-s4-i5",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-7bdf38fc",
+            "legacyId": "c1-s4-i5",
             "text": "히든 퀘스트: EGPD 훈장 전달",
             "completed": false
           },
           {
-            "id": "c1-s4-i6",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-3e542b42",
+            "legacyId": "c1-s4-i6",
             "text": "히든 퀘스트: 불모의 땅에서 꽃 수집",
             "completed": false
           },
           {
-            "id": "c1-s4-i7",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-7692871f",
+            "legacyId": "c1-s4-i7",
             "text": "히든 퀘스트: 꼭꼭 숨어라!",
             "completed": false
           },
           {
-            "id": "c1-s4-i8",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-a1a4f043",
+            "legacyId": "c1-s4-i8",
             "text": "히든 퀘스트: 토우 장인과 여덟 요괴의 인과를 지켜보기",
             "completed": false
           },
           {
-            "id": "c1-s4-i9",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-2f118c7c",
+            "legacyId": "c1-s4-i9",
             "text": "이벤트: 방울 부적의 복",
             "completed": false
           },
           {
-            "id": "c1-s4-i10",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-0e89f9df",
+            "legacyId": "c1-s4-i10",
             "text": "키 아이템: 달의 청년 태풍의 대양, 달의 청년 바람의 섬",
             "completed": false
           },
           {
-            "id": "c1-s4-i11",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-74e34db0",
+            "legacyId": "c1-s4-i11",
             "text": "고대 동방 무기 8종, 방어구 6종 강화",
             "completed": false
           },
           {
-            "id": "c1-s4-i12",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-4dbf285d",
+            "legacyId": "c1-s4-i12",
             "text": "모든 속성의 모든 타입 어린 짚단을 동료로 만들기",
             "completed": false
           },
           {
-            "id": "c1-s4-i13",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-a28c0421",
+            "legacyId": "c1-s4-i13",
             "text": "짚돌이를 30회 전생시키기",
             "completed": false
           },
           {
-            "id": "c1-s4-i14",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-2ae3ad56",
+            "legacyId": "c1-s4-i14",
             "text": "고양이 신사의 부적 찾기",
             "completed": false
           },
           {
-            "id": "c1-s4-i15",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-9dc30371",
+            "legacyId": "c1-s4-i15",
             "text": "FEAR <Terra Nivium> 토벌",
             "completed": false
           },
           {
-            "id": "c1-s4-i16",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-b34d4f49",
+            "legacyId": "c1-s4-i16",
             "text": "고대 가를레아 대륙 <Hard>: 방어구 3종 획득",
             "completed": false
           },
           {
-            "id": "c1-s4-i17",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-aa531f99",
+            "legacyId": "c1-s4-i17",
             "text": "고대 가를레아 대륙 <Hard> 가다로: 청년, 소녀와의 세련된 토우 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s4-i18",
+            "id": "c1-제2부중편동방기담편시간의여신의귀환-0a337d16",
+            "legacyId": "c1-s4-i18",
             "text": "고대 가를레아 대륙 <Hard> 자미: 짚단 애호가와의 마물의 뼈 교환을 완료",
             "completed": false
           }
@@ -391,80 +461,95 @@
       },
       {
         "sectionName": "제2부 후편-전(轉) <동방 기담 편 — 시간의 여신의 귀환>",
-        "sectionId": "c1-s5",
+        "sectionId": "c1-제2부후편전轉동방기담편시간의여신의귀환",
         "items": [
           {
-            "id": "c1-s5-i0",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-c8a77bfe",
+            "legacyId": "c1-s5-i0",
             "text": "메인 퀘스트 제67~74장",
             "completed": false
           },
           {
-            "id": "c1-s5-i1",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-e98f1758",
+            "legacyId": "c1-s5-i1",
             "text": "히든 퀘스트: 숨바꼭질(이토이스)",
             "completed": false
           },
           {
-            "id": "c1-s5-i2",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-a0e7a788",
+            "legacyId": "c1-s5-i2",
             "text": "히든 퀘스트: 눈 움집 만들기",
             "completed": false
           },
           {
-            "id": "c1-s5-i3",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-bc573af9",
+            "legacyId": "c1-s5-i3",
             "text": "이벤트: 대장장이의 마음가짐",
             "completed": false
           },
           {
-            "id": "c1-s5-i4",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-e5111af5",
+            "legacyId": "c1-s5-i4",
             "text": "사당 순례 열 곳을 모두 완료",
             "completed": false
           },
           {
-            "id": "c1-s5-i5",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-a742e0db",
+            "legacyId": "c1-s5-i5",
             "text": "거장의 무기 8종, 혼신의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s5-i6",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-ac1e0c8a",
+            "legacyId": "c1-s5-i6",
             "text": "초밥 무기 4종(지팡이, 검, 활, 권갑) 획득",
             "completed": false
           },
           {
-            "id": "c1-s5-i7",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-1317b5f8",
+            "legacyId": "c1-s5-i7",
             "text": "빙옥귀에게 승리",
             "completed": false
           },
           {
-            "id": "c1-s5-i8",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-120f7a10",
+            "legacyId": "c1-s5-i8",
             "text": "구단에게 승리",
             "completed": false
           },
           {
-            "id": "c1-s5-i9",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-004646c0",
+            "legacyId": "c1-s5-i9",
             "text": "미래 가를레아 대륙 <Hard>: 초밥 무기 4종(도, 도끼, 창, 망치) 획득",
             "completed": false
           },
           {
-            "id": "c1-s5-i10",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-bd540458",
+            "legacyId": "c1-s5-i10",
             "text": "미래 가를레아 대륙 <Hard>: 향후의 방어구 3종 획득",
             "completed": false
           },
           {
-            "id": "c1-s5-i11",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-86fd79dc",
+            "legacyId": "c1-s5-i11",
             "text": "미래 가를레아 대륙 <Hard>: 고양이 신의 염주 구매",
             "completed": false
           },
           {
-            "id": "c1-s5-i12",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-efeceff0",
+            "legacyId": "c1-s5-i12",
             "text": "미래 가를레아 대륙 <Hard> 오염갱: 모든 녹슨 핸들에 기름통 사용",
             "completed": false
           },
           {
-            "id": "c1-s5-i13",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-3ed4e2e2",
+            "legacyId": "c1-s5-i13",
             "text": "미래 가를레아 대륙 <Hard> 가르파겐: 모든 두꺼운 철창에 공업용 커터 사용",
             "completed": false
           },
           {
-            "id": "c1-s5-i14",
+            "id": "c1-제2부후편전轉동방기담편시간의여신의귀환-e045f68b",
+            "legacyId": "c1-s5-i14",
             "text": "미래 가를레아 대륙 <Hard> KMS 동방 지부: 모든 탐지 레이저에 전파 방해용 장치 사용",
             "completed": false
           }
@@ -472,80 +557,95 @@
       },
       {
         "sectionName": "제2부 후편-결(結) <동방 기담 편 — 시간의 여신의 귀환>",
-        "sectionId": "c1-s6",
+        "sectionId": "c1-제2부후편결結동방기담편시간의여신의귀환",
         "items": [
           {
-            "id": "c1-s6-i0",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-ea27dda3",
+            "legacyId": "c1-s6-i0",
             "text": "메인 퀘스트 제75~84장",
             "completed": false
           },
           {
-            "id": "c1-s6-i1",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-56e9c18c",
+            "legacyId": "c1-s6-i1",
             "text": "정령 나무 6층의 목제 상자 열기",
             "completed": false
           },
           {
-            "id": "c1-s6-i2",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-39520b31",
+            "legacyId": "c1-s6-i2",
             "text": "고양이 신사 지하도 왼쪽, 오른쪽 통로 탐사",
             "completed": false
           },
           {
-            "id": "c1-s6-i3",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-ec1f5025",
+            "legacyId": "c1-s6-i3",
             "text": "황천의 층의 모든 환영 없에기",
             "completed": false
           },
           {
-            "id": "c1-s6-i4",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-8f2fb6ec",
+            "legacyId": "c1-s6-i4",
             "text": "피네 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c1-s6-i5",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-73fb359f",
+            "legacyId": "c1-s6-i5",
             "text": "환 무기 8종 및 배수의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s6-i6",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-20ce90c6",
+            "legacyId": "c1-s6-i6",
             "text": "아공의 무기 8종 획득",
             "completed": false
           },
           {
-            "id": "c1-s6-i7",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-e301e98a",
+            "legacyId": "c1-s6-i7",
             "text": "보현 도장 두 번째 관문을 돌파",
             "completed": false
           },
           {
-            "id": "c1-s6-i8",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-f0214115",
+            "legacyId": "c1-s6-i8",
             "text": "혼돈의 그림자를 격파",
             "completed": false
           },
           {
-            "id": "c1-s6-i9",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-50ffab3d",
+            "legacyId": "c1-s6-i9",
             "text": "명협계 <Hard>: 동방의 방어구 3종 획득",
             "completed": false
           },
           {
-            "id": "c1-s6-i10",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-b8342cdb",
+            "legacyId": "c1-s6-i10",
             "text": "명협계 <Hard>: 계혼의 보옥 구매",
             "completed": false
           },
           {
-            "id": "c1-s6-i11",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-6d97cbf0",
+            "legacyId": "c1-s6-i11",
             "text": "명협계 <Hard>: 고대의 여성, 미래의 마수 여성, 미래의 할아버지, 현대의 요마 청년과의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s6-i12",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-6f6bdd76",
+            "legacyId": "c1-s6-i12",
             "text": "명협계 <Hard> 귀화 동굴: 모든 거대한 짐승에게 숙성 버섯 사용",
             "completed": false
           },
           {
-            "id": "c1-s6-i13",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-9085e3c1",
+            "legacyId": "c1-s6-i13",
             "text": "명협계 <Hard> 차원 대성당: 모든 이상한 벽에 기도의 손거울 사용",
             "completed": false
           },
           {
-            "id": "c1-s6-i14",
+            "id": "c1-제2부후편결結동방기담편시간의여신의귀환-95d06225",
+            "legacyId": "c1-s6-i14",
             "text": "명협계 <Hard> 황천의 방주: 모든 딱딱한 덩굴에 황천의 짧은 낫 사용",
             "completed": false
           }
@@ -553,145 +653,173 @@
       },
       {
         "sectionName": "제3부 전편 <공허한 시층의 윤회 편 — 시간 제국의 역습>",
-        "sectionId": "c1-s7",
+        "sectionId": "c1-제3부전편공허한시층의윤회편시간제국의역습",
         "items": [
           {
-            "id": "c1-s7-i0",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-047151ff",
+            "legacyId": "c1-s7-i0",
             "text": "메인 퀘스트 제85~93장",
             "completed": false
           },
           {
-            "id": "c1-s7-i1",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-4a6676ef",
+            "legacyId": "c1-s7-i1",
             "text": "키 아이템: 그을린 결정 조각, 위상 증폭 앰프",
             "completed": false
           },
           {
-            "id": "c1-s7-i2",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-d57cbc31",
+            "legacyId": "c1-s7-i2",
             "text": "(오메가폴리스 하층)암상인 남자의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i3",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-b2e57611",
+            "legacyId": "c1-s7-i3",
             "text": "(오메가폴리스 중층)베어링 상회 물품 모두 교환(브론즈 기어 제외)",
             "completed": false
           },
           {
-            "id": "c1-s7-i4",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-a5234e05",
+            "legacyId": "c1-s7-i4",
             "text": "(해상 도시 래시발)정크 숍 물품을 모두 교환(레스트 세트, 브론즈 기어 제외)",
             "completed": false
           },
           {
-            "id": "c1-s7-i5",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-8931b428",
+            "legacyId": "c1-s7-i5",
             "text": "(봄바람의 마을 피레이라)골동품 가게 할머니의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i6",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-35d605ac",
+            "legacyId": "c1-s7-i6",
             "text": "(라란차 평원)안개 백성 상인의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i7",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-20a0fce3",
+            "legacyId": "c1-s7-i7",
             "text": "(엘투레)정크 숍의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i8",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-9ecd70aa",
+            "legacyId": "c1-s7-i8",
             "text": "(잔해 더미의 외딴섬)고물상의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i9",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-a60c6072",
+            "legacyId": "c1-s7-i9",
             "text": "(폐무역선)유령의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s7-i10",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-4bebc618",
+            "legacyId": "c1-s7-i10",
             "text": "(기인의 세계 메탈라니카)버디 액션으로 얻을 수 있는 아이템 모두 획득(일반 샐비지 제외)",
             "completed": false
           },
           {
-            "id": "c1-s7-i11",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-a53b1e41",
+            "legacyId": "c1-s7-i11",
             "text": "기계식 무기 8종, 방어구 3종 교환 또는 제작",
             "completed": false
           },
           {
-            "id": "c1-s7-i12",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-b7ccdf9c",
+            "legacyId": "c1-s7-i12",
             "text": "플라즈마 무기 8종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s7-i13",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-ef4be481",
+            "legacyId": "c1-s7-i13",
             "text": "연랑의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s7-i14",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-7bb0f674",
+            "legacyId": "c1-s7-i14",
             "text": "무기 26종(명귀 8종, 토토 8종, 이경 10종) 재가공",
             "completed": false
           },
           {
-            "id": "c1-s7-i15",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-d31fa6e2",
+            "legacyId": "c1-s7-i15",
             "text": "버디 장비 11종(너클, 페인 에지, 포이즌 니들, 잔물결의 조개껍질, 치유의 방울 끈, 시간의 새싹, 로알의 시계, 애뮬릿 3종, 판도라의 통조림) 강화",
             "completed": false
           },
           {
-            "id": "c1-s7-i16",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-53d58eaf",
+            "legacyId": "c1-s7-i16",
             "text": "천뢰의 이쑤시개를 사용하여 애수의 아스피드 퇴치 후 핫셀과 대화하기",
             "completed": false
           },
           {
-            "id": "c1-s7-i17",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-e0aabaaa",
+            "legacyId": "c1-s7-i17",
             "text": "[도적왕] 픽키를 격퇴하고 사냥꾼 소굴 오너와 대화하기",
             "completed": false
           },
           {
-            "id": "c1-s7-i18",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-98fe2f44",
+            "legacyId": "c1-s7-i18",
             "text": "엘피스 무기 8종 획득 후 신비한 바위 조사하기",
             "completed": false
           },
           {
-            "id": "c1-s7-i19",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-3df8fead",
+            "legacyId": "c1-s7-i19",
             "text": "모든 바운티를 토벌하기",
             "completed": false
           },
           {
-            "id": "c1-s7-i20",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-02bd06fe",
+            "legacyId": "c1-s7-i20",
             "text": "각성 아말 - 가말에게 승리",
             "completed": false
           },
           {
-            "id": "c1-s7-i21",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-409ee45d",
+            "legacyId": "c1-s7-i21",
             "text": "오메가폴리스 <Hard>: 버디 장비 3종(하늘/바람/바위의 애뮬릿) 획득",
             "completed": false
           },
           {
-            "id": "c1-s7-i22",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-f61c4d76",
+            "legacyId": "c1-s7-i22",
             "text": "오메가폴리스 <Hard>: 하층의 발명가, 청년, 여성, 수수께끼 상인과의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s7-i23",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-083f7a22",
+            "legacyId": "c1-s7-i23",
             "text": "오메가폴리스 <Hard>: 중층의 아저씨, 아가씨, (왼쪽 집 안)남성과의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s7-i24",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-e7928a8d",
+            "legacyId": "c1-s7-i24",
             "text": "오메가폴리스 <Hard>: 밸브 오일, 수리용 모듈, 빛의 씨앗을 모두 사용",
             "completed": false
           },
           {
-            "id": "c1-s7-i25",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-008c7359",
+            "legacyId": "c1-s7-i25",
             "text": "(잃어버린 시간의 쉼터)파트너 소년과 대화하기",
             "completed": false
           },
           {
-            "id": "c1-s7-i26",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-727f79a7",
+            "legacyId": "c1-s7-i26",
             "text": "New Buddy 우쿨렐레 님과 동료 되기",
             "completed": false
           },
           {
-            "id": "c1-s7-i27",
+            "id": "c1-제3부전편공허한시층의윤회편시간제국의역습-5c9f089f",
+            "legacyId": "c1-s7-i27",
             "text": "New Buddy 올챙이맨더와 동료 되기",
             "completed": false
           }
@@ -699,160 +827,191 @@
       },
       {
         "sectionName": "제3부 중편 <공허한 시층의 윤회 편 — 시간 제국의 역습>",
-        "sectionId": "c1-s8",
+        "sectionId": "c1-제3부중편공허한시층의윤회편시간제국의역습",
         "items": [
           {
-            "id": "c1-s8-i0",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-0145d62a",
+            "legacyId": "c1-s8-i0",
             "text": "메인 퀘스트 제94~104장",
             "completed": false
           },
           {
-            "id": "c1-s8-i1",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-5e320277",
+            "legacyId": "c1-s8-i1",
             "text": "히든 퀘스트: 리리엄 황무지 아저씨에게 황금의 열매 두 번 건내기",
             "completed": false
           },
           {
-            "id": "c1-s8-i2",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-98c0ae96",
+            "legacyId": "c1-s8-i2",
             "text": "히든 퀘스트: 비석의 홈 메우기",
             "completed": false
           },
           {
-            "id": "c1-s8-i3",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-926ee83c",
+            "legacyId": "c1-s8-i3",
             "text": "(환락가 토르루탄 - 대장간)털털한 직원의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i4",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-b3ecf735",
+            "legacyId": "c1-s8-i4",
             "text": "(환락가 토르루탄 - 코미아의 공방)제자의 물품을 모두 교환(브론즈 볼트 제외)",
             "completed": false
           },
           {
-            "id": "c1-s8-i5",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-1cc625b9",
+            "legacyId": "c1-s8-i5",
             "text": "(리리엄 황무지)행상인의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i6",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-a3728699",
+            "legacyId": "c1-s8-i6",
             "text": "(종교 도시 야나투)활발한 상인의 물품을 모두 교환(레스트 세트, 브론즈 볼트 제외)",
             "completed": false
           },
           {
-            "id": "c1-s8-i7",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-b77a0119",
+            "legacyId": "c1-s8-i7",
             "text": "(신기루 마을 이가림)상인의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i8",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-3ba4f82e",
+            "legacyId": "c1-s8-i8",
             "text": "(네르토 석굴)베테랑 상인의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i9",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-b1da7f96",
+            "legacyId": "c1-s8-i9",
             "text": "(볼키아 갱도)탐험가의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i10",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-646d986b",
+            "legacyId": "c1-s8-i10",
             "text": "(네필라 섬)능글맞은 상인의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s8-i11",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-b8d180ef",
+            "legacyId": "c1-s8-i11",
             "text": "(묘인의 세계 플라토노스)버디 액션으로 얻을 수 있는 아이템 모두 획득",
             "completed": false
           },
           {
-            "id": "c1-s8-i12",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-ebc237ee",
+            "legacyId": "c1-s8-i12",
             "text": "연대기의 무기 8종, 방어구 3종 획득 또는 제작",
             "completed": false
           },
           {
-            "id": "c1-s8-i13",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-44e1c131",
+            "legacyId": "c1-s8-i13",
             "text": "오푸스 무기 8종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s8-i14",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-371c6dfd",
+            "legacyId": "c1-s8-i14",
             "text": "금화의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s8-i15",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-af59ca00",
+            "legacyId": "c1-s8-i15",
             "text": "무기 24종(비취 8종, 벚꽃(앵) 8종, 아주로 8종) 재가공",
             "completed": false
           },
           {
-            "id": "c1-s8-i16",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-e0bf0e34",
+            "legacyId": "c1-s8-i16",
             "text": "천년 나무의 무기 8종 획득",
             "completed": false
           },
           {
-            "id": "c1-s8-i17",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-2827a85c",
+            "legacyId": "c1-s8-i17",
             "text": "버디 장비 6종(스턴 배턴, 따끔따끔 구체, 바다 딸랑이, 뇌명/음영/쌍정의 목걸이) 강화",
             "completed": false
           },
           {
-            "id": "c1-s8-i18",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-886f0f52",
+            "legacyId": "c1-s8-i18",
             "text": "마물 토벌 보상 모두 받기",
             "completed": false
           },
           {
-            "id": "c1-s8-i19",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-efcff2cf",
+            "legacyId": "c1-s8-i19",
             "text": "빚 변제 후 사업 파트너 보수 모두 획득",
             "completed": false
           },
           {
-            "id": "c1-s8-i20",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-09fa4599",
+            "legacyId": "c1-s8-i20",
             "text": "NOB(냐인즈 오브 배틀)의 모든 덱 수집률 100% 달성, 모든 스킬 획득",
             "completed": false
           },
           {
-            "id": "c1-s8-i21",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-697b9e42",
+            "legacyId": "c1-s8-i21",
             "text": "모든 것을 뛰어넘은 고양이에게 승리하기",
             "completed": false
           },
           {
-            "id": "c1-s8-i22",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-60fe77e3",
+            "legacyId": "c1-s8-i22",
             "text": "보물 사냥 협회가 요구한 보물을 모두 찾아 건내기",
             "completed": false
           },
           {
-            "id": "c1-s8-i23",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-ab02fba9",
+            "legacyId": "c1-s8-i23",
             "text": "길바데스의 모든 장비 강화, 모든 프레임 레벨 80 달성",
             "completed": false
           },
           {
-            "id": "c1-s8-i24",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-4d014297",
+            "legacyId": "c1-s8-i24",
             "text": "모든 거대 짐승 토벌",
             "completed": false
           },
           {
-            "id": "c1-s8-i25",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-64f4e00c",
+            "legacyId": "c1-s8-i25",
             "text": "라보그에게 승리 후 코논과 대화하기",
             "completed": false
           },
           {
-            "id": "c1-s8-i26",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-96ea1324",
+            "legacyId": "c1-s8-i26",
             "text": "엔트라나 <Hard>: 과학자의 몸 되찾아주기",
             "completed": false
           },
           {
-            "id": "c1-s8-i27",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-e866b8cd",
+            "legacyId": "c1-s8-i27",
             "text": "엔트라나 <Hard>: 외딴섬 마을 엔트라나의 과학자, 생성기, 여자아이, 아저씨와의 교환 또는 제작을 완료",
             "completed": false
           },
           {
-            "id": "c1-s8-i28",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-cc8bdaf2",
+            "legacyId": "c1-s8-i28",
             "text": "엔트라나 <Hard>: 환락가 토르루탄의 발명가, 할아버지, 아가씨, 재료상, 남자아이와의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s8-i29",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-834da80c",
+            "legacyId": "c1-s8-i29",
             "text": "엔트라나 <Hard>: 보조 배터리, 미니 클리너, 크랙 칩을 모두 사용",
             "completed": false
           },
           {
-            "id": "c1-s8-i30",
+            "id": "c1-제3부중편공허한시층의윤회편시간제국의역습-7cc9493f",
+            "legacyId": "c1-s8-i30",
             "text": "New Buddy 휴우가와 동료 되기",
             "completed": false
           }
@@ -860,140 +1019,167 @@
       },
       {
         "sectionName": "제3부 후편 <공허한 시층의 윤회 편 — 시간 제국의 역습>",
-        "sectionId": "c1-s9",
+        "sectionId": "c1-제3부후편공허한시층의윤회편시간제국의역습",
         "items": [
           {
-            "id": "c1-s9-i0",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-4a36308e",
+            "legacyId": "c1-s9-i0",
             "text": "메인 퀘스트 제105~114장",
             "completed": false
           },
           {
-            "id": "c1-s9-i1",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-2dcb7e42",
+            "legacyId": "c1-s9-i1",
             "text": "노인의 꽃 교배를 모두 지켜보기",
             "completed": false
           },
           {
-            "id": "c1-s9-i2",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-38473f27",
+            "legacyId": "c1-s9-i2",
             "text": "환상 유원지의 모든 버거 메뉴를 마물에게 주기",
             "completed": false
           },
           {
-            "id": "c1-s9-i3",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-6b312d68",
+            "legacyId": "c1-s9-i3",
             "text": "환상 유원지에서 마녀 모자 찾아주기",
             "completed": false
           },
           {
-            "id": "c1-s9-i4",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-d97cfbf5",
+            "legacyId": "c1-s9-i4",
             "text": "(결정 도시 지스몬데 슬래터구)리치맨 상회의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s9-i5",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-7fe47ebc",
+            "legacyId": "c1-s9-i5",
             "text": "(변경 마을 에뮬)리치맨 상회의 물품을 모두 교환(레스트 세트, 잿빛의 숫돌 제외)",
             "completed": false
           },
           {
-            "id": "c1-s9-i6",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-6367ce0f",
+            "legacyId": "c1-s9-i6",
             "text": "(예지의 탑)리치맨 상회의 물품을 모두 교환(격진 광석 4종 제외)",
             "completed": false
           },
           {
-            "id": "c1-s9-i7",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-d79f440d",
+            "legacyId": "c1-s9-i7",
             "text": "(고요의 마을 에텔누크)리치맨 상회의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s9-i8",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-2fb76d53",
+            "legacyId": "c1-s9-i8",
             "text": "(낙화 마을)리치맨 상회의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s9-i9",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-7aa84a32",
+            "legacyId": "c1-s9-i9",
             "text": "천공 의장병의 무기 8종 교환 또는 제작",
             "completed": false
           },
           {
-            "id": "c1-s9-i10",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-d021e716",
+            "legacyId": "c1-s9-i10",
             "text": "부평화의 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c1-s9-i11",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-16d63e2b",
+            "legacyId": "c1-s9-i11",
             "text": "천공 의장병의 방어구 3종 획득 또는 제작",
             "completed": false
           },
           {
-            "id": "c1-s9-i12",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-9deb35bf",
+            "legacyId": "c1-s9-i12",
             "text": "부평화의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s9-i13",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-5f2eb5e2",
+            "legacyId": "c1-s9-i13",
             "text": "화려한 결정의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s9-i14",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-bbb2123e",
+            "legacyId": "c1-s9-i14",
             "text": "무기 32종(초밥 8종, 환 8종, 루나 8종, 아공 8종) 재가공",
             "completed": false
           },
           {
-            "id": "c1-s9-i15",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-3fca99c9",
+            "legacyId": "c1-s9-i15",
             "text": "수마장의 무기 8종 획득",
             "completed": false
           },
           {
-            "id": "c1-s9-i16",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-4acaa45a",
+            "legacyId": "c1-s9-i16",
             "text": "버디 장비 9종(결정질의 갈고리발톱, 마기아 크리스탈, 파워 크리스탈, 힐러 쥬얼, 수정 배트, 위크니스 나이트, 신명의 오브, 예지의 오브, 국부 돌파 추진 부스터) 강화",
             "completed": false
           },
           {
-            "id": "c1-s9-i17",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-40c18ee0",
+            "legacyId": "c1-s9-i17",
             "text": "(화석인 세계 리페르케)마법으로 얻을 수 있는 아이템 모두 획득",
             "completed": false
           },
           {
-            "id": "c1-s9-i18",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-71c527de",
+            "legacyId": "c1-s9-i18",
             "text": "레비테이터에게 승리",
             "completed": false
           },
           {
-            "id": "c1-s9-i19",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-c3c16e1f",
+            "legacyId": "c1-s9-i19",
             "text": "구도의 대회 제100회 대회 우승",
             "completed": false
           },
           {
-            "id": "c1-s9-i20",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-2e4ec461",
+            "legacyId": "c1-s9-i20",
             "text": "성도 각성 「돌아온 소녀」",
             "completed": false
           },
           {
-            "id": "c1-s9-i21",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-e3bbb858",
+            "legacyId": "c1-s9-i21",
             "text": "플라니에 섬의 모든 섬 이벤트 클리어",
             "completed": false
           },
           {
-            "id": "c1-s9-i22",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-a54e68e0",
+            "legacyId": "c1-s9-i22",
             "text": "카프토닉을 격퇴",
             "completed": false
           },
           {
-            "id": "c1-s9-i23",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-8eb352dc",
+            "legacyId": "c1-s9-i23",
             "text": "지스몬데 <Hard>: 기종의 거목에 비약 사용",
             "completed": false
           },
           {
-            "id": "c1-s9-i24",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-72e81e8b",
+            "legacyId": "c1-s9-i24",
             "text": "지스몬데 <Hard>: 슬레터구의 노인, 대장간, 할아버지, 남성과의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s9-i25",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-3d6339ae",
+            "legacyId": "c1-s9-i25",
             "text": "지스몬데 <Hard>: 알바구의 여자아이, 여성, (중앙 집 안)소녀, 할머니, 젊은이, (위쪽 집 안)소녀와의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s9-i26",
+            "id": "c1-제3부후편공허한시층의윤회편시간제국의역습-38ebadd9",
+            "legacyId": "c1-s9-i26",
             "text": "지스몬데 <Hard>: 커다란 결정, 마녀의 모자, 복각판 곡검을 모두 사용",
             "completed": false
           }
@@ -1001,125 +1187,149 @@
       },
       {
         "sectionName": "제3부 최종편 <공허한 시층의 윤회 편 — 시간 제국의 역습>",
-        "sectionId": "c1-s10",
+        "sectionId": "c1-제3부최종편공허한시층의윤회편시간제국의역습",
         "items": [
           {
-            "id": "c1-s10-i0",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-510263a4",
+            "legacyId": "c1-s10-i0",
             "text": "메인 퀘스트 제115~122장",
             "completed": false
           },
           {
-            "id": "c1-s10-i1",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-e7c9cae4",
+            "legacyId": "c1-s10-i1",
             "text": "(식시 유니건)노포우족의 물품을 모두 교환",
             "completed": false
           },
           {
-            "id": "c1-s10-i2",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-3de55e9c",
+            "legacyId": "c1-s10-i2",
             "text": "(식시 오메가폴리스 중층)노포우족의 물품을 모두 교환(레스트 세트, 브론즈 코어 제외)",
             "completed": false
           },
           {
-            "id": "c1-s10-i3",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-ce87345e",
+            "legacyId": "c1-s10-i3",
             "text": "(식시 토르루탄)노포우족의 물품을 모두 교환(격진 ○○ 광석 제외)",
             "completed": false
           },
           {
-            "id": "c1-s10-i4",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-6237bd51",
+            "legacyId": "c1-s10-i4",
             "text": "(합성귀룡 작전실)노포우족의 물품을 모두 교환(격진 ○○ 광석 제외)",
             "completed": false
           },
           {
-            "id": "c1-s10-i5",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-05e81917",
+            "legacyId": "c1-s10-i5",
             "text": "백식의 무기 8종 교환 또는 제작",
             "completed": false
           },
           {
-            "id": "c1-s10-i6",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-0af03de8",
+            "legacyId": "c1-s10-i6",
             "text": "이클립스 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c1-s10-i7",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-6038a5a2",
+            "legacyId": "c1-s10-i7",
             "text": "백식의 방어구 3종 제작",
             "completed": false
           },
           {
-            "id": "c1-s10-i8",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-b1c9e216",
+            "legacyId": "c1-s10-i8",
             "text": "이클립스의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s10-i9",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-eba5a437",
+            "legacyId": "c1-s10-i9",
             "text": "무수한 세계를 경험한 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c1-s10-i10",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-b57b5fe2",
+            "legacyId": "c1-s10-i10",
             "text": "무기 33종(제논 1종, 거장 8종, 용골 8종, 항마 8종, 릴 8종) 재가공",
             "completed": false
           },
           {
-            "id": "c1-s10-i11",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-cadff8d1",
+            "legacyId": "c1-s10-i11",
             "text": "혁요의 무기 8종 획득",
             "completed": false
           },
           {
-            "id": "c1-s10-i12",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-f215848e",
+            "legacyId": "c1-s10-i12",
             "text": "버디 장비 13종(일그러진 애뮬릿, 해악 불식 펜던트, 회심의 오브, 마력 돌리기의 시곗바늘, 부침의 방패, 마력 순환의 지팡이, 리커버리 스톤, 라이카의 부적(빨강), 라이카의 부적(파랑), 라이카의 부적(노랑), 기갑 발톱, 기갑 단창, 기갑 너클) 강화",
             "completed": false
           },
           {
-            "id": "c1-s10-i13",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-e5dcd5c7",
+            "legacyId": "c1-s10-i13",
             "text": "식시 대결정을 모두 파괴",
             "completed": false
           },
           {
-            "id": "c1-s10-i14",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-c0c33e30",
+            "legacyId": "c1-s10-i14",
             "text": "실체화한 소리를 모두 주크박스에 넣기",
             "completed": false
           },
           {
-            "id": "c1-s10-i15",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-9ddefc50",
+            "legacyId": "c1-s10-i15",
             "text": "사연이 깃든 물건들을 모두 냥지로에게 보이기",
             "completed": false
           },
           {
-            "id": "c1-s10-i16",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-146fa985",
+            "legacyId": "c1-s10-i16",
             "text": "니르야가 말한 보물을 모두 전시하기",
             "completed": false
           },
           {
-            "id": "c1-s10-i17",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-e06efdcf",
+            "legacyId": "c1-s10-i17",
             "text": "모든 조각상에 기도 드리기",
             "completed": false
           },
           {
-            "id": "c1-s10-i18",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-07d1d0d7",
+            "legacyId": "c1-s10-i18",
             "text": "Montes Agricola에게 승리",
             "completed": false
           },
           {
-            "id": "c1-s10-i19",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-ada4dbc8",
+            "legacyId": "c1-s10-i19",
             "text": "라이카 5★으로 개안",
             "completed": false
           },
           {
-            "id": "c1-s10-i20",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-46df474b",
+            "legacyId": "c1-s10-i20",
             "text": "식시 유니건 <Hard>: 터미널 코어의 시스템 재기동 후 답례 받기",
             "completed": false
           },
           {
-            "id": "c1-s10-i21",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-2f1da381",
+            "legacyId": "c1-s10-i21",
             "text": "식시 유니건 <Hard>: 식시 유니건의 (위쪽 집)제국 병사, (여관)제국 병사, 대장간, 아저씨와의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s10-i22",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-c9baca87",
+            "legacyId": "c1-s10-i22",
             "text": "식시 유니건 <Hard>: 식시 엘지온의 제국 병사, 여성, 남자아이, (중앙 집)연구자와, (아래쪽 집)연구자의 교환을 완료",
             "completed": false
           },
           {
-            "id": "c1-s10-i23",
+            "id": "c1-제3부최종편공허한시층의윤회편시간제국의역습-bf6369c8",
+            "legacyId": "c1-s10-i23",
             "text": "식시 유니건 <Hard>: 인증 패스, 캡슐 큐브, 게이트 키를 모두 사용",
             "completed": false
           }
@@ -1133,20 +1343,23 @@
     "sections": [
       {
         "sectionName": "<부활의 마수왕 — 태고의 맹약>",
-        "sectionId": "c2-s0",
+        "sectionId": "c2-부활의마수왕태고의맹약",
         "items": [
           {
-            "id": "c2-s0-i0",
+            "id": "c2-부활의마수왕태고의맹약-28c4b1c4",
+            "legacyId": "c2-s0-i0",
             "text": "길드너 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c2-s0-i1",
+            "id": "c2-부활의마수왕태고의맹약-59cf008e",
+            "legacyId": "c2-s0-i1",
             "text": "절망의 검 강화",
             "completed": false
           },
           {
-            "id": "c2-s0-i2",
+            "id": "c2-부활의마수왕태고의맹약-81178d3e",
+            "legacyId": "c2-s0-i2",
             "text": "성도 각성 「마왕」",
             "completed": false
           }
@@ -1154,10 +1367,11 @@
       },
       {
         "sectionName": "<마수 전생! 기천의 옥좌>",
-        "sectionId": "c2-s1",
+        "sectionId": "c2-마수전생기천의옥좌",
         "items": [
           {
-            "id": "c2-s1-i0",
+            "id": "c2-마수전생기천의옥좌-fc5a78c2",
+            "legacyId": "c2-s1-i0",
             "text": "마수왕의 극의 획득",
             "completed": false
           }
@@ -1165,15 +1379,17 @@
       },
       {
         "sectionName": "<시공을 넘는 고양이와 경계를 넘는 세계서>",
-        "sectionId": "c2-s2",
+        "sectionId": "c2-시공을넘는고양이와경계를넘는세계서",
         "items": [
           {
-            "id": "c2-s2-i0",
+            "id": "c2-시공을넘는고양이와경계를넘는세계서-4876f59b",
+            "legacyId": "c2-s2-i0",
             "text": "워 해머 얼티마니아를 강화",
             "completed": false
           },
           {
-            "id": "c2-s2-i1",
+            "id": "c2-시공을넘는고양이와경계를넘는세계서-761e2c06",
+            "legacyId": "c2-s2-i1",
             "text": "첫 번째 아다마스 무기 강화",
             "completed": false
           }
@@ -1181,30 +1397,35 @@
       },
       {
         "sectionName": "<Another Eden — 영역을 넘는 고양이>",
-        "sectionId": "c2-s3",
+        "sectionId": "c2-AnotherEden영역을넘는고양이",
         "items": [
           {
-            "id": "c2-s3-i0",
+            "id": "c2-AnotherEden영역을넘는고양이-ee2d734b",
+            "legacyId": "c2-s3-i0",
             "text": "고양이 도감 완성",
             "completed": false
           },
           {
-            "id": "c2-s3-i1",
+            "id": "c2-AnotherEden영역을넘는고양이-0b93fcea",
+            "legacyId": "c2-s3-i1",
             "text": "고양이 장비 모두 제작 (ver 2.8.500: 58종)",
             "completed": false
           },
           {
-            "id": "c2-s3-i2",
+            "id": "c2-AnotherEden영역을넘는고양이-95f4a0ba",
+            "legacyId": "c2-s3-i2",
             "text": "키 아이템: 시온의 말린 생선",
             "completed": false
           },
           {
-            "id": "c2-s3-i3",
+            "id": "c2-AnotherEden영역을넘는고양이-f36f291a",
+            "legacyId": "c2-s3-i3",
             "text": "FEAR <로테 리베레> 토벌",
             "completed": false
           },
           {
-            "id": "c2-s3-i4",
+            "id": "c2-AnotherEden영역을넘는고양이-70c66ef5",
+            "legacyId": "c2-s3-i4",
             "text": "혼돈의 물방울 교환을 완료",
             "completed": false
           }
@@ -1212,35 +1433,41 @@
       },
       {
         "sectionName": "<Another Eden — 시공을 넘는 고양이들>",
-        "sectionId": "c2-s4",
+        "sectionId": "c2-AnotherEden시공을넘는고양이들",
         "items": [
           {
-            "id": "c2-s4-i0",
+            "id": "c2-AnotherEden시공을넘는고양이들-ea3b95e1",
+            "legacyId": "c2-s4-i0",
             "text": "비베트 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c2-s4-i1",
+            "id": "c2-AnotherEden시공을넘는고양이들-db2fb184",
+            "legacyId": "c2-s4-i1",
             "text": "모든 고양이의 레벨 50 달성",
             "completed": false
           },
           {
-            "id": "c2-s4-i2",
+            "id": "c2-AnotherEden시공을넘는고양이들-a920cc07",
+            "legacyId": "c2-s4-i2",
             "text": "냥콜로니 사천묘를 모두 격퇴",
             "completed": false
           },
           {
-            "id": "c2-s4-i3",
+            "id": "c2-AnotherEden시공을넘는고양이들-94145b75",
+            "legacyId": "c2-s4-i3",
             "text": "FEAR <레이겐브룸> 토벌",
             "completed": false
           },
           {
-            "id": "c2-s4-i4",
+            "id": "c2-AnotherEden시공을넘는고양이들-3a1bdb72",
+            "legacyId": "c2-s4-i4",
             "text": "혼돈의 결정 교환을 완료",
             "completed": false
           },
           {
-            "id": "c2-s4-i5",
+            "id": "c2-AnotherEden시공을넘는고양이들-c9e18840",
+            "legacyId": "c2-s4-i5",
             "text": "(고양이 사진관) 모든 세트 두 번째 과제 클리어",
             "completed": false
           }
@@ -1248,10 +1475,11 @@
       },
       {
         "sectionName": "<여행의 끝과 시작>",
-        "sectionId": "c2-s5",
+        "sectionId": "c2-여행의끝과시작",
         "items": [
           {
-            "id": "c2-s5-i0",
+            "id": "c2-여행의끝과시작-acc4b2b9",
+            "legacyId": "c2-s5-i0",
             "text": "무지마 장비 11종 모두 교환",
             "completed": false
           }
@@ -1259,20 +1487,23 @@
       },
       {
         "sectionName": "<새로운 동료 「아이샤」>",
-        "sectionId": "c2-s6",
+        "sectionId": "c2-새로운동료「아이샤」",
         "items": [
           {
-            "id": "c2-s6-i0",
+            "id": "c2-새로운동료「아이샤」-82509298",
+            "legacyId": "c2-s6-i0",
             "text": "진 아그니 바루나의 증표 획득",
             "completed": false
           },
           {
-            "id": "c2-s6-i1",
+            "id": "c2-새로운동료「아이샤」-130f2ece",
+            "legacyId": "c2-s6-i1",
             "text": "열화의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c2-s6-i2",
+            "id": "c2-새로운동료「아이샤」-5d54bc0f",
+            "legacyId": "c2-s6-i2",
             "text": "만수의 방어구 3종 강화",
             "completed": false
           }
@@ -1286,15 +1517,17 @@
     "sections": [
       {
         "sectionName": "<두 명의 기사와 기원의 마검>",
-        "sectionId": "c3-s0",
+        "sectionId": "c3-두명의기사와기원의마검",
         "items": [
           {
-            "id": "c3-s0-i0",
+            "id": "c3-두명의기사와기원의마검-3b00e0fb",
+            "legacyId": "c3-s0-i0",
             "text": "지하미궁의 마력 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s0-i1",
+            "id": "c3-두명의기사와기원의마검-721d3edb",
+            "legacyId": "c3-s0-i1",
             "text": "아나벨의 추가 퀘스트",
             "completed": false
           }
@@ -1302,60 +1535,71 @@
       },
       {
         "sectionName": "<시작의 기사와 기원의 마검>",
-        "sectionId": "c3-s1",
+        "sectionId": "c3-시작의기사와기원의마검",
         "items": [
           {
-            "id": "c3-s1-i0",
+            "id": "c3-시작의기사와기원의마검-21911040",
+            "legacyId": "c3-s1-i0",
             "text": "레지스탕스 멤버를 7명 모집하고 보고하기",
             "completed": false
           },
           {
-            "id": "c3-s1-i1",
+            "id": "c3-시작의기사와기원의마검-17ee4ecb",
+            "legacyId": "c3-s1-i1",
             "text": "(레지스탕스 배틀) 8턴 이내에 린데에 도착하기",
             "completed": false
           },
           {
-            "id": "c3-s1-i2",
+            "id": "c3-시작의기사와기원의마검-426b5f04",
+            "legacyId": "c3-s1-i2",
             "text": "모든 성기사의 무덤에 꽃 바치고 진혼의 종 울리기",
             "completed": false
           },
           {
-            "id": "c3-s1-i3",
+            "id": "c3-시작의기사와기원의마검-c220e7db",
+            "legacyId": "c3-s1-i3",
             "text": "키 아이템: 화학 반응의 지혜",
             "completed": false
           },
           {
-            "id": "c3-s1-i4",
+            "id": "c3-시작의기사와기원의마검-1d9a406e",
+            "legacyId": "c3-s1-i4",
             "text": "디아드라 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c3-s1-i5",
+            "id": "c3-시작의기사와기원의마검-50c2637a",
+            "legacyId": "c3-s1-i5",
             "text": "브리아 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c3-s1-i6",
+            "id": "c3-시작의기사와기원의마검-239f8484",
+            "legacyId": "c3-s1-i6",
             "text": "무형의 이슬 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s1-i7",
+            "id": "c3-시작의기사와기원의마검-7899958f",
+            "legacyId": "c3-s1-i7",
             "text": "불굴의 무기 8종 제작",
             "completed": false
           },
           {
-            "id": "c3-s1-i8",
+            "id": "c3-시작의기사와기원의마검-652631b8",
+            "legacyId": "c3-s1-i8",
             "text": "두 번째 아다마스 무기 획득 및 강화",
             "completed": false
           },
           {
-            "id": "c3-s1-i9",
+            "id": "c3-시작의기사와기원의마검-68a64227",
+            "legacyId": "c3-s1-i9",
             "text": "절망의 팔찌를 강화",
             "completed": false
           },
           {
-            "id": "c3-s1-i10",
+            "id": "c3-시작의기사와기원의마검-d765ce56",
+            "legacyId": "c3-s1-i10",
             "text": "연장핵, 해조음 버섯 교환을 완료",
             "completed": false
           }
@@ -1363,30 +1607,35 @@
       },
       {
         "sectionName": "<IDA 스쿨편Ⅰ — 절대영도의 사슬>",
-        "sectionId": "c3-s2",
+        "sectionId": "c3-IDA스쿨편Ⅰ절대영도의사슬",
         "items": [
           {
-            "id": "c3-s2-i0",
+            "id": "c3-IDA스쿨편Ⅰ절대영도의사슬-5c924433",
+            "legacyId": "c3-s2-i0",
             "text": "스코어 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s2-i1",
+            "id": "c3-IDA스쿨편Ⅰ절대영도의사슬-f77ba56c",
+            "legacyId": "c3-s2-i1",
             "text": "히든 퀘스트: 샤크 님의 절친 (라이프 마크)",
             "completed": false
           },
           {
-            "id": "c3-s2-i2",
+            "id": "c3-IDA스쿨편Ⅰ절대영도의사슬-d0a76e25",
+            "legacyId": "c3-s2-i2",
             "text": "히든 퀘스트: 숨바꼭질 마스터",
             "completed": false
           },
           {
-            "id": "c3-s2-i3",
+            "id": "c3-IDA스쿨편Ⅰ절대영도의사슬-8bcf9292",
+            "legacyId": "c3-s2-i3",
             "text": "히든 퀘스트: 미코의 정체",
             "completed": false
           },
           {
-            "id": "c3-s2-i4",
+            "id": "c3-IDA스쿨편Ⅰ절대영도의사슬-a44da7b7",
+            "legacyId": "c3-s2-i4",
             "text": "키 아이템: 수상한 납품서, 너덜너덜한 마도서",
             "completed": false
           }
@@ -1394,30 +1643,35 @@
       },
       {
         "sectionName": "<IDA 스쿨편Ⅱ — 나비의 도시와 하늘의 요람>",
-        "sectionId": "c3-s3",
+        "sectionId": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람",
         "items": [
           {
-            "id": "c3-s3-i0",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람-ba2a52d4",
+            "legacyId": "c3-s3-i0",
             "text": "누에고치의 꿈 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s3-i1",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람-6a0da136",
+            "legacyId": "c3-s3-i1",
             "text": "히든 퀘스트: 라이트 마크 수집",
             "completed": false
           },
           {
-            "id": "c3-s3-i2",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람-baf4f55c",
+            "legacyId": "c3-s3-i2",
             "text": "히든 퀘스트: 산호의 계위",
             "completed": false
           },
           {
-            "id": "c3-s3-i3",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람-64f3619a",
+            "legacyId": "c3-s3-i3",
             "text": "히든 퀘스트: 만담은 폭발력이다",
             "completed": false
           },
           {
-            "id": "c3-s3-i4",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람-7b993a3f",
+            "legacyId": "c3-s3-i4",
             "text": "히든 퀘스트: 유리링의 정체",
             "completed": false
           }
@@ -1425,10 +1679,11 @@
       },
       {
         "sectionName": "<IDA 스쿨편Ⅱ — 나비의 도시와 하늘의 요람 After Incidents>",
-        "sectionId": "c3-s4",
+        "sectionId": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람AfterIncidents",
         "items": [
           {
-            "id": "c3-s4-i0",
+            "id": "c3-IDA스쿨편Ⅱ나비의도시와하늘의요람AfterIncidents-8422f8b9",
+            "legacyId": "c3-s4-i0",
             "text": "사키 New Style 획득",
             "completed": false
           }
@@ -1436,35 +1691,41 @@
       },
       {
         "sectionName": "<IDA 스쿨편Ⅲ — 인도하는 과실과 화면 속 미아>",
-        "sectionId": "c3-s5",
+        "sectionId": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아",
         "items": [
           {
-            "id": "c3-s5-i0",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-3bd45fd1",
+            "legacyId": "c3-s5-i0",
             "text": "마나 VC Lv3 획득",
             "completed": false
           },
           {
-            "id": "c3-s5-i1",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-744b3521",
+            "legacyId": "c3-s5-i1",
             "text": "알도의 모든 장비 획득",
             "completed": false
           },
           {
-            "id": "c3-s5-i2",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-54882b83",
+            "legacyId": "c3-s5-i2",
             "text": "알도의 세 가지 직업 레벨 50 달성",
             "completed": false
           },
           {
-            "id": "c3-s5-i3",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-3aa0d1e5",
+            "legacyId": "c3-s5-i3",
             "text": "모든 친구(29명)의 레벨 50 달성",
             "completed": false
           },
           {
-            "id": "c3-s5-i4",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-1ed7ce83",
+            "legacyId": "c3-s5-i4",
             "text": "모든 친구(29명)의 게임 친구 랭크 3 달성",
             "completed": false
           },
           {
-            "id": "c3-s5-i5",
+            "id": "c3-IDA스쿨편Ⅲ인도하는과실과화면속미아-78d8395c",
+            "legacyId": "c3-s5-i5",
             "text": "모든 동료(11명)의 게임 친구 랭크 4 달성",
             "completed": false
           }
@@ -1472,60 +1733,71 @@
       },
       {
         "sectionName": "<천년의 상자, 해신의 신전>",
-        "sectionId": "c3-s6",
+        "sectionId": "c3-천년의상자해신의신전",
         "items": [
           {
-            "id": "c3-s6-i0",
+            "id": "c3-천년의상자해신의신전-c98ad63a",
+            "legacyId": "c3-s6-i0",
             "text": "용궁 진주 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s6-i1",
+            "id": "c3-천년의상자해신의신전-8354988a",
+            "legacyId": "c3-s6-i1",
             "text": "칠흑 진주를 모두 수집",
             "completed": false
           },
           {
-            "id": "c3-s6-i2",
+            "id": "c3-천년의상자해신의신전-0587a5a4",
+            "legacyId": "c3-s6-i2",
             "text": "히든 퀘스트: 부티 나는 어인에게 어린이 카마스 보여주기",
             "completed": false
           },
           {
-            "id": "c3-s6-i3",
+            "id": "c3-천년의상자해신의신전-a0b9bb52",
+            "legacyId": "c3-s6-i3",
             "text": "히든 퀘스트: 대도 왈라스를 토벌",
             "completed": false
           },
           {
-            "id": "c3-s6-i4",
+            "id": "c3-천년의상자해신의신전-3fa30c92",
+            "legacyId": "c3-s6-i4",
             "text": "키 아이템: 작은 모험자의 메모, 의문의 장갑판",
             "completed": false
           },
           {
-            "id": "c3-s6-i5",
+            "id": "c3-천년의상자해신의신전-159df539",
+            "legacyId": "c3-s6-i5",
             "text": "레비아와의 동료 되기",
             "completed": false
           },
           {
-            "id": "c3-s6-i6",
+            "id": "c3-천년의상자해신의신전-0e197302",
+            "legacyId": "c3-s6-i6",
             "text": "선인의 낚싯대 Lv.30 달성",
             "completed": false
           },
           {
-            "id": "c3-s6-i7",
+            "id": "c3-천년의상자해신의신전-5c07951c",
+            "legacyId": "c3-s6-i7",
             "text": "낚시 선인에게서 낚시 도구를 모두 구입",
             "completed": false
           },
           {
-            "id": "c3-s6-i8",
+            "id": "c3-천년의상자해신의신전-b36410d0",
+            "legacyId": "c3-s6-i8",
             "text": "(일반) 낚시: 모든 물고기 XL을 낚기",
             "completed": false
           },
           {
-            "id": "c3-s6-i9",
+            "id": "c3-천년의상자해신의신전-a743c963",
+            "legacyId": "c3-s6-i9",
             "text": "(일반) 낚시: 모든 물고기를 150마리씩 낚기",
             "completed": false
           },
           {
-            "id": "c3-s6-i10",
+            "id": "c3-천년의상자해신의신전-7686ad97",
+            "legacyId": "c3-s6-i10",
             "text": "모든 낚시터(21종)에서 모든 종류의 물고기 채집",
             "completed": false
           }
@@ -1533,65 +1805,77 @@
       },
       {
         "sectionName": "<삼천 세계의 상자, 해신의 심연>",
-        "sectionId": "c3-s7",
+        "sectionId": "c3-삼천세계의상자해신의심연",
         "items": [
           {
-            "id": "c3-s7-i0",
+            "id": "c3-삼천세계의상자해신의심연-f88c5da6",
+            "legacyId": "c3-s7-i0",
             "text": "성상혼 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s7-i1",
+            "id": "c3-삼천세계의상자해신의심연-98b99e73",
+            "legacyId": "c3-s7-i1",
             "text": "모든 길 및 낚시 장소 개방",
             "completed": false
           },
           {
-            "id": "c3-s7-i2",
+            "id": "c3-삼천세계의상자해신의심연-5d4ecd58",
+            "legacyId": "c3-s7-i2",
             "text": "FEAR <레드 고블보리멸> 토벌",
             "completed": false
           },
           {
-            "id": "c3-s7-i3",
+            "id": "c3-삼천세계의상자해신의심연-aa100314",
+            "legacyId": "c3-s7-i3",
             "text": "오토히메의 창을 강화",
             "completed": false
           },
           {
-            "id": "c3-s7-i4",
+            "id": "c3-삼천세계의상자해신의심연-ca366f94",
+            "legacyId": "c3-s7-i4",
             "text": "심연에 울리는 무기 소리 8종을 강화",
             "completed": false
           },
           {
-            "id": "c3-s7-i5",
+            "id": "c3-삼천세계의상자해신의심연-ab5431b1",
+            "legacyId": "c3-s7-i5",
             "text": "불굴의 방어구 3종 제작",
             "completed": false
           },
           {
-            "id": "c3-s7-i6",
+            "id": "c3-삼천세계의상자해신의심연-ed18203e",
+            "legacyId": "c3-s7-i6",
             "text": "히든 퀘스트: 인어 여인에게 새깜먹물 건네기",
             "completed": false
           },
           {
-            "id": "c3-s7-i7",
+            "id": "c3-삼천세계의상자해신의심연-6aaf027e",
+            "legacyId": "c3-s7-i7",
             "text": "작살력의 증표 Lv.30 달성",
             "completed": false
           },
           {
-            "id": "c3-s7-i8",
+            "id": "c3-삼천세계의상자해신의심연-de28d62c",
+            "legacyId": "c3-s7-i8",
             "text": "월척 선녀에게서 낚시 도구를 모두 구입",
             "completed": false
           },
           {
-            "id": "c3-s7-i9",
+            "id": "c3-삼천세계의상자해신의심연-67f4313a",
+            "legacyId": "c3-s7-i9",
             "text": "작살 낚시: 모든 물고기 XL을 낚기",
             "completed": false
           },
           {
-            "id": "c3-s7-i10",
+            "id": "c3-삼천세계의상자해신의심연-65b88c20",
+            "legacyId": "c3-s7-i10",
             "text": "작살 낚시: 모든 물고기를 150마리씩 낚기",
             "completed": false
           },
           {
-            "id": "c3-s7-i11",
+            "id": "c3-삼천세계의상자해신의심연-bdc4b9db",
+            "legacyId": "c3-s7-i11",
             "text": "세이렌 마을 근해, 애틀렌티카 근해, 심해 북부, 심해 서부, 심해 동부, 얼음의 바다에서 모든 종류의 물고기 채집",
             "completed": false
           }
@@ -1599,25 +1883,29 @@
       },
       {
         "sectionName": "<시간의 탄광과 꿈꾸는 마을>",
-        "sectionId": "c3-s8",
+        "sectionId": "c3-시간의탄광과꿈꾸는마을",
         "items": [
           {
-            "id": "c3-s8-i0",
+            "id": "c3-시간의탄광과꿈꾸는마을-90aeff6f",
+            "legacyId": "c3-s8-i0",
             "text": "보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s8-i1",
+            "id": "c3-시간의탄광과꿈꾸는마을-a984b99b",
+            "legacyId": "c3-s8-i1",
             "text": "모든 길 개방",
             "completed": false
           },
           {
-            "id": "c3-s8-i2",
+            "id": "c3-시간의탄광과꿈꾸는마을-b0e25299",
+            "legacyId": "c3-s8-i2",
             "text": "고속 광차 9개 설치",
             "completed": false
           },
           {
-            "id": "c3-s8-i3",
+            "id": "c3-시간의탄광과꿈꾸는마을-f8ae1409",
+            "legacyId": "c3-s8-i3",
             "text": "착한 마쿠마쿠와 동료 되기",
             "completed": false
           }
@@ -1625,15 +1913,17 @@
       },
       {
         "sectionName": "<천개의 탑과 저승의 마녀>",
-        "sectionId": "c3-s9",
+        "sectionId": "c3-천개의탑과저승의마녀",
         "items": [
           {
-            "id": "c3-s9-i0",
+            "id": "c3-천개의탑과저승의마녀-7b3a8377",
+            "legacyId": "c3-s9-i0",
             "text": "검은 잔재 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s9-i1",
+            "id": "c3-천개의탑과저승의마녀-1afc132b",
+            "legacyId": "c3-s9-i1",
             "text": "100층의 다이얼 문 개방",
             "completed": false
           }
@@ -1641,10 +1931,11 @@
       },
       {
         "sectionName": "<천개의 탑과 저승의 마녀 — 되살아난 마성, 나부끼는 칼날>",
-        "sectionId": "c3-s10",
+        "sectionId": "c3-천개의탑과저승의마녀되살아난마성나부끼는칼날",
         "items": [
           {
-            "id": "c3-s10-i0",
+            "id": "c3-천개의탑과저승의마녀되살아난마성나부끼는칼날-90b2dee8",
+            "legacyId": "c3-s10-i0",
             "text": "사이러스 5★ Class Change",
             "completed": false
           }
@@ -1652,15 +1943,17 @@
       },
       {
         "sectionName": "<닫힌 정원과 창궁의 반역자>",
-        "sectionId": "c3-s11",
+        "sectionId": "c3-닫힌정원과창궁의반역자",
         "items": [
           {
-            "id": "c3-s11-i0",
+            "id": "c3-닫힌정원과창궁의반역자-7bc92e74",
+            "legacyId": "c3-s11-i0",
             "text": "헬레나 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c3-s11-i1",
+            "id": "c3-닫힌정원과창궁의반역자-959eda17",
+            "legacyId": "c3-s11-i1",
             "text": "시층 동력 보상을 모두 획득",
             "completed": false
           }
@@ -1668,10 +1961,11 @@
       },
       {
         "sectionName": "<닫힌 정원과 창궁의 반역자 — One Other Ordeal>",
-        "sectionId": "c3-s12",
+        "sectionId": "c3-닫힌정원과창궁의반역자OneOtherOrdeal",
         "items": [
           {
-            "id": "c3-s12-i0",
+            "id": "c3-닫힌정원과창궁의반역자OneOtherOrdeal-5342f8ec",
+            "legacyId": "c3-s12-i0",
             "text": "리이카 5★ Class Change",
             "completed": false
           }
@@ -1679,30 +1973,35 @@
       },
       {
         "sectionName": "<잃어버린 경전과 시들지 않는 은꽃>",
-        "sectionId": "c3-s13",
+        "sectionId": "c3-잃어버린경전과시들지않는은꽃",
         "items": [
           {
-            "id": "c3-s13-i0",
+            "id": "c3-잃어버린경전과시들지않는은꽃-1b8e5370",
+            "legacyId": "c3-s13-i0",
             "text": "소피아 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c3-s13-i1",
+            "id": "c3-잃어버린경전과시들지않는은꽃-0da9202f",
+            "legacyId": "c3-s13-i1",
             "text": "시커 포이트 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s13-i2",
+            "id": "c3-잃어버린경전과시들지않는은꽃-ac333a18",
+            "legacyId": "c3-s13-i2",
             "text": "모든 트레저를 상급으로 획득(양달의 씨앗, 소녀의 탄식, 위시 후르츠 제외)",
             "completed": false
           },
           {
-            "id": "c3-s13-i3",
+            "id": "c3-잃어버린경전과시들지않는은꽃-67d75a52",
+            "legacyId": "c3-s13-i3",
             "text": "옥션 배틀의 모든 커맨드 습득",
             "completed": false
           },
           {
-            "id": "c3-s13-i4",
+            "id": "c3-잃어버린경전과시들지않는은꽃-23e87413",
+            "legacyId": "c3-s13-i4",
             "text": "옥션 품목을 모두 낙찰받기(결정 제외)",
             "completed": false
           }
@@ -1710,15 +2009,17 @@
       },
       {
         "sectionName": "<잃어버린 경전과 시들지 않는 은꽃 — Jewel in Shade>",
-        "sectionId": "c3-s14",
+        "sectionId": "c3-잃어버린경전과시들지않는은꽃JewelinShade",
         "items": [
           {
-            "id": "c3-s14-i0",
+            "id": "c3-잃어버린경전과시들지않는은꽃JewelinShade-578960cc",
+            "legacyId": "c3-s14-i0",
             "text": "제이드 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c3-s14-i1",
+            "id": "c3-잃어버린경전과시들지않는은꽃JewelinShade-7c5b4531",
+            "legacyId": "c3-s14-i1",
             "text": "히든 퀘스트: 알트리지의 결의",
             "completed": false
           }
@@ -1726,25 +2027,29 @@
       },
       {
         "sectionName": "<방황하는 소녀와 백야의 고리>",
-        "sectionId": "c3-s15",
+        "sectionId": "c3-방황하는소녀와백야의고리",
         "items": [
           {
-            "id": "c3-s15-i0",
+            "id": "c3-방황하는소녀와백야의고리-12786049",
+            "legacyId": "c3-s15-i0",
             "text": "노나 New Style 획득",
             "completed": false
           },
           {
-            "id": "c3-s15-i1",
+            "id": "c3-방황하는소녀와백야의고리-137fcff2",
+            "legacyId": "c3-s15-i1",
             "text": "시간의 연사 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s15-i2",
+            "id": "c3-방황하는소녀와백야의고리-10b67a5c",
+            "legacyId": "c3-s15-i2",
             "text": "총력전 대화 이벤트 모두 열람",
             "completed": false
           },
           {
-            "id": "c3-s15-i3",
+            "id": "c3-방황하는소녀와백야의고리-b8b54b14",
+            "legacyId": "c3-s15-i3",
             "text": "적철의 무기 8종 강화",
             "completed": false
           }
@@ -1752,20 +2057,23 @@
       },
       {
         "sectionName": "<방황하는 소녀와 백야의 고리 — Edge of the Vortex>",
-        "sectionId": "c3-s16",
+        "sectionId": "c3-방황하는소녀와백야의고리EdgeoftheVortex",
         "items": [
           {
-            "id": "c3-s16-i0",
+            "id": "c3-방황하는소녀와백야의고리EdgeoftheVortex-b6fe3467",
+            "legacyId": "c3-s16-i0",
             "text": "녹시스 New Style 획득",
             "completed": false
           },
           {
-            "id": "c3-s16-i1",
+            "id": "c3-방황하는소녀와백야의고리EdgeoftheVortex-ee81bf50",
+            "legacyId": "c3-s16-i1",
             "text": "등불의 팔찌 획득",
             "completed": false
           },
           {
-            "id": "c3-s16-i2",
+            "id": "c3-방황하는소녀와백야의고리EdgeoftheVortex-122808db",
+            "legacyId": "c3-s16-i2",
             "text": "뒤틀린 마지막 소용돌이에게 승리",
             "completed": false
           }
@@ -1773,40 +2081,47 @@
       },
       {
         "sectionName": "<벌룡 공주 기담 Ⅰ — 와룡의 섬과 절벽의 문양>",
-        "sectionId": "c3-s17",
+        "sectionId": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양",
         "items": [
           {
-            "id": "c3-s17-i0",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-7980cafb",
+            "legacyId": "c3-s17-i0",
             "text": "작룡린 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s17-i1",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-fec72cf0",
+            "legacyId": "c3-s17-i1",
             "text": "점보 투석기 수리 후 착지용 천 모두 설치",
             "completed": false
           },
           {
-            "id": "c3-s17-i2",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-519f0485",
+            "legacyId": "c3-s17-i2",
             "text": "전방 거점 음식점 이벤트 모두 보기",
             "completed": false
           },
           {
-            "id": "c3-s17-i3",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-b5a0287b",
+            "legacyId": "c3-s17-i3",
             "text": "단원이 숨긴 보물상자 찾기",
             "completed": false
           },
           {
-            "id": "c3-s17-i4",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-93d4d221",
+            "legacyId": "c3-s17-i4",
             "text": "흑룡루의 무기 EX 8종 강화",
             "completed": false
           },
           {
-            "id": "c3-s17-i5",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-5ab22b18",
+            "legacyId": "c3-s17-i5",
             "text": "용 두름의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c3-s17-i6",
+            "id": "c3-벌룡공주기담Ⅰ와룡의섬과절벽의문양-4f3b52d7",
+            "legacyId": "c3-s17-i6",
             "text": "사식룡 린트부름에게 승리",
             "completed": false
           }
@@ -1814,30 +2129,35 @@
       },
       {
         "sectionName": "<벌룡 공주 기담 Ⅱ — 천명의 길과 영롱한 아이>",
-        "sectionId": "c3-s18",
+        "sectionId": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이",
         "items": [
           {
-            "id": "c3-s18-i0",
+            "id": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이-7980cafb",
+            "legacyId": "c3-s18-i0",
             "text": "작룡린 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s18-i1",
+            "id": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이-3e9c9ca4",
+            "legacyId": "c3-s18-i1",
             "text": "붉은 용 물방울 무기 EX 8종 강화",
             "completed": false
           },
           {
-            "id": "c3-s18-i2",
+            "id": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이-ca92de4f",
+            "legacyId": "c3-s18-i2",
             "text": "해저룡의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c3-s18-i3",
+            "id": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이-c4627496",
+            "legacyId": "c3-s18-i3",
             "text": "라이리스 세 가지 타입 개방",
             "completed": false
           },
           {
-            "id": "c3-s18-i4",
+            "id": "c3-벌룡공주기담Ⅱ천명의길과영롱한아이-a730bbec",
+            "legacyId": "c3-s18-i4",
             "text": "라이리스 특기 모두 습득, 모험 모두 성공",
             "completed": false
           }
@@ -1845,50 +2165,59 @@
       },
       {
         "sectionName": "<벌룡 공주 기담 Ⅲ — 혼돈의 신역과 영걸의 시>",
-        "sectionId": "c3-s19",
+        "sectionId": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시",
         "items": [
           {
-            "id": "c3-s19-i0",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-d09aa749",
+            "legacyId": "c3-s19-i0",
             "text": "키 아이템: 사룡의 금서",
             "completed": false
           },
           {
-            "id": "c3-s19-i1",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-ae089574",
+            "legacyId": "c3-s19-i1",
             "text": "명룡린 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s19-i2",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-d1a0806c",
+            "legacyId": "c3-s19-i2",
             "text": "벌룡 공주 기담을 완성",
             "completed": false
           },
           {
-            "id": "c3-s19-i3",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-5ea34502",
+            "legacyId": "c3-s19-i3",
             "text": "명룡왕의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c3-s19-i4",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-5c415c46",
+            "legacyId": "c3-s19-i4",
             "text": "노포우족이 원하는 도시락 건네기",
             "completed": false
           },
           {
-            "id": "c3-s19-i5",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-85d989ce",
+            "legacyId": "c3-s19-i5",
             "text": "진명핵의 무기 EX 8종 강화",
             "completed": false
           },
           {
-            "id": "c3-s19-i6",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-19398312",
+            "legacyId": "c3-s19-i6",
             "text": "명전룡의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c3-s19-i7",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-cfcfb68f",
+            "legacyId": "c3-s19-i7",
             "text": "성도 각성 「벌룡 공주」",
             "completed": false
           },
           {
-            "id": "c3-s19-i8",
+            "id": "c3-벌룡공주기담Ⅲ혼돈의신역과영걸의시-5b6e8091",
+            "legacyId": "c3-s19-i8",
             "text": "라이리스 ★5 개방",
             "completed": false
           }
@@ -1896,40 +2225,47 @@
       },
       {
         "sectionName": "<미완의 생명과 하자의 낙토>",
-        "sectionId": "c3-s20",
+        "sectionId": "c3-미완의생명과하자의낙토",
         "items": [
           {
-            "id": "c3-s20-i0",
+            "id": "c3-미완의생명과하자의낙토-f9ac7cd5",
+            "legacyId": "c3-s20-i0",
             "text": "PTL 레코드 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s20-i1",
+            "id": "c3-미완의생명과하자의낙토-13450731",
+            "legacyId": "c3-s20-i1",
             "text": "시뮬레이션용 머신을 풀 커스텀",
             "completed": false
           },
           {
-            "id": "c3-s20-i2",
+            "id": "c3-미완의생명과하자의낙토-088ce7a3",
+            "legacyId": "c3-s20-i2",
             "text": "오토바이 게임의 모든 난이도 클리어",
             "completed": false
           },
           {
-            "id": "c3-s20-i3",
+            "id": "c3-미완의생명과하자의낙토-a7b1fc5f",
+            "legacyId": "c3-s20-i3",
             "text": "프로토의 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c3-s20-i4",
+            "id": "c3-미완의생명과하자의낙토-3c9d6b79",
+            "legacyId": "c3-s20-i4",
             "text": "프로토 에덴 코어의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c3-s20-i5",
+            "id": "c3-미완의생명과하자의낙토-ca9440f6",
+            "legacyId": "c3-s20-i5",
             "text": "성도 각성 「반역자」",
             "completed": false
           },
           {
-            "id": "c3-s20-i6",
+            "id": "c3-미완의생명과하자의낙토-69d0954f",
+            "legacyId": "c3-s20-i6",
             "text": "성도 각성 「제노레기온」",
             "completed": false
           }
@@ -1937,35 +2273,41 @@
       },
       {
         "sectionName": "<나선의 기억과 원초의 선율 Ⅰ — 마수의 장: 이율배반>",
-        "sectionId": "c3-s21",
+        "sectionId": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반",
         "items": [
           {
-            "id": "c3-s21-i0",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-cb5f9bcc",
+            "legacyId": "c3-s21-i0",
             "text": "마수왕 전하 메달 상점의 물품을 모두 교환(글래스터, 상급 비전서 제외)",
             "completed": false
           },
           {
-            "id": "c3-s21-i1",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-ca307531",
+            "legacyId": "c3-s21-i1",
             "text": "크래프트 키 아이템 모두 사용하기",
             "completed": false
           },
           {
-            "id": "c3-s21-i2",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-6a8f8a21",
+            "legacyId": "c3-s21-i2",
             "text": "크래프트 도구 아이템 최대 레벨까지 제작(Lv.3)",
             "completed": false
           },
           {
-            "id": "c3-s21-i3",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-717ed135",
+            "legacyId": "c3-s21-i3",
             "text": "절망의 검 재가공",
             "completed": false
           },
           {
-            "id": "c3-s21-i4",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-6cb19987",
+            "legacyId": "c3-s21-i4",
             "text": "성천의 무기 8종 강화(~Ⅲ)",
             "completed": false
           },
           {
-            "id": "c3-s21-i5",
+            "id": "c3-나선의기억과원초의선율Ⅰ마수의장이율배반-e9ada111",
+            "legacyId": "c3-s21-i5",
             "text": "무르 안쿤에게 승리",
             "completed": false
           }
@@ -1973,45 +2315,53 @@
       },
       {
         "sectionName": "<나선의 기억과 원초의 선율 Ⅱ — 인류의 장: 공평한 세상>",
-        "sectionId": "c3-s22",
+        "sectionId": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상",
         "items": [
           {
-            "id": "c3-s22-i0",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-1053755c",
+            "legacyId": "c3-s22-i0",
             "text": "파랑 포트에서 얻을 수 있는 모든 종류의 장비 획득",
             "completed": false
           },
           {
-            "id": "c3-s22-i1",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-a1e9cf83",
+            "legacyId": "c3-s22-i1",
             "text": "레스트인 촌장의 채집 기술을 모두 전수받기",
             "completed": false
           },
           {
-            "id": "c3-s22-i2",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-ca307531",
+            "legacyId": "c3-s22-i2",
             "text": "크래프트 키 아이템 모두 사용하기",
             "completed": false
           },
           {
-            "id": "c3-s22-i3",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-8484dfac",
+            "legacyId": "c3-s22-i3",
             "text": "크래프트 도구 아이템 최대 레벨까지 제작(Lv.6)",
             "completed": false
           },
           {
-            "id": "c3-s22-i4",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-b686b103",
+            "legacyId": "c3-s22-i4",
             "text": "성천의 무기 8종 강화(~Ⅵ)",
             "completed": false
           },
           {
-            "id": "c3-s22-i5",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-35691050",
+            "legacyId": "c3-s22-i5",
             "text": "무르 키카에게 승리",
             "completed": false
           },
           {
-            "id": "c3-s22-i6",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-13252830",
+            "legacyId": "c3-s22-i6",
             "text": "혼돈의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s22-i7",
+            "id": "c3-나선의기억과원초의선율Ⅱ인류의장공평한세상-e72c67fb",
+            "legacyId": "c3-s22-i7",
             "text": "성도 각성 「스테로페스」",
             "completed": false
           }
@@ -2019,40 +2369,47 @@
       },
       {
         "sectionName": "<나선의 기억과 원초의 선율 Ⅲ — 아인의 장: 행복주의>",
-        "sectionId": "c3-s23",
+        "sectionId": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의",
         "items": [
           {
-            "id": "c3-s23-i0",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-43197060",
+            "legacyId": "c3-s23-i0",
             "text": "분홍 포트에서 얻을 수 있는 모든 종류의 장비 획득",
             "completed": false
           },
           {
-            "id": "c3-s23-i1",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-ca307531",
+            "legacyId": "c3-s23-i1",
             "text": "크래프트 키 아이템 모두 사용하기",
             "completed": false
           },
           {
-            "id": "c3-s23-i2",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-1b7b97e8",
+            "legacyId": "c3-s23-i2",
             "text": "크래프트 도구 아이템 최대 레벨까지 제작(Lv.9)",
             "completed": false
           },
           {
-            "id": "c3-s23-i3",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-8ae01f7a",
+            "legacyId": "c3-s23-i3",
             "text": "냥째로 글러브 제작",
             "completed": false
           },
           {
-            "id": "c3-s23-i4",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-4627227b",
+            "legacyId": "c3-s23-i4",
             "text": "성천의 무기 8종 강화(~Ⅸ)",
             "completed": false
           },
           {
-            "id": "c3-s23-i5",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-1fcc5799",
+            "legacyId": "c3-s23-i5",
             "text": "유구한 수호신 게니우스에게 승리",
             "completed": false
           },
           {
-            "id": "c3-s23-i6",
+            "id": "c3-나선의기억과원초의선율Ⅲ아인의장행복주의-e38de96b",
+            "legacyId": "c3-s23-i6",
             "text": "무르 나브즈에게 승리",
             "completed": false
           }
@@ -2060,35 +2417,41 @@
       },
       {
         "sectionName": "<나선의 기억과 원초의 선율 Ⅳ — 나선의 장: 진화의 두 원칙>",
-        "sectionId": "c3-s24",
+        "sectionId": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙",
         "items": [
           {
-            "id": "c3-s24-i0",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-ba6f0200",
+            "legacyId": "c3-s24-i0",
             "text": "나선율의 기억 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c3-s24-i1",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-4fcda576",
+            "legacyId": "c3-s24-i1",
             "text": "초록 포트에서 얻을 수 있는 모든 종류의 장비 획득",
             "completed": false
           },
           {
-            "id": "c3-s24-i2",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-a9abc9aa",
+            "legacyId": "c3-s24-i2",
             "text": "크래프트 도구 아이템 최대 레벨까지 제작(Lv.10)",
             "completed": false
           },
           {
-            "id": "c3-s24-i3",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-3b212f89",
+            "legacyId": "c3-s24-i3",
             "text": "성천의 무기 8종 강화(~Ⅹ)",
             "completed": false
           },
           {
-            "id": "c3-s24-i4",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-c1655af0",
+            "legacyId": "c3-s24-i4",
             "text": "계승의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c3-s24-i5",
+            "id": "c3-나선의기억과원초의선율Ⅳ나선의장진화의두원칙-316502c4",
+            "legacyId": "c3-s24-i5",
             "text": "모든 흉성이 발동된 상태로 안 키 디그마에게 승리",
             "completed": false
           }
@@ -2102,100 +2465,119 @@
     "sections": [
       {
         "sectionName": "<검의 노래와 실락의 날개>",
-        "sectionId": "c4-s0",
+        "sectionId": "c4-검의노래와실락의날개",
         "items": [
           {
-            "id": "c4-s0-i0",
+            "id": "c4-검의노래와실락의날개-778a66d7",
+            "legacyId": "c4-s0-i0",
             "text": "탐색 거점에 모든 가구를 갖추기",
             "completed": false
           },
           {
-            "id": "c4-s0-i1",
+            "id": "c4-검의노래와실락의날개-046904c6",
+            "legacyId": "c4-s0-i1",
             "text": "메를로트구 음식점 이벤트 모두 보기",
             "completed": false
           },
           {
-            "id": "c4-s0-i2",
+            "id": "c4-검의노래와실락의날개-2e32737b",
+            "legacyId": "c4-s0-i2",
             "text": "부서졌던 구세주상을 복원하기",
             "completed": false
           },
           {
-            "id": "c4-s0-i3",
+            "id": "c4-검의노래와실락의날개-13431a12",
+            "legacyId": "c4-s0-i3",
             "text": "애틀랜티카 음식점 이벤트 모두 보기",
             "completed": false
           },
           {
-            "id": "c4-s0-i4",
+            "id": "c4-검의노래와실락의날개-965d69bc",
+            "legacyId": "c4-s0-i4",
             "text": "베르드 미답 구역의 세로 구멍 네 곳을 모두 조사하고 조복의 열쇠 사용",
             "completed": false
           },
           {
-            "id": "c4-s0-i5",
+            "id": "c4-검의노래와실락의날개-f3ad863c",
+            "legacyId": "c4-s0-i5",
             "text": "키 아이템: 달의 청년 무지개만, 달의 청년 끄트머리의 바다, 달의 청년 열의 만, 달의 청년 황야의 호수, 달의 청년 천둥의 반도",
             "completed": false
           },
           {
-            "id": "c4-s0-i6",
+            "id": "c4-검의노래와실락의날개-ffb3aac3",
+            "legacyId": "c4-s0-i6",
             "text": "무형에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i7",
+            "id": "c4-검의노래와실락의날개-8b175291",
+            "legacyId": "c4-s0-i7",
             "text": "멜로지아에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i8",
+            "id": "c4-검의노래와실락의날개-497048bc",
+            "legacyId": "c4-s0-i8",
             "text": "테유르 메나스의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i9",
+            "id": "c4-검의노래와실락의날개-392da265",
+            "legacyId": "c4-s0-i9",
             "text": "Sinus Aestuum B.C.20000에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i10",
+            "id": "c4-검의노래와실락의날개-7052ba21",
+            "legacyId": "c4-s0-i10",
             "text": "Imbrium Basin B.C.20000에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i11",
+            "id": "c4-검의노래와실락의날개-09b88d56",
+            "legacyId": "c4-s0-i11",
             "text": "Lacus Solitudinis B.C.20000에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i12",
+            "id": "c4-검의노래와실락의날개-a1fefea2",
+            "legacyId": "c4-s0-i12",
             "text": "Insula Ventorum B.C.20000에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i13",
+            "id": "c4-검의노래와실락의날개-04d3f2ed",
+            "legacyId": "c4-s0-i13",
             "text": "Terra NiVium B.C.20000에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s0-i14",
+            "id": "c4-검의노래와실락의날개-9268ec08",
+            "legacyId": "c4-s0-i14",
             "text": "프리즘 더스트 교환을 완료",
             "completed": false
           },
           {
-            "id": "c4-s0-i15",
+            "id": "c4-검의노래와실락의날개-3e436b5e",
+            "legacyId": "c4-s0-i15",
             "text": "아주로 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c4-s0-i16",
+            "id": "c4-검의노래와실락의날개-9d86253d",
+            "legacyId": "c4-s0-i16",
             "text": "루나 무기 8종, 월계의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c4-s0-i17",
+            "id": "c4-검의노래와실락의날개-6dd55f5a",
+            "legacyId": "c4-s0-i17",
             "text": "실락의 도시 <Hard>: 활성 마소를 17500개 수집",
             "completed": false
           },
           {
-            "id": "c4-s0-i18",
+            "id": "c4-검의노래와실락의날개-7303cd2c",
+            "legacyId": "c4-s0-i18",
             "text": "실락의 도시 <Hard>: 무인 교환기의 물품을 모두 교환 (상급 비전서 제외)",
             "completed": false
           }
@@ -2203,10 +2585,11 @@
       },
       {
         "sectionName": "<검의 노래와 실락의 날개 — The Winged Prayer>",
-        "sectionId": "c4-s1",
+        "sectionId": "c4-검의노래와실락의날개TheWingedPrayer",
         "items": [
           {
-            "id": "c4-s1-i0",
+            "id": "c4-검의노래와실락의날개TheWingedPrayer-249d8b53",
+            "legacyId": "c4-s1-i0",
             "text": "프라이 5★ Class Change",
             "completed": false
           }
@@ -2214,95 +2597,113 @@
       },
       {
         "sectionName": "<영장의 이치와 추기의 천칭>",
-        "sectionId": "c4-s2",
+        "sectionId": "c4-영장의이치와추기의천칭",
         "items": [
           {
-            "id": "c4-s2-i0",
+            "id": "c4-영장의이치와추기의천칭-ec5ee9ec",
+            "legacyId": "c4-s2-i0",
             "text": "라비앙 로즈 테라스에서 하디와 대화하기",
             "completed": false
           },
           {
-            "id": "c4-s2-i1",
+            "id": "c4-영장의이치와추기의천칭-422a0291",
+            "legacyId": "c4-s2-i1",
             "text": "라비앙 로즈의 아르바이트 엑스트라 클리어",
             "completed": false
           },
           {
-            "id": "c4-s2-i2",
+            "id": "c4-영장의이치와추기의천칭-54f74ba1",
+            "legacyId": "c4-s2-i2",
             "text": "라비앙 로즈의 아르바이트 보수 모두 획득",
             "completed": false
           },
           {
-            "id": "c4-s2-i3",
+            "id": "c4-영장의이치와추기의천칭-7cad3e17",
+            "legacyId": "c4-s2-i3",
             "text": "라비앙 로즈 음식점 이벤트 모두 보기",
             "completed": false
           },
           {
-            "id": "c4-s2-i4",
+            "id": "c4-영장의이치와추기의천칭-9cc6f120",
+            "legacyId": "c4-s2-i4",
             "text": "실크 스퀘어 음식점 이벤트 모두 보기",
             "completed": false
           },
           {
-            "id": "c4-s2-i5",
+            "id": "c4-영장의이치와추기의천칭-c5426c6c",
+            "legacyId": "c4-s2-i5",
             "text": "서브 퀘스트: 새롭게 출발하는 나비",
             "completed": false
           },
           {
-            "id": "c4-s2-i6",
+            "id": "c4-영장의이치와추기의천칭-db74a8fa",
+            "legacyId": "c4-s2-i6",
             "text": "아름다운 밤의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c4-s2-i7",
+            "id": "c4-영장의이치와추기의천칭-b0ccdb81",
+            "legacyId": "c4-s2-i7",
             "text": "땅거미의 무기 8종 제작",
             "completed": false
           },
           {
-            "id": "c4-s2-i8",
+            "id": "c4-영장의이치와추기의천칭-1e487eb7",
+            "legacyId": "c4-s2-i8",
             "text": "검은 씨앗의 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c4-s2-i9",
+            "id": "c4-영장의이치와추기의천칭-f5c1b38f",
+            "legacyId": "c4-s2-i9",
             "text": "셰켈 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c4-s2-i10",
+            "id": "c4-영장의이치와추기의천칭-40b1ece7",
+            "legacyId": "c4-s2-i10",
             "text": "토토 드림 오션 경품 교환 완료",
             "completed": false
           },
           {
-            "id": "c4-s2-i11",
+            "id": "c4-영장의이치와추기의천칭-fb400570",
+            "legacyId": "c4-s2-i11",
             "text": "불모의 항체 교환 완료",
             "completed": false
           },
           {
-            "id": "c4-s2-i12",
+            "id": "c4-영장의이치와추기의천칭-f4dbe262",
+            "legacyId": "c4-s2-i12",
             "text": "영장의 추억을 17500개 수집(누적)",
             "completed": false
           },
           {
-            "id": "c4-s2-i13",
+            "id": "c4-영장의이치와추기의천칭-327cead4",
+            "legacyId": "c4-s2-i13",
             "text": "영장의 추억 교환 완료",
             "completed": false
           },
           {
-            "id": "c4-s2-i14",
+            "id": "c4-영장의이치와추기의천칭-06292a9e",
+            "legacyId": "c4-s2-i14",
             "text": "오우거베인 천의 힘을 해방",
             "completed": false
           },
           {
-            "id": "c4-s2-i15",
+            "id": "c4-영장의이치와추기의천칭-8abe4d6f",
+            "legacyId": "c4-s2-i15",
             "text": "15턴 이내에 추기의 천망의 그림차 처치",
             "completed": false
           },
           {
-            "id": "c4-s2-i16",
+            "id": "c4-영장의이치와추기의천칭-6c5d7df5",
+            "legacyId": "c4-s2-i16",
             "text": "검은 옷의 칼잡이의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s2-i17",
+            "id": "c4-영장의이치와추기의천칭-4ff38d3b",
+            "legacyId": "c4-s2-i17",
             "text": "연구 기록 #0~4 모두 획득하고 소피와 대화하기",
             "completed": false
           }
@@ -2310,10 +2711,11 @@
       },
       {
         "sectionName": "<영장의 이치와 추기의 천칭 — wind liberator>",
-        "sectionId": "c4-s3",
+        "sectionId": "c4-영장의이치와추기의천칭windliberator",
         "items": [
           {
-            "id": "c4-s3-i0",
+            "id": "c4-영장의이치와추기의천칭windliberator-0181baa2",
+            "legacyId": "c4-s3-i0",
             "text": "세빈 5★ Class Change",
             "completed": false
           }
@@ -2321,60 +2723,71 @@
       },
       {
         "sectionName": "<만고의 죄와 불복의 칼날>",
-        "sectionId": "c4-s4",
+        "sectionId": "c4-만고의죄와불복의칼날",
         "items": [
           {
-            "id": "c4-s4-i0",
+            "id": "c4-만고의죄와불복의칼날-46759ea8",
+            "legacyId": "c4-s4-i0",
             "text": "키 아이템: 손수 만든 놀이 말",
             "completed": false
           },
           {
-            "id": "c4-s4-i1",
+            "id": "c4-만고의죄와불복의칼날-cc61a5fb",
+            "legacyId": "c4-s4-i1",
             "text": "전가의 무기 8종 강화",
             "completed": false
           },
           {
-            "id": "c4-s4-i2",
+            "id": "c4-만고의죄와불복의칼날-92c7d244",
+            "legacyId": "c4-s4-i2",
             "text": "구운 가지 바치기",
             "completed": false
           },
           {
-            "id": "c4-s4-i3",
+            "id": "c4-만고의죄와불복의칼날-baf767e1",
+            "legacyId": "c4-s4-i3",
             "text": "요마천루의 모든 늪을 얼리기",
             "completed": false
           },
           {
-            "id": "c4-s4-i4",
+            "id": "c4-만고의죄와불복의칼날-6be13a4b",
+            "legacyId": "c4-s4-i4",
             "text": "엽전을 모두 모아 엽전 수집가의 물건과 교환하기",
             "completed": false
           },
           {
-            "id": "c4-s4-i5",
+            "id": "c4-만고의죄와불복의칼날-1f126ed8",
+            "legacyId": "c4-s4-i5",
             "text": "야흑황혼석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c4-s4-i6",
+            "id": "c4-만고의죄와불복의칼날-954b96b3",
+            "legacyId": "c4-s4-i6",
             "text": "백양화혼석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c4-s4-i7",
+            "id": "c4-만고의죄와불복의칼날-b2ea8012",
+            "legacyId": "c4-s4-i7",
             "text": "정령수의 분신인 청룡에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s4-i8",
+            "id": "c4-만고의죄와불복의칼날-ead35950",
+            "legacyId": "c4-s4-i8",
             "text": "정령수의 분신인 백호에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s4-i9",
+            "id": "c4-만고의죄와불복의칼날-c23f3180",
+            "legacyId": "c4-s4-i9",
             "text": "정령수의 분신인 궁기에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s4-i10",
+            "id": "c4-만고의죄와불복의칼날-e2778539",
+            "legacyId": "c4-s4-i10",
             "text": "천상백인의 숨겨진 힘 해방",
             "completed": false
           }
@@ -2382,25 +2795,29 @@
       },
       {
         "sectionName": "<만고의 죄와 불복의 칼날 — 아쉬운 밤에 피는 붉은 꽃>",
-        "sectionId": "c4-s5",
+        "sectionId": "c4-만고의죄와불복의칼날아쉬운밤에피는붉은꽃",
         "items": [
           {
-            "id": "c4-s5-i0",
+            "id": "c4-만고의죄와불복의칼날아쉬운밤에피는붉은꽃-27a2686e",
+            "legacyId": "c4-s5-i0",
             "text": "센서가 반응하는 수상한 곳을 전부 찾기",
             "completed": false
           },
           {
-            "id": "c4-s5-i1",
+            "id": "c4-만고의죄와불복의칼날아쉬운밤에피는붉은꽃-53923281",
+            "legacyId": "c4-s5-i1",
             "text": "천신 츠쿠요미 옥체의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c4-s5-i2",
+            "id": "c4-만고의죄와불복의칼날아쉬운밤에피는붉은꽃-1f345c2d",
+            "legacyId": "c4-s5-i2",
             "text": "성도 각성 「아메노토츠카」",
             "completed": false
           },
           {
-            "id": "c4-s5-i3",
+            "id": "c4-만고의죄와불복의칼날아쉬운밤에피는붉은꽃-e512c03e",
+            "legacyId": "c4-s5-i3",
             "text": "성도 각성 「히하야히」",
             "completed": false
           }
@@ -2414,35 +2831,41 @@
     "sections": [
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 프롤로그>",
-        "sectionId": "c5-s0",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이프롤로그",
         "items": [
           {
-            "id": "c5-s0-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-32ad88f2",
+            "legacyId": "c5-s0-i0",
             "text": "데토네이터 10개 획득",
             "completed": false
           },
           {
-            "id": "c5-s0-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-0bc5176a",
+            "legacyId": "c5-s0-i1",
             "text": "미궁 제20층 돌파",
             "completed": false
           },
           {
-            "id": "c5-s0-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-df4cff17",
+            "legacyId": "c5-s0-i2",
             "text": "참을 모두 교환",
             "completed": false
           },
           {
-            "id": "c5-s0-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-722341e3",
+            "legacyId": "c5-s0-i3",
             "text": "감정 메달 교환소에서 교환할 수 있는 아이템을 모두 교환(상급 비전서 제외)",
             "completed": false
           },
           {
-            "id": "c5-s0-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-164ae0de",
+            "legacyId": "c5-s0-i4",
             "text": "오파츠를 총 1000개 감정",
             "completed": false
           },
           {
-            "id": "c5-s0-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이프롤로그-db1c4812",
+            "legacyId": "c5-s0-i5",
             "text": "모든 미궁 장비를 희소급으로, 어빌리티 종류별로 획득",
             "completed": false
           }
@@ -2450,30 +2873,35 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 번개의 궤적>",
-        "sectionId": "c5-s1",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적",
         "items": [
           {
-            "id": "c5-s1-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적-0244d2d4",
+            "legacyId": "c5-s1-i0",
             "text": "고리더스가 살아 있는 미래에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s1-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적-ae9b4fbb",
+            "legacyId": "c5-s1-i1",
             "text": "천뢰의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s1-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적-c4d8c3e6",
+            "legacyId": "c5-s1-i2",
             "text": "요격용 설비 - 투석기【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s1-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적-5a187fe4",
+            "legacyId": "c5-s1-i3",
             "text": "뒤틀린 카오스 오우거 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s1-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과번개의궤적-aed132c0",
+            "legacyId": "c5-s1-i4",
             "text": "복원된 시간의 무기 3종(도끼, 창, 활) 강화",
             "completed": false
           }
@@ -2481,50 +2909,59 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 백금의 꽃봉오리>",
-        "sectionId": "c5-s2",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리",
         "items": [
           {
-            "id": "c5-s2-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-1c70a916",
+            "legacyId": "c5-s2-i0",
             "text": "폭주한 호문쿨루스 찾아오기",
             "completed": false
           },
           {
-            "id": "c5-s2-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-79630758",
+            "legacyId": "c5-s2-i1",
             "text": "쿠루에게 영약을 연성한 후 나머지 영약 2개를 다시 받기",
             "completed": false
           },
           {
-            "id": "c5-s2-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-69f28359",
+            "legacyId": "c5-s2-i2",
             "text": "팔케리우스의 영혼이 소멸하지 않는 미래에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s2-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-c51b2e74",
+            "legacyId": "c5-s2-i3",
             "text": "키 아이템: 화학 반응의 계시",
             "completed": false
           },
           {
-            "id": "c5-s2-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-ba2f7479",
+            "legacyId": "c5-s2-i4",
             "text": "백금의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s2-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-1383814e",
+            "legacyId": "c5-s2-i5",
             "text": "요격용 설비 - 연성로【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s2-i6",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-335db34d",
+            "legacyId": "c5-s2-i6",
             "text": "뒤틀린 알마 에테르나 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s2-i7",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-2ff36695",
+            "legacyId": "c5-s2-i7",
             "text": "복원된 시간의 무기 2종(지팡이, 도) 강화",
             "completed": false
           },
           {
-            "id": "c5-s2-i8",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과백금의꽃봉오리-d32c68a7",
+            "legacyId": "c5-s2-i8",
             "text": "복원된 시간의 방어구 3종 강화",
             "completed": false
           }
@@ -2532,35 +2969,41 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 망국의 왕>",
-        "sectionId": "c5-s3",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕",
         "items": [
           {
-            "id": "c5-s3-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-8bed3517",
+            "legacyId": "c5-s3-i0",
             "text": "케류켈 체조 「어려움」 클리어",
             "completed": false
           },
           {
-            "id": "c5-s3-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-0b8f9112",
+            "legacyId": "c5-s3-i1",
             "text": "모든 사람을 미래로 연결하는 결말에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s3-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-d9b91a5e",
+            "legacyId": "c5-s3-i2",
             "text": "취옥의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s3-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-f972fc7b",
+            "legacyId": "c5-s3-i3",
             "text": "요격용 설비 - 왕가의 수호【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s3-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-37b00cb3",
+            "legacyId": "c5-s3-i4",
             "text": "뒤틀린 케류켈 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s3-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과망국의왕-3532e111",
+            "legacyId": "c5-s3-i5",
             "text": "복원된 시간의 무기 3종(검, 권갑, 망치) 강화",
             "completed": false
           }
@@ -2568,40 +3011,47 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 무지갯빛 마을>",
-        "sectionId": "c5-s4",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을",
         "items": [
           {
-            "id": "c5-s4-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-67501dcd",
+            "legacyId": "c5-s4-i0",
             "text": "수수께끼 풀이를 모두 클리어",
             "completed": false
           },
           {
-            "id": "c5-s4-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-a4c86ef6",
+            "legacyId": "c5-s4-i1",
             "text": "태엽 사무라이 - 여심을 격퇴",
             "completed": false
           },
           {
-            "id": "c5-s4-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-ff410675",
+            "legacyId": "c5-s4-i2",
             "text": "스자쿠와 가이신이 나라에 남는 결말에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s4-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-6e9af439",
+            "legacyId": "c5-s4-i3",
             "text": "무지갯빛 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s4-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-50fc520e",
+            "legacyId": "c5-s4-i4",
             "text": "요격용 설비 - 태엽 군단【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s4-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-718fe70c",
+            "legacyId": "c5-s4-i5",
             "text": "뒤틀린 주조 - 가이신 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s4-i6",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무지갯빛마을-ad7fb1e6",
+            "legacyId": "c5-s4-i6",
             "text": "별의 운명이 구현화된 무기 3종(도, 창, 활) 강화",
             "completed": false
           }
@@ -2609,45 +3059,53 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 무구한 낙원>",
-        "sectionId": "c5-s5",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원",
         "items": [
           {
-            "id": "c5-s5-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-d206e0a5",
+            "legacyId": "c5-s5-i0",
             "text": "기믹 아이템으로 얻을 수 있는 아이템 모두 얻기",
             "completed": false
           },
           {
-            "id": "c5-s5-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-6b9773f2",
+            "legacyId": "c5-s5-i1",
             "text": "툴 박스로 전능의 힘 <성직자> 제작",
             "completed": false
           },
           {
-            "id": "c5-s5-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-efb0b1f4",
+            "legacyId": "c5-s5-i2",
             "text": "태어난 생명 떠나 보내기",
             "completed": false
           },
           {
-            "id": "c5-s5-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-633282ca",
+            "legacyId": "c5-s5-i3",
             "text": "시계탑의 사람들을 진정으로 구원하는 결말에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s5-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-a6ab7751",
+            "legacyId": "c5-s5-i4",
             "text": "무구의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s5-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-edec4632",
+            "legacyId": "c5-s5-i5",
             "text": "요격용 설비 - 저승 버섯의 균상【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s5-i6",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-455dfde9",
+            "legacyId": "c5-s5-i6",
             "text": "뒤틀린 태어난 생명 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s5-i7",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과무구한낙원-af76a3ce",
+            "legacyId": "c5-s5-i7",
             "text": "별의 운명이 구현화된 무기 2종(지팡이, 권갑) 강화",
             "completed": false
           }
@@ -2655,40 +3113,47 @@
       },
       {
         "sectionName": "<방황하는 소녀와 영겁의 소용돌이 — 돌고 도는 운명과 새벽녘의 감옥>",
-        "sectionId": "c5-s6",
+        "sectionId": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥",
         "items": [
           {
-            "id": "c5-s6-i0",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-dc2b8876",
+            "legacyId": "c5-s6-i0",
             "text": "빼앗긴 전시품 되찾아주기",
             "completed": false
           },
           {
-            "id": "c5-s6-i1",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-c6750eff",
+            "legacyId": "c5-s6-i1",
             "text": "최고 영업 실적 달성",
             "completed": false
           },
           {
-            "id": "c5-s6-i2",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-be5da512",
+            "legacyId": "c5-s6-i2",
             "text": "두 명의 야쿠모를 구원하는 결말에 다다랐다.",
             "completed": false
           },
           {
-            "id": "c5-s6-i3",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-96336092",
+            "legacyId": "c5-s6-i3",
             "text": "새벽녘의 조각 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c5-s6-i4",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-25f3495c",
+            "legacyId": "c5-s6-i4",
             "text": "요격용 설비 - 불량 재고【레벨 3】 제작",
             "completed": false
           },
           {
-            "id": "c5-s6-i5",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-4c7cd453",
+            "legacyId": "c5-s6-i5",
             "text": "뒤틀린 데우스 크라스 HARD에게 승리",
             "completed": false
           },
           {
-            "id": "c5-s6-i6",
+            "id": "c5-방황하는소녀와영겁의소용돌이돌고도는운명과새벽녘의감옥-a1857183",
+            "legacyId": "c5-s6-i6",
             "text": "별의 운명이 구현화된 무기 3종(검, 도끼, 망치) 강화",
             "completed": false
           }
@@ -2702,10 +3167,11 @@
     "sections": [
       {
         "sectionName": "<아자미 편>",
-        "sectionId": "c6-s0",
+        "sectionId": "c6-아자미편",
         "items": [
           {
-            "id": "c6-s0-i0",
+            "id": "c6-아자미편-e479c2de",
+            "legacyId": "c6-s0-i0",
             "text": "아자미 5★ Class Change",
             "completed": false
           }
@@ -2713,15 +3179,17 @@
       },
       {
         "sectionName": "<가리유 편>",
-        "sectionId": "c6-s1",
+        "sectionId": "c6-가리유편",
         "items": [
           {
-            "id": "c6-s1-i0",
+            "id": "c6-가리유편-c2b556a8",
+            "legacyId": "c6-s1-i0",
             "text": "가리유 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c6-s1-i1",
+            "id": "c6-가리유편-6f414af8",
+            "legacyId": "c6-s1-i1",
             "text": "화식조♀에게 승리",
             "completed": false
           }
@@ -2729,10 +3197,11 @@
       },
       {
         "sectionName": "<셀리느 편>",
-        "sectionId": "c6-s2",
+        "sectionId": "c6-셀리느편",
         "items": [
           {
-            "id": "c6-s2-i0",
+            "id": "c6-셀리느편-2d869e6a",
+            "legacyId": "c6-s2-i0",
             "text": "셀리느 5★ Class Change",
             "completed": false
           }
@@ -2746,10 +3215,11 @@
     "sections": [
       {
         "sectionName": "<가리유 편>",
-        "sectionId": "c7-s0",
+        "sectionId": "c7-가리유편",
         "items": [
           {
-            "id": "c7-s0-i0",
+            "id": "c7-가리유편-eeb0126e",
+            "legacyId": "c7-s0-i0",
             "text": "가리유 New Style 획득",
             "completed": false
           }
@@ -2757,15 +3227,17 @@
       },
       {
         "sectionName": "<레비아 편>",
-        "sectionId": "c7-s1",
+        "sectionId": "c7-레비아편",
         "items": [
           {
-            "id": "c7-s1-i0",
+            "id": "c7-레비아편-d867285e",
+            "legacyId": "c7-s1-i0",
             "text": "레비아 New Style 획득",
             "completed": false
           },
           {
-            "id": "c7-s1-i1",
+            "id": "c7-레비아편-db40c7da",
+            "legacyId": "c7-s1-i1",
             "text": "진 쌍둥이별의 동자의 증표 획득",
             "completed": false
           }
@@ -2773,10 +3245,11 @@
       },
       {
         "sectionName": "<아자미 편>",
-        "sectionId": "c7-s2",
+        "sectionId": "c7-아자미편",
         "items": [
           {
-            "id": "c7-s2-i0",
+            "id": "c7-아자미편-1eca34b5",
+            "legacyId": "c7-s2-i0",
             "text": "아자미 New Style 획득",
             "completed": false
           }
@@ -2784,10 +3257,11 @@
       },
       {
         "sectionName": "<셀리느 편>",
-        "sectionId": "c7-s3",
+        "sectionId": "c7-셀리느편",
         "items": [
           {
-            "id": "c7-s3-i0",
+            "id": "c7-셀리느편-e93bcb50",
+            "legacyId": "c7-s3-i0",
             "text": "셀리느 New Style 획득",
             "completed": false
           }
@@ -2795,10 +3269,11 @@
       },
       {
         "sectionName": "<미워할 수 없는 어리석음 — The Guardian of Curiosity>",
-        "sectionId": "c7-s4",
+        "sectionId": "c7-미워할수없는어리석음TheGuardianofCuriosity",
         "items": [
           {
-            "id": "c7-s4-i0",
+            "id": "c7-미워할수없는어리석음TheGuardianofCuriosity-b9b40ce4",
+            "legacyId": "c7-s4-i0",
             "text": "성도 각성 「아마란투스」",
             "completed": false
           }
@@ -2812,30 +3287,35 @@
     "sections": [
       {
         "sectionName": "<작은 왕녀의 작은 대모험>",
-        "sectionId": "c8-s0",
+        "sectionId": "c8-작은왕녀의작은대모험",
         "items": [
           {
-            "id": "c8-s0-i0",
+            "id": "c8-작은왕녀의작은대모험-4dbc75b5",
+            "legacyId": "c8-s0-i0",
             "text": "키 아이템: 기묘한 숲: 깊은 곳의 지도",
             "completed": false
           },
           {
-            "id": "c8-s0-i1",
+            "id": "c8-작은왕녀의작은대모험-0e003f8f",
+            "legacyId": "c8-s0-i1",
             "text": "미유 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c8-s0-i2",
+            "id": "c8-작은왕녀의작은대모험-681a420c",
+            "legacyId": "c8-s0-i2",
             "text": "리틀 글리터 강화",
             "completed": false
           },
           {
-            "id": "c8-s0-i3",
+            "id": "c8-작은왕녀의작은대모험-fb3928f3",
+            "legacyId": "c8-s0-i3",
             "text": "아주 평범한 도끼 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c8-s0-i4",
+            "id": "c8-작은왕녀의작은대모험-9557b491",
+            "legacyId": "c8-s0-i4",
             "text": "랠름 머쉬룸을 100회 토벌",
             "completed": false
           }
@@ -2843,30 +3323,35 @@
       },
       {
         "sectionName": "<이국의 하늘과 자유를 향한 방주>",
-        "sectionId": "c8-s1",
+        "sectionId": "c8-이국의하늘과자유를향한방주",
         "items": [
           {
-            "id": "c8-s1-i0",
+            "id": "c8-이국의하늘과자유를향한방주-00acfa03",
+            "legacyId": "c8-s1-i0",
             "text": "키 아이템: 정원 확장 데이터",
             "completed": false
           },
           {
-            "id": "c8-s1-i1",
+            "id": "c8-이국의하늘과자유를향한방주-aa17e43a",
+            "legacyId": "c8-s1-i1",
             "text": "시엘 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c8-s1-i2",
+            "id": "c8-이국의하늘과자유를향한방주-55395020",
+            "legacyId": "c8-s1-i2",
             "text": "아폴로 하프 강화",
             "completed": false
           },
           {
-            "id": "c8-s1-i3",
+            "id": "c8-이국의하늘과자유를향한방주-945fd293",
+            "legacyId": "c8-s1-i3",
             "text": "강철 소녀의 뼈 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c8-s1-i4",
+            "id": "c8-이국의하늘과자유를향한방주-e1900b9b",
+            "legacyId": "c8-s1-i4",
             "text": "랠름 보타니를 100회 토벌",
             "completed": false
           }
@@ -2880,35 +3365,41 @@
     "sections": [
       {
         "sectionName": "<지난날의 영웅과 맹세의 각명>",
-        "sectionId": "c9-s0",
+        "sectionId": "c9-지난날의영웅과맹세의각명",
         "items": [
           {
-            "id": "c9-s0-i0",
+            "id": "c9-지난날의영웅과맹세의각명-a97159e2",
+            "legacyId": "c9-s0-i0",
             "text": "묘비에 커스패리어스의 이름 새기기",
             "completed": false
           },
           {
-            "id": "c9-s0-i1",
+            "id": "c9-지난날의영웅과맹세의각명-a5975d40",
+            "legacyId": "c9-s0-i1",
             "text": "메이 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c9-s0-i2",
+            "id": "c9-지난날의영웅과맹세의각명-2c6a2b55",
+            "legacyId": "c9-s0-i2",
             "text": "인연의 망치 강화",
             "completed": false
           },
           {
-            "id": "c9-s0-i3",
+            "id": "c9-지난날의영웅과맹세의각명-112b43ce",
+            "legacyId": "c9-s0-i3",
             "text": "옅은 비색 마석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c9-s0-i4",
+            "id": "c9-지난날의영웅과맹세의각명-265f14d7",
+            "legacyId": "c9-s0-i4",
             "text": "망향의 아틀리에 <Very Hard>: 통곡의 묘소를 4분 이내에 클리어",
             "completed": false
           },
           {
-            "id": "c9-s0-i5",
+            "id": "c9-지난날의영웅과맹세의각명-de7d553d",
+            "legacyId": "c9-s0-i5",
             "text": "망향의 아틀리에 <Very Hard>: 옅은 비색 마석 교환을 완료 (상급 비전서 제외)",
             "completed": false
           }
@@ -2916,35 +3407,41 @@
       },
       {
         "sectionName": "<윤회의 낫과 홍련의 도화>",
-        "sectionId": "c9-s1",
+        "sectionId": "c9-윤회의낫과홍련의도화",
         "items": [
           {
-            "id": "c9-s1-i0",
+            "id": "c9-윤회의낫과홍련의도화-6e563324",
+            "legacyId": "c9-s1-i0",
             "text": "소녀에게 수면 연꽃의 잎 건네기",
             "completed": false
           },
           {
-            "id": "c9-s1-i1",
+            "id": "c9-윤회의낫과홍련의도화-a098f787",
+            "legacyId": "c9-s1-i1",
             "text": "연옥의 지팡이 강화",
             "completed": false
           },
           {
-            "id": "c9-s1-i2",
+            "id": "c9-윤회의낫과홍련의도화-40b0014f",
+            "legacyId": "c9-s1-i2",
             "text": "연옥의 환수의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c9-s1-i3",
+            "id": "c9-윤회의낫과홍련의도화-1c68a007",
+            "legacyId": "c9-s1-i3",
             "text": "짙은 비색 마석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c9-s1-i4",
+            "id": "c9-윤회의낫과홍련의도화-0b852fb9",
+            "legacyId": "c9-s1-i4",
             "text": "망향의 아틀리에 <Very Hard>: <고성소의 순례>를 스코어 45억 이상으로 클리어",
             "completed": false
           },
           {
-            "id": "c9-s1-i5",
+            "id": "c9-윤회의낫과홍련의도화-a1a1dfd8",
+            "legacyId": "c9-s1-i5",
             "text": "망향의 아틀리에 <Very Hard>: 짙은 비색 마석 교환을 완료 (상급 비전서 제외)",
             "completed": false
           }
@@ -2952,30 +3449,35 @@
       },
       {
         "sectionName": "<장성의 도끼와 갑주의 양>",
-        "sectionId": "c9-s2",
+        "sectionId": "c9-장성의도끼와갑주의양",
         "items": [
           {
-            "id": "c9-s2-i0",
+            "id": "c9-장성의도끼와갑주의양-b57082dc",
+            "legacyId": "c9-s2-i0",
             "text": "베네디트 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c9-s2-i1",
+            "id": "c9-장성의도끼와갑주의양-1727aa51",
+            "legacyId": "c9-s2-i1",
             "text": "역사를 전해온 검 강화",
             "completed": false
           },
           {
-            "id": "c9-s2-i2",
+            "id": "c9-장성의도끼와갑주의양-7bdef9cd",
+            "legacyId": "c9-s2-i2",
             "text": "진홍색 마석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c9-s2-i3",
+            "id": "c9-장성의도끼와갑주의양-a8175d24",
+            "legacyId": "c9-s2-i3",
             "text": "망향의 아틀리에 <Very Hard>: <전율의 저택>을 합계 5턴 내로 클리어",
             "completed": false
           },
           {
-            "id": "c9-s2-i4",
+            "id": "c9-장성의도끼와갑주의양-dd3d3dbf",
+            "legacyId": "c9-s2-i4",
             "text": "망향의 아틀리에 <Very Hard>: 진홍색 마석 교환을 완료 (상급 비전서 제외)",
             "completed": false
           }
@@ -2983,40 +3485,47 @@
       },
       {
         "sectionName": "<낙일의 폐허와 광휘의 수호자>",
-        "sectionId": "c9-s3",
+        "sectionId": "c9-낙일의폐허와광휘의수호자",
         "items": [
           {
-            "id": "c9-s3-i0",
+            "id": "c9-낙일의폐허와광휘의수호자-d8a11302",
+            "legacyId": "c9-s3-i0",
             "text": "정크 숍의 여자아이의 게임 제작을 돕기",
             "completed": false
           },
           {
-            "id": "c9-s3-i1",
+            "id": "c9-낙일의폐허와광휘의수호자-95cde146",
+            "legacyId": "c9-s3-i1",
             "text": "엔포스 무기 2종(도끼, 창) 강화",
             "completed": false
           },
           {
-            "id": "c9-s3-i2",
+            "id": "c9-낙일의폐허와광휘의수호자-8933aa12",
+            "legacyId": "c9-s3-i2",
             "text": "유디키움의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c9-s3-i3",
+            "id": "c9-낙일의폐허와광휘의수호자-4304deab",
+            "legacyId": "c9-s3-i3",
             "text": "정크 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c9-s3-i4",
+            "id": "c9-낙일의폐허와광휘의수호자-2718454b",
+            "legacyId": "c9-s3-i4",
             "text": "유리색 마석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c9-s3-i5",
+            "id": "c9-낙일의폐허와광휘의수호자-6c67454c",
+            "legacyId": "c9-s3-i5",
             "text": "망향의 아틀리에 <Very Hard>: <새벽녘의 전흔>을 스코어 50000 이상으로 클리어",
             "completed": false
           },
           {
-            "id": "c9-s3-i6",
+            "id": "c9-낙일의폐허와광휘의수호자-e94e35c4",
+            "legacyId": "c9-s3-i6",
             "text": "망향의 아틀리에 <Very Hard>: 유리색 마석 교환을 완료 (상급 비전서 제외)",
             "completed": false
           }
@@ -3025,7 +3534,8 @@
     ],
     "items": [
       {
-        "id": "c9-i0",
+        "id": "c9-12793491",
+        "legacyId": "c9-i0",
         "text": "수수께끼 시인과 폴라리스의 재회를 지켜보기",
         "completed": false
       }
@@ -3037,20 +3547,23 @@
     "sections": [
       {
         "sectionName": "<두 영혼의 인연과 공허의 괴뢰사>",
-        "sectionId": "c10-s0",
+        "sectionId": "c10-두영혼의인연과공허의괴뢰사",
         "items": [
           {
-            "id": "c10-s0-i0",
+            "id": "c10-두영혼의인연과공허의괴뢰사-6cd56634",
+            "legacyId": "c10-s0-i0",
             "text": "조커 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s0-i1",
+            "id": "c10-두영혼의인연과공허의괴뢰사-c93bdc9d",
+            "legacyId": "c10-s0-i1",
             "text": "히든 퀘스트: 토카체프 획득",
             "completed": false
           },
           {
-            "id": "c10-s0-i2",
+            "id": "c10-두영혼의인연과공허의괴뢰사-cf966f49",
+            "legacyId": "c10-s0-i2",
             "text": "밴디트 소드 획득",
             "completed": false
           }
@@ -3058,25 +3571,29 @@
       },
       {
         "sectionName": "<두 영혼의 인연과 공허의 괴뢰사 — 약속과 맹세와 반지>",
-        "sectionId": "c10-s1",
+        "sectionId": "c10-두영혼의인연과공허의괴뢰사약속과맹세와반지",
         "items": [
           {
-            "id": "c10-s1-i0",
+            "id": "c10-두영혼의인연과공허의괴뢰사약속과맹세와반지-533aea96",
+            "legacyId": "c10-s1-i0",
             "text": "쥐스틴 & 카롤린의 인지 존재에게 승리",
             "completed": false
           },
           {
-            "id": "c10-s1-i1",
+            "id": "c10-두영혼의인연과공허의괴뢰사약속과맹세와반지-f2fbd96d",
+            "legacyId": "c10-s1-i1",
             "text": "메멘토스 <Hard or Very Hard>: 사념의 썩은 나뭇가지 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s1-i2",
+            "id": "c10-두영혼의인연과공허의괴뢰사약속과맹세와반지-dadb6550",
+            "legacyId": "c10-s1-i2",
             "text": "메멘토스 <Hard or Very Hard>: 미션 10회 클리어 후 매튜로부터 답례 받기",
             "completed": false
           },
           {
-            "id": "c10-s1-i3",
+            "id": "c10-두영혼의인연과공허의괴뢰사약속과맹세와반지-39033160",
+            "legacyId": "c10-s1-i3",
             "text": "메멘토스 <Hard or Very Hard>: FEAR <갈망의 큰 항아리> 토벌",
             "completed": false
           }
@@ -3084,55 +3601,65 @@
       },
       {
         "sectionName": "<광음의 꼬리, 사천의 별들 — 테일즈 오브 크로노그래피아>",
-        "sectionId": "c10-s2",
+        "sectionId": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아",
         "items": [
           {
-            "id": "c10-s2-i0",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-446336aa",
+            "legacyId": "c10-s2-i0",
             "text": "마하 소년에게 승리",
             "completed": false
           },
           {
-            "id": "c10-s2-i1",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-426e9337",
+            "legacyId": "c10-s2-i1",
             "text": "꿈의 물감 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s2-i2",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-ab683334",
+            "legacyId": "c10-s2-i2",
             "text": "클레스 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s2-i3",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-ee656dac",
+            "legacyId": "c10-s2-i3",
             "text": "벨벳 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s2-i4",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-64b2ec7f",
+            "legacyId": "c10-s2-i4",
             "text": "미라 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s2-i5",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-2a0d19ce",
+            "legacyId": "c10-s2-i5",
             "text": "유리 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s2-i6",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-6ca299fb",
+            "legacyId": "c10-s2-i6",
             "text": "그립 소드, 블러드 블레이드, 페어 소드, 두 번째 별 획득",
             "completed": false
           },
           {
-            "id": "c10-s2-i7",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-6ab9df75",
+            "legacyId": "c10-s2-i7",
             "text": "진 글래스터 4종 획득",
             "completed": false
           },
           {
-            "id": "c10-s2-i8",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-29665f87",
+            "legacyId": "c10-s2-i8",
             "text": "스킷 41개 모두 보기",
             "completed": false
           },
           {
-            "id": "c10-s2-i9",
+            "id": "c10-광음의꼬리사천의별들테일즈오브크로노그래피아-40df90b9",
+            "legacyId": "c10-s2-i9",
             "text": "일품요리 무기 8종 및 방어구 3종 획득",
             "completed": false
           }
@@ -3140,75 +3667,89 @@
       },
       {
         "sectionName": "<구세의 신관과 여명의 거목>",
-        "sectionId": "c10-s3",
+        "sectionId": "c10-구세의신관과여명의거목",
         "items": [
           {
-            "id": "c10-s3-i0",
+            "id": "c10-구세의신관과여명의거목-0e117b61",
+            "legacyId": "c10-s3-i0",
             "text": "히든 퀘스트: 미글랜스 성의 병사에게 요리 만들어주기",
             "completed": false
           },
           {
-            "id": "c10-s3-i1",
+            "id": "c10-구세의신관과여명의거목-f2321ec4",
+            "legacyId": "c10-s3-i1",
             "text": "히든 퀘스트: 엘지온의 요리 연구가의 요리 연구 돕기",
             "completed": false
           },
           {
-            "id": "c10-s3-i2",
+            "id": "c10-구세의신관과여명의거목-4c7e61b3",
+            "legacyId": "c10-s3-i2",
             "text": "몽환의 꽃잎 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s3-i3",
+            "id": "c10-구세의신관과여명의거목-cd5235cc",
+            "legacyId": "c10-s3-i3",
             "text": "모든 땅굴 올빼미에게 이름 붙이고 학자를 떠나보내기",
             "completed": false
           },
           {
-            "id": "c10-s3-i4",
+            "id": "c10-구세의신관과여명의거목-9242d132",
+            "legacyId": "c10-s3-i4",
             "text": "마장비의 진정한 힘을 개방",
             "completed": false
           },
           {
-            "id": "c10-s3-i5",
+            "id": "c10-구세의신관과여명의거목-26b07f99",
+            "legacyId": "c10-s3-i5",
             "text": "신성수 아스클레피어의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c10-s3-i6",
+            "id": "c10-구세의신관과여명의거목-5b959fc4",
+            "legacyId": "c10-s3-i6",
             "text": "로이드 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s3-i7",
+            "id": "c10-구세의신관과여명의거목-1ba8ee73",
+            "legacyId": "c10-s3-i7",
             "text": "콜레트 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s3-i8",
+            "id": "c10-구세의신관과여명의거목-780e8f63",
+            "legacyId": "c10-s3-i8",
             "text": "알펜 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s3-i9",
+            "id": "c10-구세의신관과여명의거목-1c7d3ec7",
+            "legacyId": "c10-s3-i9",
             "text": "시온 5★ Class Change",
             "completed": false
           },
           {
-            "id": "c10-s3-i10",
+            "id": "c10-구세의신관과여명의거목-66bbcbe7",
+            "legacyId": "c10-s3-i10",
             "text": "결전 전 기억에서 배지 4종 획득",
             "completed": false
           },
           {
-            "id": "c10-s3-i11",
+            "id": "c10-구세의신관과여명의거목-6ab9df75",
+            "legacyId": "c10-s3-i11",
             "text": "진 글래스터 4종 획득",
             "completed": false
           },
           {
-            "id": "c10-s3-i12",
+            "id": "c10-구세의신관과여명의거목-a35194a6",
+            "legacyId": "c10-s3-i12",
             "text": "모든 야영 요리의 숙련도를 최대로 만들기",
             "completed": false
           },
           {
-            "id": "c10-s3-i13",
+            "id": "c10-구세의신관과여명의거목-bf96e1c3",
+            "legacyId": "c10-s3-i13",
             "text": "스킷 38개 모두 보기",
             "completed": false
           }
@@ -3216,90 +3757,107 @@
       },
       {
         "sectionName": "<COMPLEX DREAM> (~31.12.08 기간 한정)",
-        "sectionId": "c10-s4",
+        "sectionId": "c10-COMPLEXDREAM~311208기간한정",
         "items": [
           {
-            "id": "c10-s4-i0",
+            "id": "c10-COMPLEXDREAM~311208기간한정-b7258216",
+            "legacyId": "c10-s4-i0",
             "text": "COMPLEX DREAM을 MASTER로 클리어",
             "completed": false
           },
           {
-            "id": "c10-s4-i1",
+            "id": "c10-COMPLEXDREAM~311208기간한정-37ff26dc",
+            "legacyId": "c10-s4-i1",
             "text": "어나더 월드에서 알도와 피네를 구출",
             "completed": false
           },
           {
-            "id": "c10-s4-i2",
+            "id": "c10-COMPLEXDREAM~311208기간한정-d0b6a11e",
+            "legacyId": "c10-s4-i2",
             "text": "서브 이벤트 100% 달성",
             "completed": false
           },
           {
-            "id": "c10-s4-i3",
+            "id": "c10-COMPLEXDREAM~311208기간한정-29fd459d",
+            "legacyId": "c10-s4-i3",
             "text": "키 아이템: 스위치 손잡이",
             "completed": false
           },
           {
-            "id": "c10-s4-i4",
+            "id": "c10-COMPLEXDREAM~311208기간한정-4579e7a1",
+            "legacyId": "c10-s4-i4",
             "text": "먹이 주기 10/20/30/40/100회 각각 성공",
             "completed": false
           },
           {
-            "id": "c10-s4-i5",
+            "id": "c10-COMPLEXDREAM~311208기간한정-cb890b7e",
+            "legacyId": "c10-s4-i5",
             "text": "야마네코에게 승리",
             "completed": false
           },
           {
-            "id": "c10-s4-i6",
+            "id": "c10-COMPLEXDREAM~311208기간한정-94c83be5",
+            "legacyId": "c10-s4-i6",
             "text": "그로우 스타 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s4-i7",
+            "id": "c10-COMPLEXDREAM~311208기간한정-57067865",
+            "legacyId": "c10-s4-i7",
             "text": "성도 각성 「조정자」",
             "completed": false
           },
           {
-            "id": "c10-s4-i8",
+            "id": "c10-COMPLEXDREAM~311208기간한정-631cf5d5",
+            "legacyId": "c10-s4-i8",
             "text": "성도 각성 「래디컬 드리머」",
             "completed": false
           },
           {
-            "id": "c10-s4-i9",
+            "id": "c10-COMPLEXDREAM~311208기간한정-4c017ab8",
+            "legacyId": "c10-s4-i9",
             "text": "성도 각성 「월희」",
             "completed": false
           },
           {
-            "id": "c10-s4-i10",
+            "id": "c10-COMPLEXDREAM~311208기간한정-8c2e8b40",
+            "legacyId": "c10-s4-i10",
             "text": "성도 각성 「별에서 내려온 아이」",
             "completed": false
           },
           {
-            "id": "c10-s4-i11",
+            "id": "c10-COMPLEXDREAM~311208기간한정-aa5f7a4e",
+            "legacyId": "c10-s4-i11",
             "text": "성도 각성 「아카시아 용기사」",
             "completed": false
           },
           {
-            "id": "c10-s4-i12",
+            "id": "c10-COMPLEXDREAM~311208기간한정-5895e282",
+            "legacyId": "c10-s4-i12",
             "text": "엘리먼트 40종 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s4-i13",
+            "id": "c10-COMPLEXDREAM~311208기간한정-b9605547",
+            "legacyId": "c10-s4-i13",
             "text": "프리즘 무기 8종 재가공",
             "completed": false
           },
           {
-            "id": "c10-s4-i14",
+            "id": "c10-COMPLEXDREAM~311208기간한정-758dbbef",
+            "legacyId": "c10-s4-i14",
             "text": "무지개 방어구 3종 획득",
             "completed": false
           },
           {
-            "id": "c10-s4-i15",
+            "id": "c10-COMPLEXDREAM~311208기간한정-66a584bc",
+            "legacyId": "c10-s4-i15",
             "text": "별이 러시 「지옥급!!」 클리어",
             "completed": false
           },
           {
-            "id": "c10-s4-i16",
+            "id": "c10-COMPLEXDREAM~311208기간한정-612d04a1",
+            "legacyId": "c10-s4-i16",
             "text": "라보저를 격퇴",
             "completed": false
           }
@@ -3307,80 +3865,95 @@
       },
       {
         "sectionName": "<땅끝의 포로와 인도의 팔중주> (~28.12.06 기간 한정)",
-        "sectionId": "c10-s5",
+        "sectionId": "c10-땅끝의포로와인도의팔중주~281206기간한정",
         "items": [
           {
-            "id": "c10-s5-i0",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-0d06863e",
+            "legacyId": "c10-s5-i0",
             "text": "어떤 여행자의 수기 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s5-i1",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-5460c4df",
+            "legacyId": "c10-s5-i1",
             "text": "길 잃은 노동자 청년을 노동자 아저씨에게 데려가기",
             "completed": false
           },
           {
-            "id": "c10-s5-i2",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-8017daa2",
+            "legacyId": "c10-s5-i2",
             "text": "솔토레 갱도 서쪽 노동자 아저씨에게 식량 건네기",
             "completed": false
           },
           {
-            "id": "c10-s5-i3",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-2409d96a",
+            "legacyId": "c10-s5-i3",
             "text": "여성에게 루카스의 행동에 관한 정보를 전하기",
             "completed": false
           },
           {
-            "id": "c10-s5-i4",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-dc9d9ad0",
+            "legacyId": "c10-s5-i4",
             "text": "마물들의 사료 알맞게 준비하기",
             "completed": false
           },
           {
-            "id": "c10-s5-i5",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-20fc9e5d",
+            "legacyId": "c10-s5-i5",
             "text": "하인 소녀에게 수기의 일부 건네기",
             "completed": false
           },
           {
-            "id": "c10-s5-i6",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-014a091b",
+            "legacyId": "c10-s5-i6",
             "text": "스트리머 여성에게 어그로 시튜버 데려가기",
             "completed": false
           },
           {
-            "id": "c10-s5-i7",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-56ac09b5",
+            "legacyId": "c10-s5-i7",
             "text": "요리 스트리머에게 요리사 데려가기",
             "completed": false
           },
           {
-            "id": "c10-s5-i8",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-5afa8afe",
+            "legacyId": "c10-s5-i8",
             "text": "필드 커맨드로 매입할 수 있는 아이템 모두 매입",
             "completed": false
           },
           {
-            "id": "c10-s5-i9",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-97caca7d",
+            "legacyId": "c10-s5-i9",
             "text": "필드 커맨드로 탐색할 수 있는 아이템 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s5-i10",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-3329c11b",
+            "legacyId": "c10-s5-i10",
             "text": "탐색 레벨 47 달성",
             "completed": false
           },
           {
-            "id": "c10-s5-i11",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-74cc0aec",
+            "legacyId": "c10-s5-i11",
             "text": "영입 레벨 32 달성",
             "completed": false
           },
           {
-            "id": "c10-s5-i12",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-96e67898",
+            "legacyId": "c10-s5-i12",
             "text": "성도 각성 「신상백」",
             "completed": false
           },
           {
-            "id": "c10-s5-i13",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-d3cd039c",
+            "legacyId": "c10-s5-i13",
             "text": "성도 각성 「석학왕」",
             "completed": false
           },
           {
-            "id": "c10-s5-i14",
+            "id": "c10-땅끝의포로와인도의팔중주~281206기간한정-beebbd2f",
+            "legacyId": "c10-s5-i14",
             "text": "성도 각성 「무도희」",
             "completed": false
           }
@@ -3388,40 +3961,47 @@
       },
       {
         "sectionName": "<THE KING OF FIGHTERS ANOTHER BOUT>",
-        "sectionId": "c10-s6",
+        "sectionId": "c10-THEKINGOFFIGHTERSANOTHERBOUT",
         "items": [
           {
-            "id": "c10-s6-i0",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-c4e61eb4",
+            "legacyId": "c10-s6-i0",
             "text": "파이터 스피릿 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s6-i1",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-642c7ac6",
+            "legacyId": "c10-s6-i1",
             "text": "KOF 메달 교환 완료(상급 비전서 제외)",
             "completed": false
           },
           {
-            "id": "c10-s6-i2",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-c56abe74",
+            "legacyId": "c10-s6-i2",
             "text": "팬텀 루갈의 그림자에게 승리",
             "completed": false
           },
           {
-            "id": "c10-s6-i3",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-1ccdfbf9",
+            "legacyId": "c10-s6-i3",
             "text": "성도 각성 「화염불탁」",
             "completed": false
           },
           {
-            "id": "c10-s6-i4",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-6f0bbb59",
+            "legacyId": "c10-s6-i4",
             "text": "성도 각성 「전설의 늑대」",
             "completed": false
           },
           {
-            "id": "c10-s6-i5",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-dae99a7a",
+            "legacyId": "c10-s6-i5",
             "text": "성도 각성 「매혹의 여성 닌자」",
             "completed": false
           },
           {
-            "id": "c10-s6-i6",
+            "id": "c10-THEKINGOFFIGHTERSANOTHERBOUT-a041d7ca",
+            "legacyId": "c10-s6-i6",
             "text": "성도 각성 「아이스 돌」",
             "completed": false
           }
@@ -3429,50 +4009,59 @@
       },
       {
         "sectionName": "<아득한 예지와 비밀의 외딴 성>",
-        "sectionId": "c10-s7",
+        "sectionId": "c10-아득한예지와비밀의외딴성",
         "items": [
           {
-            "id": "c10-s7-i0",
+            "id": "c10-아득한예지와비밀의외딴성-9a19b690",
+            "legacyId": "c10-s7-i0",
             "text": "교차된 결정 모래 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s7-i1",
+            "id": "c10-아득한예지와비밀의외딴성-d813359e",
+            "legacyId": "c10-s7-i1",
             "text": "연금 레벨 Max 달성",
             "completed": false
           },
           {
-            "id": "c10-s7-i2",
+            "id": "c10-아득한예지와비밀의외딴성-b5280008",
+            "legacyId": "c10-s7-i2",
             "text": "모든 코어아이템에 머티리얼환 효과를 모두 부여하고 S랭크로 조합",
             "completed": false
           },
           {
-            "id": "c10-s7-i3",
+            "id": "c10-아득한예지와비밀의외딴성-7eed05be",
+            "legacyId": "c10-s7-i3",
             "text": "무기 3종, 방어구 3종에 머티리얼환 효과를 모두 부여하고 S랭크로 조합",
             "completed": false
           },
           {
-            "id": "c10-s7-i4",
+            "id": "c10-아득한예지와비밀의외딴성-b4c7b6b3",
+            "legacyId": "c10-s7-i4",
             "text": "카르나 제네시스의 그림자 토벌",
             "completed": false
           },
           {
-            "id": "c10-s7-i5",
+            "id": "c10-아득한예지와비밀의외딴성-a4d85b74",
+            "legacyId": "c10-s7-i5",
             "text": "어둠의 얼터 포스 토벌",
             "completed": false
           },
           {
-            "id": "c10-s7-i6",
+            "id": "c10-아득한예지와비밀의외딴성-b7826327",
+            "legacyId": "c10-s7-i6",
             "text": "성도 각성 「기예 연금술사」",
             "completed": false
           },
           {
-            "id": "c10-s7-i7",
+            "id": "c10-아득한예지와비밀의외딴성-8d7a0cff",
+            "legacyId": "c10-s7-i7",
             "text": "성도 각성 「정숙한 연주자」",
             "completed": false
           },
           {
-            "id": "c10-s7-i8",
+            "id": "c10-아득한예지와비밀의외딴성-a7d082c9",
+            "legacyId": "c10-s7-i8",
             "text": "성도 각성 「유랑 연금술사」",
             "completed": false
           }
@@ -3480,90 +4069,107 @@
       },
       {
         "sectionName": "<Memories of Another Sky> (~26.07.06 기간 한정)",
-        "sectionId": "c10-s8",
+        "sectionId": "c10-MemoriesofAnotherSky~260706기간한정",
         "items": [
           {
-            "id": "c10-s8-i0",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-b8391fa4",
+            "legacyId": "c10-s8-i0",
             "text": "보석 보상을 모두 획득",
             "completed": false
           },
           {
-            "id": "c10-s8-i1",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-ee4e0b84",
+            "legacyId": "c10-s8-i1",
             "text": "ATE 모두 보기",
             "completed": false
           },
           {
-            "id": "c10-s8-i2",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-b88a75a7",
+            "legacyId": "c10-s8-i2",
             "text": "모그리 편지를 모두 배달하기",
             "completed": false
           },
           {
-            "id": "c10-s8-i3",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-ab2835dd",
+            "legacyId": "c10-s8-i3",
             "text": "초코보 부리 Lv 99 달성",
             "completed": false
           },
           {
-            "id": "c10-s8-i4",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-45e3fb6a",
+            "legacyId": "c10-s8-i4",
             "text": "초코보로 모든 보물 찾기",
             "completed": false
           },
           {
-            "id": "c10-s8-i5",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-0835fa75",
+            "legacyId": "c10-s8-i5",
             "text": "데드 페퍼를 사용할 수 있는 곳 모두 조사하기",
             "completed": false
           },
           {
-            "id": "c10-s8-i6",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-c1f331f8",
+            "legacyId": "c10-s8-i6",
             "text": "얀에게 다이아몬드 주기",
             "completed": false
           },
           {
-            "id": "c10-s8-i7",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-132e1f69",
+            "legacyId": "c10-s8-i7",
             "text": "모그리에게 카드 두 장 건네기",
             "completed": false
           },
           {
-            "id": "c10-s8-i8",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-2ff84655",
+            "legacyId": "c10-s8-i8",
             "text": "알렉산드리아 시가지 광장의 대장장이와의 교환을 완료 (SA 장비 제외)",
             "completed": false
           },
           {
-            "id": "c10-s8-i9",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-ef05c23a",
+            "legacyId": "c10-s8-i9",
             "text": "달리 마을 입구의 직원과의 교환을 완료(SA 장비 제외)",
             "completed": false
           },
           {
-            "id": "c10-s8-i10",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-2b3a0f25",
+            "legacyId": "c10-s8-i10",
             "text": "흑마도사 마을 광장의 흑마도사 239호와의 교환을 완료(SA 장비 제외)",
             "completed": false
           },
           {
-            "id": "c10-s8-i11",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-780ab5c6",
+            "legacyId": "c10-s8-i11",
             "text": "린드블룸 시가지 상점 거리의 직원과의 교환을 완료(SA 장비 제외)",
             "completed": false
           },
           {
-            "id": "c10-s8-i12",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-a9297ea9",
+            "legacyId": "c10-s8-i12",
             "text": "초코보 숲의 메네와의 교환을 완료 (상급 비전서 제외)",
             "completed": false
           },
           {
-            "id": "c10-s8-i13",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-61857ddf",
+            "legacyId": "c10-s8-i13",
             "text": "성도 각성 「도적」",
             "completed": false
           },
           {
-            "id": "c10-s8-i14",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-0cb4341a",
+            "legacyId": "c10-s8-i14",
             "text": "성도 각성 「흑마도사」",
             "completed": false
           },
           {
-            "id": "c10-s8-i15",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-073b821b",
+            "legacyId": "c10-s8-i15",
             "text": "성도 각성 「근위 기사」",
             "completed": false
           },
           {
-            "id": "c10-s8-i16",
+            "id": "c10-MemoriesofAnotherSky~260706기간한정-367750db",
+            "legacyId": "c10-s8-i16",
             "text": "성도 각성 「순진한 여왕」",
             "completed": false
           }
@@ -3577,15 +4183,17 @@
     "sections": [
       {
         "sectionName": "<바르오키 지방>",
-        "sectionId": "c11-s0",
+        "sectionId": "c11-바르오키지방",
         "items": [
           {
-            "id": "c11-s0-i0",
+            "id": "c11-바르오키지방-d5af9032",
+            "legacyId": "c11-s0-i0",
             "text": "무기 3종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c11-s0-i1",
+            "id": "c11-바르오키지방-4e7b3710",
+            "legacyId": "c11-s0-i1",
             "text": "랠름 고블린을 100회 토벌",
             "completed": false
           }
@@ -3593,15 +4201,17 @@
       },
       {
         "sectionName": "<라틀 지방>",
-        "sectionId": "c11-s1",
+        "sectionId": "c11-라틀지방",
         "items": [
           {
-            "id": "c11-s1-i0",
+            "id": "c11-라틀지방-e25e4411",
+            "legacyId": "c11-s1-i0",
             "text": "무기 4종, 방어구 4종 강화",
             "completed": false
           },
           {
-            "id": "c11-s1-i1",
+            "id": "c11-라틀지방-e2e95c48",
+            "legacyId": "c11-s1-i1",
             "text": "랠름 하운드를 100회 토벌",
             "completed": false
           }
@@ -3609,15 +4219,17 @@
       },
       {
         "sectionName": "<엘지온 지방>",
-        "sectionId": "c11-s2",
+        "sectionId": "c11-엘지온지방",
         "items": [
           {
-            "id": "c11-s2-i0",
+            "id": "c11-엘지온지방-d5af9032",
+            "legacyId": "c11-s2-i0",
             "text": "무기 3종, 방어구 3종 강화",
             "completed": false
           },
           {
-            "id": "c11-s2-i1",
+            "id": "c11-엘지온지방-1ca6bf4e",
+            "legacyId": "c11-s2-i1",
             "text": "랠름 비트를 100회 토벌",
             "completed": false
           }
@@ -3631,15 +4243,17 @@
     "sections": [
       {
         "sectionName": "<루차나 고적>",
-        "sectionId": "c12-s0",
+        "sectionId": "c12-루차나고적",
         "items": [
           {
-            "id": "c12-s0-i0",
+            "id": "c12-루차나고적-9af7c77a",
+            "legacyId": "c12-s0-i0",
             "text": "루인즈 위습, 앨리게이터, 페더, 비스트를 100회씩 토벌",
             "completed": false
           },
           {
-            "id": "c12-s0-i1",
+            "id": "c12-루차나고적-f0f90449",
+            "legacyId": "c12-s0-i1",
             "text": "탐험 아이템을 모두 수집",
             "completed": false
           }
@@ -3647,15 +4261,17 @@
       },
       {
         "sectionName": "<토토 시어터 월드>",
-        "sectionId": "c12-s1",
+        "sectionId": "c12-토토시어터월드",
         "items": [
           {
-            "id": "c12-s1-i0",
+            "id": "c12-토토시어터월드-9c2e72d6",
+            "legacyId": "c12-s1-i0",
             "text": "미미 구출 후 직원실 방문",
             "completed": false
           },
           {
-            "id": "c12-s1-i1",
+            "id": "c12-토토시어터월드-2c80dc2f",
+            "legacyId": "c12-s1-i1",
             "text": "오리지널 굿즈로 얻을 수 있는 천명 아이템 모두 획득",
             "completed": false
           }
@@ -3669,15 +4285,17 @@
     "sections": [
       {
         "sectionName": "<환리경>",
-        "sectionId": "c13-s0",
+        "sectionId": "c13-환리경",
         "items": [
           {
-            "id": "c13-s0-i0",
+            "id": "c13-환리경-de7639af",
+            "legacyId": "c13-s0-i0",
             "text": "마지막 경에 도달",
             "completed": false
           },
           {
-            "id": "c13-s0-i1",
+            "id": "c13-환리경-801d052c",
+            "legacyId": "c13-s0-i1",
             "text": "발바닥 젤리 도장 보상 모두 획득",
             "completed": false
           }
@@ -3691,60 +4309,71 @@
     "sections": [
       {
         "sectionName": "<미글랜스 왕국 국립 극장>",
-        "sectionId": "c14-s0",
+        "sectionId": "c14-미글랜스왕국국립극장",
         "items": [
           {
-            "id": "c14-s0-i0",
+            "id": "c14-미글랜스왕국국립극장-2adcd3a7",
+            "legacyId": "c14-s0-i0",
             "text": "<인어공주> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i1",
+            "id": "c14-미글랜스왕국국립극장-3de3de70",
+            "legacyId": "c14-s0-i1",
             "text": "<명탐정 하우스와 사라진 눈동자> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i2",
+            "id": "c14-미글랜스왕국국립극장-2e64a937",
+            "legacyId": "c14-s0-i2",
             "text": "<미글랜스 성 전투> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i3",
+            "id": "c14-미글랜스왕국국립극장-61ed4dac",
+            "legacyId": "c14-s0-i3",
             "text": "<은의 낙원> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i4",
+            "id": "c14-미글랜스왕국국립극장-04ff6b3a",
+            "legacyId": "c14-s0-i4",
             "text": "<전율의 밤에> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i5",
+            "id": "c14-미글랜스왕국국립극장-94418e59",
+            "legacyId": "c14-s0-i5",
             "text": "<클로에 패밀리의 일상> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i6",
+            "id": "c14-미글랜스왕국국립극장-3e0c1c37",
+            "legacyId": "c14-s0-i6",
             "text": "<명탐정 하우스와 두 개의 번개> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i7",
+            "id": "c14-미글랜스왕국국립극장-e9981cf2",
+            "legacyId": "c14-s0-i7",
             "text": "<약속의 나무> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i8",
+            "id": "c14-미글랜스왕국국립극장-195e4df1",
+            "legacyId": "c14-s0-i8",
             "text": "<동방 전래 동화 - 태엽 인형> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i9",
+            "id": "c14-미글랜스왕국국립극장-e6bbc014",
+            "legacyId": "c14-s0-i9",
             "text": "<격투! 요리왕 결승전> 한심한/멋진/기적의 공연",
             "completed": false
           },
           {
-            "id": "c14-s0-i10",
+            "id": "c14-미글랜스왕국국립극장-7a5bad57",
+            "legacyId": "c14-s0-i10",
             "text": "<벌룡 공주 기담> 한심한/멋진/기적의 공연",
             "completed": false
           }
@@ -3758,10 +4387,11 @@
     "sections": [
       {
         "sectionName": "<무기와의 조우>, <진 무기와의 조우>",
-        "sectionId": "c15-s0",
+        "sectionId": "c15-무기와의조우진무기와의조우",
         "items": [
           {
-            "id": "c15-s0-i0",
+            "id": "c15-무기와의조우진무기와의조우-64307b4c",
+            "legacyId": "c15-s0-i0",
             "text": "현현 무기 도감 완성",
             "completed": false
           }
@@ -3769,20 +4399,23 @@
       },
       {
         "sectionName": "<결실한 무기와의 교차>",
-        "sectionId": "c15-s1",
+        "sectionId": "c15-결실한무기와의교차",
         "items": [
           {
-            "id": "c15-s1-i0",
+            "id": "c15-결실한무기와의교차-34379508",
+            "legacyId": "c15-s1-i0",
             "text": "현현 무기 ~결실~ 도감 완성",
             "completed": false
           },
           {
-            "id": "c15-s1-i1",
+            "id": "c15-결실한무기와의교차-9d65f2ac",
+            "legacyId": "c15-s1-i1",
             "text": "모든 현현 결실 무기 CHALLENGE에게 모든 서약을 동시에 달성하여 승리",
             "completed": false
           },
           {
-            "id": "c15-s1-i2",
+            "id": "c15-결실한무기와의교차-7733d73f",
+            "legacyId": "c15-s1-i2",
             "text": "모든 현현 결실 무기 CHALLENGE에게 100번씩 승리",
             "completed": false
           }
@@ -3796,105 +4429,125 @@
     "sections": [
       {
         "sectionName": "<과거와의 결착>",
-        "sectionId": "c16-s0",
+        "sectionId": "c16-과거와의결착",
         "items": [
           {
-            "id": "c16-s0-i0",
+            "id": "c16-과거와의결착-b07f3dbd",
+            "legacyId": "c16-s0-i0",
             "text": "'시간의 어둠을 비춘 자의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i1",
+            "id": "c16-과거와의결착-0780db5e",
+            "legacyId": "c16-s0-i1",
             "text": "'시간의 어둠을 비춘 자의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i2",
+            "id": "c16-과거와의결착-3bc56c45",
+            "legacyId": "c16-s0-i2",
             "text": "'장대한 열진 붕괴의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i3",
+            "id": "c16-과거와의결착-ca5d4e0f",
+            "legacyId": "c16-s0-i3",
             "text": "'장대한 열진 붕괴의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i4",
+            "id": "c16-과거와의결착-bd1a9666",
+            "legacyId": "c16-s0-i4",
             "text": "'청명한 수옥 재앙의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i5",
+            "id": "c16-과거와의결착-8b8ec365",
+            "legacyId": "c16-s0-i5",
             "text": "'청명한 수옥 재앙의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i6",
+            "id": "c16-과거와의결착-fc66de2b",
+            "legacyId": "c16-s0-i6",
             "text": "'시간의 뒤틀림을 밝혀낸 자의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i7",
+            "id": "c16-과거와의결착-dc14a812",
+            "legacyId": "c16-s0-i7",
             "text": "'시간의 뒤틀림을 밝혀낸 자의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i8",
+            "id": "c16-과거와의결착-a5846bab",
+            "legacyId": "c16-s0-i8",
             "text": "'빛나는 호염 맹화의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i9",
+            "id": "c16-과거와의결착-c5291f57",
+            "legacyId": "c16-s0-i9",
             "text": "'빛나는 호염 맹화의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i10",
+            "id": "c16-과거와의결착-77ddee24",
+            "legacyId": "c16-s0-i10",
             "text": "'화면 속 수수께끼를 밝혀낸 자의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i11",
+            "id": "c16-과거와의결착-1a847481",
+            "legacyId": "c16-s0-i11",
             "text": "'화면 속 수수께끼를 밝혀낸 자의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i12",
+            "id": "c16-과거와의결착-0c19f099",
+            "legacyId": "c16-s0-i12",
             "text": "'봉인된 재앙의 귀신의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i13",
+            "id": "c16-과거와의결착-b2cde83f",
+            "legacyId": "c16-s0-i13",
             "text": "'봉인된 재앙의 귀신의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i14",
+            "id": "c16-과거와의결착-09e32f68",
+            "legacyId": "c16-s0-i14",
             "text": "'매서운 광풍 폭란의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i15",
+            "id": "c16-과거와의결착-6b32d102",
+            "legacyId": "c16-s0-i15",
             "text": "'매서운 광풍 폭란의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i16",
+            "id": "c16-과거와의결착-e3ad9e50",
+            "legacyId": "c16-s0-i16",
             "text": "'인과의 멍에를 끊는 자의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i17",
+            "id": "c16-과거와의결착-21cf7017",
+            "legacyId": "c16-s0-i17",
             "text": "'인과의 멍에를 끊는 자의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i18",
+            "id": "c16-과거와의결착-bc696261",
+            "legacyId": "c16-s0-i18",
             "text": "'영장의 명법에 저항한 자의 시련'의 모든 미션 클리어",
             "completed": false
           },
           {
-            "id": "c16-s0-i19",
+            "id": "c16-과거와의결착-9d7dcf34",
+            "legacyId": "c16-s0-i19",
             "text": "'영장의 명법에 저항한 자의 시련 -Extreme-'의 모든 미션 클리어",
             "completed": false
           }
@@ -3907,17 +4560,20 @@
     "categoryId": "c17",
     "items": [
       {
-        "id": "c17-i0",
+        "id": "c17-68b00aba",
+        "legacyId": "c17-i0",
         "text": "성영의 서의 난이도 CHALLENGE 보상을 모두 획득",
         "completed": false
       },
       {
-        "id": "c17-i1",
+        "id": "c17-511c53f3",
+        "legacyId": "c17-i1",
         "text": "성도 각성 「드래곤 베어러」",
         "completed": false
       },
       {
-        "id": "c17-i2",
+        "id": "c17-4d96459e",
+        "legacyId": "c17-i2",
         "text": "New Buddy 피스케와 동료 되기",
         "completed": false
       }
@@ -3929,35 +4585,41 @@
     "sections": [
       {
         "sectionName": "<봉인된 검과 옛 영웅담>",
-        "sectionId": "c18-s0",
+        "sectionId": "c18-봉인된검과옛영웅담",
         "items": [
           {
-            "id": "c18-s0-i0",
+            "id": "c18-봉인된검과옛영웅담-5eb7a4c4",
+            "legacyId": "c18-s0-i0",
             "text": "환혹 정원 「봉인된 검과 옛 영웅담」을 제패",
             "completed": false
           },
           {
-            "id": "c18-s0-i1",
+            "id": "c18-봉인된검과옛영웅담-cc22ec73",
+            "legacyId": "c18-s0-i1",
             "text": "뜰채로 나비 잡기",
             "completed": false
           },
           {
-            "id": "c18-s0-i2",
+            "id": "c18-봉인된검과옛영웅담-7c7d523a",
+            "legacyId": "c18-s0-i2",
             "text": "싱싱싱한 물고기를 직화로 굽기",
             "completed": false
           },
           {
-            "id": "c18-s0-i3",
+            "id": "c18-봉인된검과옛영웅담-9d0fbfb0",
+            "legacyId": "c18-s0-i3",
             "text": "보물 상자에 숨겨진 비밀 사진을 찾기",
             "completed": false
           },
           {
-            "id": "c18-s0-i4",
+            "id": "c18-봉인된검과옛영웅담-fa15d30a",
+            "legacyId": "c18-s0-i4",
             "text": "환혹 저택의 주인에게 묘약을 사용하기",
             "completed": false
           },
           {
-            "id": "c18-s0-i5",
+            "id": "c18-봉인된검과옛영웅담-fb9ef2d2",
+            "legacyId": "c18-s0-i5",
             "text": "화병에 담긴 시든 꽃에 물을 주기",
             "completed": false
           }
