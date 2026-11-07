@@ -8,7 +8,11 @@
 - 구글시트/CSV로도 바로 쓸 수 있게 flat CSV도 함께 생성
 
 Usage:
-    python _tools/parse_checklist.py
+    python _tools/parse_checklist.py           # 체크리스트.md(사본) → JSON
+    python _tools/parse_checklist.py --fetch   # 카페 원글(88206)에서 체크리스트.md 를 다시 받은 뒤 → JSON (2026-11-07)
+
+훈장(2026-11-07): 딩님 「어나더 에덴 훈장」 공개 시트(카페 215206) 사본 _archive/ding-medals/<날짜>/*.csv(탭 7)를
+「훈장」 분류로 붙인다. 시트 갱신 = 이 스크립트 --fetch(훈장 탭도 오늘 날짜로 받는다). id = 탭 + 훈장 이름 · 설명 해시(보상 · 비고가 바뀌어도 진행도 유지).
 
 Output:
     data/master-data.json   — 계층 구조
@@ -17,13 +21,21 @@ Output:
 import json
 import re
 import csv
+import sys
+import html
+import datetime
 import hashlib
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MD_PATH = ROOT / "체크리스트.md"
 OUT_JSON = ROOT / "data" / "master-data.json"
 OUT_CSV = ROOT / "data" / "master-sheet.csv"
+MEDAL_DIR = ROOT.parent / "_archive" / "ding-medals"
+MEDAL_PUB = ("https://docs.google.com/spreadsheets/d/e/"
+             "2PACX-1vQv1tpayIrElt0bPlnHhSqdwkF0st8o5RetZdAvYLulczIdTGEw3u6chrRsT2ZWzNw2DaDkKN7Z3PR-")
+MEDAL_TABS = ["배틀", "시나리오", "던전", "컬렉션", "동료", "물고기", "기타"]
 
 # 알려진 최상위 카테고리 목록 (md 순서대로)
 CATEGORIES = [
@@ -176,8 +188,63 @@ def emit_csv(categories, path: Path):
     return len(rows)
 
 
+def fetch():
+    """카페 원글 88206(딩님 「콘텐츠 목록, 체크 리스트」) → 체크리스트.md, 훈장 시트 탭 → _archive/ding-medals/<오늘>/.
+    카페 글 API 는 로그인 쿠키가 필요하다 — 워크스페이스 _tools/collect/extract_naver_cafe.py(.env) 를 쓴다."""
+    sys.path.insert(0, str(ROOT.parent / "_tools" / "collect"))
+    import os
+    cwd = os.getcwd()
+    os.chdir(ROOT.parent / "_tools")                 # .env 위치
+    try:
+        import extract_naver_cafe as nc
+        d = nc.get_article("anothereden", "88206")
+    finally:
+        os.chdir(cwd)
+    h = d["result"]["article"]["contentHtml"]
+    t = re.sub(r"<br\s*/?>|</p>|</div>", "\n", h)
+    t = html.unescape(re.sub(r"<[^>]+>", "", t)).replace("\u200b", "").replace("\xa0", " ")   # 태그 먼저 지우고 엔티티 복원(<Hard> 보존)
+    MD_PATH.write_text("\n".join(l.rstrip() for l in t.splitlines() if l.strip()) + "\n", encoding="utf-8")
+    get = lambda u: urllib.request.urlopen(u, timeout=60).read().decode("utf-8")
+    tabs = re.findall(r'items\.push\(\{name: "(.*?)", pageUrl: ".*?gid=(\d+)', get(MEDAL_PUB + "/pubhtml"))
+    dst = MEDAL_DIR / datetime.date.today().isoformat()
+    dst.mkdir(parents=True, exist_ok=True)
+    for name, gid in tabs:
+        (dst / f"{gid}_{name}.csv").write_text(get(f"{MEDAL_PUB}/pub?gid={gid}&single=true&output=csv"), encoding="utf-8")
+    print(f"[OK] 체크리스트.md <- 카페 88206 · 훈장 탭 {len(tabs)} -> {dst}")
+
+
+def medals(cat_idx):
+    """딩님 훈장 시트 사본 → 「훈장」 분류(탭 = 섹션). 행: 훈장(금·은·동) · 이름 · 설명 · 보상 · ver · 비고"""
+    dirs = sorted(MEDAL_DIR.glob("20*"))
+    if not dirs:
+        return None
+    cat_id = f"c{cat_idx}"
+    cat = {"categoryName": "훈장", "categoryId": cat_id, "sections": [],
+           "source": "출처: 카페 딩님 「어나더 에덴 훈장」 https://cafe.naver.com/anothereden/215206"}
+    files = {f.stem.split("_", 1)[1]: f for f in dirs[-1].glob("*.csv")}
+    used_sec = set()
+    for tab in [t for t in MEDAL_TABS if t in files] + sorted(t for t in files if t not in MEDAL_TABS):
+        rows = list(csv.reader(files[tab].open(encoding="utf-8")))
+        head = next(i for i, r in enumerate(rows) if r[:2] == ["훈장", "이름"])
+        sec_id = uniq_id(f"{cat_id}-{slugify(tab)}", used_sec)
+        sec, used = {"sectionName": tab, "sectionId": sec_id, "items": []}, set()
+        for n, r in enumerate(rows[head + 1:]):
+            grade, name, desc, reward, ver, note = (r + [""] * 6)[:6]
+            if not name.strip():
+                continue
+            text = f"[{grade}] {name} — {desc}" + (f" · 보상 {reward}" if reward else "") + (f" ※{note}" if note else "")
+            sec["items"].append({"id": uniq_id(f"{sec_id}-{text_hash(name + desc)}", used), "legacyId": f"{sec_id}-i{n}",
+                                 "text": text, "completed": False})
+        cat["sections"].append(sec)
+    return cat
+
+
 def main():
+    if "--fetch" in sys.argv:
+        fetch()
     categories = parse()
+    if (m := medals(len(categories))):
+        categories.append(m)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(
         json.dumps(categories, ensure_ascii=False, indent=2),
